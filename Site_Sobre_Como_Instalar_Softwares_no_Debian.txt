@@ -1,0 +1,5 @@
+https://linuxize.com/tags/debian/
+
+|Site sobre como instalar de tudo no Debian.
+|Somente com o Tutorial deste Site (e nem mesmo com o tutorial original do produtor) consegui instalar o
+banco de dados MongoDB. Nem no site oficial a documentação era funcional, mas neste aqui resolveu tudo.

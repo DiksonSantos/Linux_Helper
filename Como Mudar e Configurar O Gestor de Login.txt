@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?app=desktop&v=0SUzwPgw2co
+
+
+sudo apt-get remove lightdm
+
+sudo apt install gdm3

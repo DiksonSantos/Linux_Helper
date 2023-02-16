@@ -1,0 +1,30 @@
+# COMO INSTALAR FIREWALL UFW NO DEBIAN 11
+
+sudo apt update && sudo apt install ufw
+
+
+# VERIFICAR STATUS
+
+sudo ufw status
+
+# (Des)/HABILITAR PARA USO JÁ DURANTE A INICIALIZAÇÃO DO SISTEMA:
+
+sudo ufw enable
+
+sudo ufw disable
+
+__________________________________
+
+To allow port number 8080 in UFW, the command will be:
+
+sudo ufw allow 8080
+
+to Deny Access:
+
+sudo ufw deny 8080
+
+__________________________________
+
+
+FONTE:
+https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/

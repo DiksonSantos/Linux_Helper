@@ -1,0 +1,12 @@
+Remover:
+sudo apt purge gnome-software
+
+
+
+To add the old one back run
+sudo apt install software-center
+
+
+
+
+https://askubuntu.com/questions/782999/is-there-any-safe-way-to-remove-gnome-software-in-16-04-and-install-the-classic

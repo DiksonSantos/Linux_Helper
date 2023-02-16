@@ -1,0 +1,50 @@
+﻿Para matar um processo do Wine que esteja causando travamento:
+
+To kill all Wine processes, use wineserver -k (all within same WINEPREFIX environment).
+For killing specific process (list by winedbg --command "info proc"), you can run winedbg in the following way:
+Then run winedbg in the following way:
+USE ESTE COMANDO:
+$ winedbg
+
+VAI ABRIR ESTE PROMPT, USE OS ATRIBUTOS “INFO”  & “PROC”
+Wine-dbg>info proc
+
+ pid      threads  executable (all id:s are in hex)
+ 0000000d 4        'taskmgr.exe'
+ 0000000e 4        'services.exe'
+ 0000001a 3        \_ 'plugplay.exe'
+Wine-dbg>attach 13
+0x9f68ad05 read$UNIX2003+0x5 in libsystem_kernel.dylib: call    0x9f68b40c _sysenter_trap in libsystem_kernel.dylib
+Wine-dbg>kill
+Wine-dbg>quit
+Since attach accepts a decimal value, you need to convert its pid from hexadecimal, here is example in Bash shell:
+
+EX → SE QUISERMOS MATAR O PROCESSO  'taskmgr.exe'  QUE TEM O NUMERO →  0000000d 4   
+
+SAIMOS DO WINEDEBUG PARA USAR O ECHO;
+
+#USANDO O “ECHO $(())”  SUBSTITUIMOS O SEGUNDO DIGITO (NESTE CASO ZERO (0)) PELA LETRA X , E NÃO USAMOS O ULTIMO DIGITO (NO CASO O 4).  
+EX:
+
+echo $(( 0x0000000d ))
+
+ELE VAI DEVOLVER UM NUMERO, COM ESTE NUMERO EM MÃO, VOLTAMOS AO WINEDBG ENTÃO USAMOS ESTE NUMERO COM O COMANDO “ATTACH”:
+
+wine-dbg>attach “Numero Devolvido”
+
+ELE VAI DEVOLVER UMA LINHA COM CODIGOS TIPO ESTA AQUI:
+0x9f68ad05 read$UNIX2003+0x5 in libsystem_kernel.dylib: call    0x9f68b40c _sysenter_trap in libsystem_kernel.dylib
+
+ENTÃO DIGITE:
+
+wine-dbg>kill
+
+E o processo será finalizado.
+
+PARA SAIR USE :
+
+Wine-dbg>quit
+
+
+FONTE:
+https://stackoverflow.com/questions/4556820/kill-a-process-running-in-wine-from-command-prompt

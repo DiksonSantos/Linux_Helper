@@ -1,0 +1,178 @@
+ENCONTRAR E MATAR PROCESSO (Facilmente):
+
+pgrep audacious
+26499
+kill -9 26499
+____________
+
+look good	-> Traz todas as palavras que começam com 'good'
+look hi | -n 5	-> Traz só 5 das palavras começadas em 'hi'  (No idioma do sistema)
+
+___
+
+
+history	-> Traz todos os ultimos comandos digitados
+
+Caso não queira que o comando seja registrado no history , use um esaço na frente do comando.
+___
+
+cal 1986	-> Mostra todo o calendário de 1986
+
+cal mar 1986	-> Calendário Março de 86
+
+ncal		-> Mesma coisa, porém mostra o calendario na transposta.
+
+ncal -3		-> Mostra o mese anterios o atual e o próximo mês ( partindo da data atual).
+
+_____
+
+
+apt-cache search *
+
+apt-cache search nome_do_software
+
+apt-cache search wine
+
+
+___
+
+MOSTRA TODAS AS INFORMAÇÕES DE UM SOFTWARE A SER INSTALADO:
+
+sudo apt show vlc -a
+
+
+________________
+
+
+
+# COPIA POR TERMINAL MOSTRANDO PROGRESSO:
+
+sudo apt install rsync
+
+rsync -ah --progress source destination
+
+FONTE:
+https://askubuntu.com/questions/17275/how-to-show-the-transfer-progress-and-speed-when-copying-files-with-cp
+
+
+
+_____
+
+
+
+# APAGA TODOS OS ARQUIVOS OCULTOS DE UMA PASTA:
+
+$ rm .*
+
+
+________
+
+
+
+REINSTALAR PROGRAMA:
+
+sudo apt-get install --reinstall packagename
+
+
+
+______
+
+VERIFICAR VERSÃO DO OPENGL & MESA_DRIVER
+
+glxinfo | grep "OpenGL version"
+
+__________________________
+
+
+$ less
+
+Como usar o less no Linux?
+O comando less pode ser usado como comando para leitura de arquivos que ocupem mais de uma tela. Quando toda a tela é ocupada, o less efetua uma pausa (semelhante ao more ) e permite que você pressione Seta para Cima e Seta para Baixo ou PgUP/PgDown para fazer o rolamento da página. Para sair do less pressione q.
+
+_________________________
+
+
+# MOSTRA O TAMANHO E O DONO & GRUPO DOS AQRUQIVOS DO LOCAL:
+ls -lh
+
+# Tamanho de um arquivo em Especifico:		(Mostra o tamanho da imagem ".qcow2")
+ls -lh Mint_MySQL.qcow2
+
+____________________________
+
+
+O comando df exibe informações sobre os espaços, livres e ocupados, das partições. O comando du exibe informações sobre o espaço usado pelos diretórios e arquivos.
+
+
+$ df -Th
+
+$ du
+
+____________________________
+
+# CRIAR ATALHOS (LINHA DE COMANDOS):
+
+sudo ln -s /opt/android-studio/bin/studio.sh /usr/local/bin/studio
+
+_____________________________-
+
+
+# MOSTRA DATA E HORA QUE O SISTEMA FOI INSTALADO:
+
+ls -lct /etc/ | tail -1 | awk '{print $6, $7, $8}'
+
+_______________________________________________
+
+
+
+# COPIAR ARQUIVOS GRANDES com LINHA DE COMANDOS & MOSTRAR O PROGRESSO DA CÓPIA:
+
+sudo apt install pv
+
+-> Useo o sinal de Maior ">" 
+-> Escreva um nome Para o novo arquivo a ser Gerado (a cópia).
+
+pv my_big_file.mkv > backup/m_b_f.mkv
+
+_____________________________________
+
+# LOGOUT POR LINHA DE COMANDOS:
+
+pkill -KILL -u dikson
+
+pkill -KILL -u usuario_corrente
+
+______________________________________
+
+# CHECAR VERSÃO DO OPENGL & MESA DRIVER
+
+$ glxinfo | grep "OpenGL version"
+
+OpenGL version string: 3.1 Mesa 20.3.5
+
+_______________________________________
+
+# EXIBIR VERSÃO DO GRUB
+
+dpkg -l | grep grub | grep ii
+
+_______________________________________
+
+REINSTALAÇÃO DE PACOTES:
+
+sudo apt-get --reinstall install PackageName
+
+
+_______________________________________
+
+# PARAR E REINICIAR A REDE :
+
+sudo /etc/init.d/networking stop
+
+sudo /etc/init.d/networking start
+
+sudo systemctl status networking
+
+https://www.layerstack.com/resources/tutorials/How-to-restart-Network-Interface-or-Network-Adapter-on-Linux-and-Windows-Cloud-Servers
+_______________________________________
+

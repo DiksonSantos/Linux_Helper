@@ -1,0 +1,65 @@
+Procedimentos para Adicionar a Opção "Abrir Qterminal"  (ou qualquer outro temrinal) com o botão
+direito do mouse no Nautilus:
+
+#Caso necessario instale SE AINDA NÃO TIVE:
+sudo apt install python3-pip
+
+
+
+First install the dependencies:
+
+sudo apt install python-nautilus
+
+Then install the extension:
+
+pip3 install --user nautilus-open-any-terminal
+
+You need to quit Nautilus (nautilus -q) and relaunch it for the “open in terminal” option to appear when right-clicking on/in the file manager.
+
+
+
+#ESTA LINHA DE COMANDO A BAIXO É QUE FAZ APARECER A PASTA 'COM' NO APP PARA "com/github/stunkymonkey...."   :
+
+glib-compile-schemas ~/.local/share/glib-2.0/schemas/
+
+Once done you can Install the dconf-editor:
+sudo apt install dconf-editor
+
+O caminho DENTRO DO DCONF (programa) para configurar Qual terminal vai abrir :
+/com/github/stunkymonkey/nautilus-open-any-terminal/terminal
+
+Em "valor personalizado" digite -> qterminal    OU o nome do terminal que deseja que seja padrão (exatamente como ele é escrito na pasta .local/bin da pasta Home
+
+
+
+
+FONTE:
+https://www.omgubuntu.co.uk/2020/07/open-folder-in-terminal-ubuntu-plugin
+
+
+
+
+
+__________________________________________________________________________________________________________
+
+
+ABRIR PASTAS EM MODO ROOT:
+
+MUITO MAIS FACIL:
+Serve para Debian ou Ubuntu
+
+
+
+sudo apt-get install nautilus-admin
+
+
+
+
+Isso instala a opção de Clicar com o Botão Direito e Abir qualquer pasta como Admin (só digitar a senha Root).
+
+
+
+
+
+FOONTE:
+https://qastack.com.br/ubuntu/156998/how-do-i-start-nautilus-as-root

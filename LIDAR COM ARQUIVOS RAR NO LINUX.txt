@@ -1,0 +1,39 @@
+﻿INSTALAR NO LINUX:
+
+$ sudo apt-get install unrar
+Ou
+$ sudo apt install unrar
+
+
+
+
+$COMANDO 'E' De Extrair nome_Do_Arquivo.RAR :
+
+$unrar e nome_Do_Arquivo.rar
+
+#unrar e tecmint.rar /home/
+
+
+
+
+LISTAR CONTEUDO DE UM ARQUIVO .RAR:
+
+$unrar l tecmint.rar
+
+
+
+PARA CRIAR UM AQRUIVO .RAR
+
+$rar a NovoArquivo.rar Arquivo_Ou_Pasta_A_SerCompactado
+
+
+ADICIONAR ARQUIVOS A UM .RAR EXISTENTE:
+
+$rar u Existente.rar Adicionar_Isto.sql
+
+
+
+
+
+FONTE:
+https://www.tecmint.com/how-to-open-extract-and-create-rar-files-in-linux/

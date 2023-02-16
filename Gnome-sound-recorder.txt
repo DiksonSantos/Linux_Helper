@@ -1,0 +1,6 @@
+A loja de apps só mostra o Gravador de som do Deeping, que é uma bos... 
+O gravador do Gnome é perfeitamente funcional.
+
+GRAVADOR DE SOM REALMENTE FUNCIONAL
+
+sudo apt install gnome-sound-recorder

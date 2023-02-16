@@ -1,0 +1,15 @@
+# LIDANDO COM ARQUIVOS '7Z' :
+
+
+$ 7z x Arquivo.7z (descompacta o arquivo)
+$ 7z t Arquivo.7z (testa os arquivos)
+$ 7z l Arquivo.7z (lista todos os arquivos) 
+
+
+FONTE:
+
+https://www.vivaolinux.com.br/dica/Descompactando-arquivos-7z
+
+# DESCOMPACTAR ARQUIVOS ".bz2"
+
+$ tar jxvf p7zip_4.16_src.tar.bz2

@@ -1,0 +1,6 @@
+dikson00@notebook:~$ su
+Senha:
+root@notebook:/home/dikson00# passwd
+Nova senha:
+Redigite a nova senha:
+passwd: senha atualizada com sucesso

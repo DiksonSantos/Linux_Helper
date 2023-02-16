@@ -1,0 +1,18 @@
+Partições NTFS bloqueadas (Acesso Escrita) no Linux, depois de Hibernar o Windows 10 e Inicializar o Linux:
+
+
+Como reverter Isto:
+
+No Windows, usando uma janela cmd em modo administrador ou o power shell (modo administrador) digite o seguinte comando para desativar
+a hibernação.
+
+powercfg -h off
+
+Pronto a hibernação já está desligada e agora no Linux você pode montar a partição Windows como leitura/escrita.
+
+Se quiser voltar a ter a hibernação ativada no Windows, digite powercfg -h on
+
+
+# CASO O LINUX NÃO SEJA CAPAZ DE LER NTFSs (INSTALE O MODULO):
+
+sudo apt install ntfs-3g

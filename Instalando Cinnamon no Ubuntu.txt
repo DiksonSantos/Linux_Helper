@@ -1,0 +1,27 @@
+
+
+Instalando Cinnamon no Ubuntu 18.04 LTS
+
+
+Para instalar o ambiente Cinnamon no Ubuntu 18.04 LTS, abra um terminal e insira os seguintes comandos:
+
+sudo add-apt-repository ppa:embrosyn/cinnamon
+$ sudo apt-get update
+$ sudo apt-get install cinnamon
+
+
+#GERENCIADOR DE LOGIN:
+$sudo apt install gdm3
+
+
+
+#Nunca se esqueça do comando:
+tasksel
+
+
+
+#INSTALAÇÃO MINIMA:
+
+sudo apt-get install cinnamon-core --no-install-recommends
+
+

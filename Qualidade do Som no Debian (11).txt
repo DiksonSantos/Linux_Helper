@@ -1,0 +1,83 @@
+First you have to do little bit of tweaking of the Pulse configuration, to match your preference by creating the daemon.conf file in your home config directory:
+
+$ vim ~/.config/pulse/daemon.conf
+
+Or you can directly modify /etc/pulse/daemon.conf. Although be careful and have a backup of original configuration to restore if you messed it up.
+
+And add or modify below options:
+
+default-sample-format = float32le
+default-sample-rate = 48000
+alternate-sample-rate = 44100
+default-sample-channels = 2
+default-channel-map = front-left,front-right
+default-fragments = 2
+default-fragment-size-msec = 125
+resample-method = soxr-vhq
+enable-lfe-remixing = no
+high-priority = yes
+nice-level = -11
+realtime-scheduling = yes
+realtime-priority = 9
+rlimit-rtprio = 9
+daemonize = no
+
+
+
+
+# NÃO SEI CONSTATAR SE O SOM FICA REALMENTE MELHOR. MAS O SOM ESTAVA 'RAJANDO' ESSES DIAS, E DECIDI TENTAR MELHORAR.
+
+
+FONTE:
+
+https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f
+
+
+
+# CASO PRECISE INSTALAR / REMOVER O DRIVER DE AUDIO (Deu certo na máquina virtual) :
+
+sudo apt-get -y install pulseaudio
+
+sudo apt-get -y remove --purge pulseaudio
+
+FONTE:
+https://installati.one/ubuntu/21.04/pulseaudio/
+
+
+_____________________________________________________________________________________________
+
+
+
+# OUTRA ALTERNATIVA/CONFIGURAÇÃO:
+
+
+;; PRIORITY
+high-priority = yes
+nice-level = -11
+realtime-scheduling = yes
+realtime-priority = 9
+rlimit-rtprio = 9
+
+;; AUDIO QUALITY
+default-sample-channels = 2
+default-sample-rate = 48000
+
+; pacmd list-sinks | grep sample   will show what you can/should (ab)use
+; lscpu | grep Byte Order        will tell if your CPU likes le or be
+;default-sample-format = s24le
+default-sample-format = float32le
+
+; pulseaudio --dump-resample-methods for all options
+; speex-float-10 is best fast method, soxr-vhq is better but slower
+; avoid soxr-vhq if you have an old slow CPU
+; resample-method = speex-float-10
+resample-method = soxr-vhq
+
+; resampling is fine
+avoid-resampling = false
+enable-remixing = yes
+remixing-use-all-sink-channels = no
+
+
+FONTE:
+https://linuxreviews.org/PulseAudio

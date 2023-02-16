@@ -1,0 +1,24 @@
+Update do Fedora 33 para o 34
+
+
+Uma dica rápida para efetuar o update do Fedora 33 para o 34.
+
+Efetue o update do seu Fedora:
+
+sudo dnf update -y
+
+Instale o plugin "dnf-plugin-system-upgrade":
+
+sudo dnf install dnf-plugin-system-upgrade -y
+
+Vamos atualizar os pacotes para a versão 34:
+
+dnf system-upgrade download --refresh --releasever=34
+
+Vamos fazer o upgrade:
+
+sudo dnf system-upgrade reboot
+
+
+FONTE:
+https://www.vivaolinux.com.br/dica/Update-do-Fedora-33-para-o-34

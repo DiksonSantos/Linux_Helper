@@ -1,0 +1,7 @@
+Precisa habilitar o Snap Antes:
+
+sudo apt update && sudo apt install -y snapd
+
+
+
+sudo snap install pinta-james-carrollsudo snap install pinta-james-carroll

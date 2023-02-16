@@ -1,0 +1,19 @@
+env WINEPREFIX="/home/dikson01/.wine" wine-development Z:\\media\\dikson01\\2TB_Disco\\JOGOS\ INSTALADOS\\CoDSP.exe 
+
+Caminho para criar atalho do Michaellis no Gnome (Mas deve funcionar em outros ambientes tbm):
+
+sh -c "env WINEPREFIX='/home/dikson/.wine' wine '/home/dikson/.wine/drive_c/Dic/WDIC/WDIC.EXE' Dicionario Michaellis"
+
+
+
+
+
+
+Deu certo -> Para fazer atalhos para softwares de Windows:
+
+wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/wine-launcher-creator/wine-launcher-creator_1.0.8-1_all.deb -O wine-launcher.deb
+sudo dpkg -i wine-launcher.deb
+sudo apt-get install -f
+
+
+https://www.edivaldobrito.com.br/lancador-para-programas-windows/

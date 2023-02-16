@@ -1,0 +1,27 @@
+CORRIGIDO PROBLEMA DE GPG DO GOOGLE-EARTH (AO USAR APT UPDATE):
+
+
+
+
+
+DIGITE ISSO NO TERMINAL
+
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
+FONTE:
+https://www.omgubuntu.co.uk/2017/08/fix-google-gpg-key-linux-repository-error
+
+
+
+___________________________
+
+DESINSTALAR:
+Uninstall the package: 
+
+sudo dpkg -P google-earth-stable
+
+
+CHECAR SE CONSTA CMO INSTALADO:
+
+dpkg --list 'google-earth*'
+

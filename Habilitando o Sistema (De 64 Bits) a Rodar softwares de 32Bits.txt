@@ -1,0 +1,9 @@
+Habilitando o Sistema (De 64 Bits) a Rodar softwares de 32Bits :
+
+
+exemplo:
+
+# dpkg --add-architecture i386
+
+E para remover:
+# dpkg --remove-architecture "arquitura"

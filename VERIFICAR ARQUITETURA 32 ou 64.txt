@@ -1,0 +1,30 @@
+VERIFICAR ARQUITETURA 32 ou 64
+
+$uname -m
+
+
+
+
+
+Outras + Informações?
+
+$uname -a
+
+
+
+
+#Instalar arquitetura x32:
+
+$dpkg --add-architecture i386
+
+
+
+COMO REMOVER A ARQUITETURA 32:
+
+$ apt-get purge ".*:i386"
+
+dpkg --remove-architecture i386
+
+
+
+https://elias.praciano.com/2014/07/como-saber-se-sistema-e-32-ou-64-bits-no-linux/

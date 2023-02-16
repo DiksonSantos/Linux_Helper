@@ -1,0 +1,60 @@
+Instalando Recurso SNAP (que roda uma extensão\Tipo Especifico de Software):
+
+
+sudo apt update && sudo apt install -y snapd
+
+
+
+
+Instalando Baixador de Videos (SNAP):
+
+sudo snap install video-downloader
+
+
+
+To remove a snap, all you need to do is run.
+sudo snap remove <snapname>
+
+Roll back to a previous version of an application Use snap revert
+$ sudo snap revert <snap name>
+
+List installed snaps.
+$ snap list
+
+Remove snap.
+$ sudo snap remove <snapname>
+
+
+
+
+
+
+
+
+https://computingforgeeks.com/how-to-install-snap-on-ubuntu-debian-linux/
+
+
+
+ATUALIZAR SOFTWARE SNAP:
+
+sudo snap refresh NOME_DO_SOFTWARE_SNAP
+
+
+Ou para atualizar TODOS os SNAPS , simplesmente:
+
+sudo snap refresh
+
+
+___________________________________________
+
+# USAR SNAP NO LINUX-MINT:
+
+$ sudo mv /etc/apt/preferences.d/nosnap.pref ~/Documents/nosnap.backup
+$ sudo apt update
+
+To install snap from the Software Manager application, search for snapd and click Install.
+
+Alternatively, snapd can be installed from the command line:
+
+$ sudo apt install snapd
+

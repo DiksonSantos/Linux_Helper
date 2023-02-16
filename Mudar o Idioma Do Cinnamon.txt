@@ -1,0 +1,38 @@
+Mudar o Idioma Do Cinnamon do Inglês Para o Português Br:
+
+Em:
+
+
+/etc/locale.gen
+
+
+Comente a linha:
+# en_US.UTF-8 UTF-8
+
+
+
+Descomente a Linha:
+  pt_BR.UTF-8 UTF-8
+
+
+
+
+FONTE:
+https://bbs.archlinux.org/viewtopic.php?id=185123
+
+
+
+
+
+__________________________
+
+
+
+REINICIAR CINNAMON:
+
+Hit Alt+F2, type r and hit enter.
+
+
+VOLTAR CINNAMON PARA CONFIGURAÇÕES INICIAIS/ORIGINAIS ou DE FABRICA:
+
+$ gsettings reset-recursively org.cinnamon

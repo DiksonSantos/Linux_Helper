@@ -1,0 +1,14 @@
+Trocar resolução da tela com linha de comandos:
+
+
+CASO O COMANDO NÃO FUNCIONE, INSTALE:
+
+sudo apt install x11-xserver-utils
+
+
+xrandr -s 1920x1080
+
+xrandr -s 1400x1050
+
+
+comando parametro resolução.

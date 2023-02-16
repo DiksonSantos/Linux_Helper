@@ -1,0 +1,48 @@
+The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A8580BDC82D3DC6C
+
+
+Neste exemplo a Public Key foi a chave do Brave Browser 
+Que dava uma mensage (PAU) de erro ao iniciar a Loja de Apps do Sistema Debian.
+
+
+
+
+SOLUÇÃO:
+
+https://www.vivaolinux.com.br/topico/Linux-Basico/Erro-sudo-apt-update-2
+
+https://askubuntu.com/questions/943539/the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-avai
+
+
+
+
+
+SOLUÇÃO uTILIZADA:
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6494C6D6997C215E
+
+E DIGITE:
+sudo apt-get update 
+
+
+Sendo 6494C6D6997C215E  a Chave a ser adicionada desta vez.
+
+
+
+___________________________________________________________
+
+# CASO QUEIRA REMOVER A CHAVE
+
+sudo apt-key del 6494C6D6997C215E
+
+Sendo “6494C6D6997C215E” a chave a ser removida.
+
+
+
+FONTE:
+https://askubuntu.com/questions/604988/how-to-remove-a-apt-key-which-i-have-added
+
+_____
+
+
+sudo apt-key adv --recv-key --keyserver keyserver.ubuntu.com 6D975C4791E7EE5E

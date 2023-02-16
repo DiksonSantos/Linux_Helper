@@ -1,0 +1,23 @@
+Como resolver o problema do Mongo Não querer "Startar" :
+
+
+
+Apresentou o seguinte erro:
+
+
+mongod.service - MongoDB Database Server
+   Loaded: loaded (/lib/systemd/system/mongod.service; disabled; vendor preset: enabled)
+   Active: failed (Result: exit-code) since Wed 2021-02-24 02:23:56 -03; 11s ago
+     Docs: https://docs.mongodb.org/manual
+  Process: 20578 ExecStart=/usr/bin/mongod --config /etc/mongod.conf (code=exited, status=14)
+ Main PID: 20578 (code=exited, status=14)
+
+
+
+
+SOLUÇÃO:
+
+sudo chown -R mongodb:mongodb /var/lib/mongodb 
+sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+
+Serve também para -> Linux Mint 20.

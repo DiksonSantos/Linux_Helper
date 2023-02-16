@@ -1,0 +1,8 @@
+Assim que baixar do site do TOR e extrair a pasta (tar xvf tor.tar.xz) Vá ao 
+seguinte diretorio e substitua os arquivos por um Icone a sua escolha:
+
+tor-browser_pt-BR/Browser/browser/chrome/icons/default
+
+- Respeitando a extensão (mesma) dos arquivos.
+
+

@@ -1,0 +1,25 @@
+Desinstalar kdenlive
+Para desinstalar somente kdenlive do Ubuntu 16.04 (Xenial Xerus) execute no terminal:
+
+sudo apt-get remove kdenlive
+Desinstalar kdenlive e os pacotes dependentes
+Para desinstalar o pacote kdenlive e quaisquer outros pacotes dependentes que não sejam mais necessários do Ubuntu Xenial.
+
+sudo apt-get autoremove kdenlive
+Expurgar kdenlive
+Se você também deseja limpar as configurações e/ou dados de kdenlive do Ubuntu Xenial então use este comando:
+
+sudo apt-get purge kdenlive
+Para limpar as configurações e/ou arquivos de dados do kdenlive e de seus pacotes dependentes do Ubuntu Xenial execute:
+
+sudo apt-get autoremove --purge kdenlive
+
+
+
+
+
+
+
+
+
+https://howtoinstall.co/pt/ubuntu/xenial/kdenlive?action=remove

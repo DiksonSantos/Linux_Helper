@@ -1,0 +1,15 @@
+Para aumentar o tamanho do HD de uma maquina virtual (VBox) 
+Vá até a pasta onde se encontra o HD virtual e de o seguinte comando:
+
+
+# vboxmanage modifyhd Windows_7.vdi --resize 30000
+
+
+Neste caso o HD tinha uns 22 GB, ele passou a ter 30GB .
+
+Porém quando você iniciar esta máquina virtual e abrir o Gerenciador De Discos, vai ver que tem (neste caso) uns 8GB 
+de HD livre. Ai é só expandir a unidade C:\ em mais 8GB. 
+
+Se for uma Maquina virtual Linux Use Um Gerenciador de Discos dele (é obvio) como Gparted ou Discos ...
+
+Só isso.

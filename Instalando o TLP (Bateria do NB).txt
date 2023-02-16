@@ -1,0 +1,28 @@
+Melhora a vida da bateria do NoteBook
+
+sudo apt install tlp
+
+
+Comandos:
+
+INICIALIZADO (?)
+sudo systemctl status tlp
+
+CONFERIR - ATIVO ou INATIVO
+sudo tlp-stat -s 
+
+CONFIGURAÇÕES
+sudo tlp-stat -c
+
+CONFIGURAÇÕES/STATUS
+sudo tlp-stat
+
+INFORMAÇÕES
+sudo tlp-stat -b
+
+TEMPERATURA
+sudo tlp-stat -t
+
+
+FONTE:
+https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/

@@ -1,0 +1,7 @@
+ORIGINAL
+
+env WINEPREFIX="/home/dikson/.Wine_Prefixo/prefix" wine-stable C:\\windows\\command\\start.exe /Unix /home/dikson/.Wine_Prefixo/prefix/dosdevices/c:/users/dikson/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Dic\ Michaelis\ -\ UOL/Dic\ Michaelis\ -\ UOL.LNK
+
+
+
+env WINEPREFIX="/home/dikson/.wine/prefix" wine-stable C:\\windows\\command\\start.exe /Unix /home/dikson/.wine_Prefixo/prefix/dosdevices/c:/users/dikson/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Dic\ Michaelis\ -\ UOL/Dic\ Michaelis\ -\ UOL.LNK

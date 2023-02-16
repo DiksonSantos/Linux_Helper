@@ -1,0 +1,75 @@
+
+# USANDO VIRTUALENV (WRAPPER) PARA CRIAR INTERPRETADOR NA MESMA PASTA DO PROJETO:
+
+mkvirtualenv --python /usr/bin/python3.9 .ambiente_virtual_Pro_3
+
+
+comando --interpretador local/do/interpretador/do/sistema .NomeDoAmbiente_Virtual
+
+Usando este comando dentro da pasta do projeto, o Ambiente virtual é criado ali mesmo.
+
+
+
+CRIANDO UM AMBIENTE VIRTUAL NO PROMPT DE COMANDO:
+
+1 - Estando posicionado na Pasta onde deseja criar no novo ambiente virtual,
+
+Digite;
+virtualenv NomeDoNovoAmbienteVirtual
+
+
+2 - Vá até a pasta do Novo ambiente virtual ,e dentro da pasta "bin" digite;
+source activate
+
+Tem um arquivo la chamado "activate"  , é só dar um source nele.
+
+Você já vai esta posicionado dentro deste ambiente virtual. 
+
+3 -  Para Sair:
+
+Digite deactivate
+
+________________________________________________________________
+
+
+
+METODO GEEK UNIVERSITY:
+
+#CRIANDO AMBIENTE:
+
+ - Você pode criar um ambiente virtual com qualquer versão do Python com o comando abaixo:
+
+mkvirtualenv nome-do-ambiente -p python3.7
+
+No exemplo acima estou especificando com "-p python3.7" que o ambiente virtual deve usar python3.7, e você pode substituir para qualquer versão do Python que você tenha instalado e que
+tenha o executável reconhecido.
+
+DIGITE "workon"  -> Para listar os ambientes já criados
+DIGITE "workon NomeDoAmbiente"  -> Para usa-lo
+
+PARA REMOVER UM VIRTUALENV :
+
+rmvirtualenv NomeDoAmbiente 
+
+Vai aparecer ->  Removing NomeDoAmbiente...
+
+
+
+________________________________________________________________
+
+METODO PYTHON_PRO :
+
+Tive que instalar o Pacote usando o Comando ->  apt-get install python3-venv
+
+python3 -m venv .venv3
+
+Sendo -> python3 ESPECIFICA VERSÃO DO PYTHON |  -m SIGNIFICA EXECUTAR MODULO Que é o VENV |  
+Por Ultimo A Pasta onde você quer colocar o Ambiente Virtual ou -> .venv3 
+
+
+Navegue até a pasta "bin"   ->  dikson00@notebook:~/venv3/bin$
+Use o comando :
+source activate
+
+Ou Source no Arquivo Activate:
+source .venv/bin/activate

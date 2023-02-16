@@ -1,0 +1,21 @@
+﻿Repositorio do Mint Para customizar o Cinnamon do Debian Baixei os X-Icons) 
+
+Sempre teste numa máquina (Com Debian) virtual antes !!!
+
+
+
+http://packages.linuxmint.com/list.php?release=Ulyssa
+
+http://packages.linuxmint.com/list.php?release=Elsie
+
+http://packages.linuxmint.com/
+
+
+
+CASO ENFRENTE PROBLEMAS COM “sox” e “zenity”
+
+apt install sox zenity
+
+
+Fonte:
+https://forums.linuxmint.com/viewtopic.php?t=282678

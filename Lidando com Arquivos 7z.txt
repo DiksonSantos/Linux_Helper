@@ -1,0 +1,15 @@
+Lidando com Arquivos 7z
+
+
+INSTALARÇÃO:
+sudo yum install p7zip p7zip-plugins
+
+COMPACTAR_ARQUIVOS:
+7z a hyper.7z Arquivo_P_Compactar
+
+DESCOMPACTAR ARQUIVO:
+7z e hyper.7z
+
+
+FONTE:
+https://www.tecmint.com/7zip-command-examples-in-linux/

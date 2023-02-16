@@ -1,0 +1,88 @@
+﻿PORÉM -> A CADA VEZ QUE O SISTEMA REINICIA PRA ATUALIZAR, É NECESSARIO RE-INSTALAR ESTE "GIT"
+
+sudo apt-get -t buster-backports install git
+
+PARA ATIVAR O BACKPORT (CASO NÃO ESTEJA AINDA):
+
+Cole esta linha no source.list  -> /etc/apt/source.list
+
+deb http://ftp.debian.org/debian buster-backports main
+
+FONTES:
+https://medium.com/the-blog-of-ehsan-nazim/heres-how-you-can-use-latest-software-on-debian-stable-35966ea0eb9
+
+____________________________________________________________________________________________________________
+A cagada que fiz (E pedi ajuda no Blog DioLinux):
+
+
+https://plus.diolinux.com.br/t/problema-com-dependencias-no-debian-10-instalacao-do-git/30441
+
+
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________________________________________
+
+
+
+Como remover o Git
+
+Uninstall git
+
+To remove just git package itself from Ubuntu 14.04 execute on terminal:
+
+$ sudo apt-get remove git
+
+Uninstall git and it's dependent packages
+
+To remove the git package and any other dependant package which are no longer needed from Ubuntu Trusty.
+
+$ sudo apt-get remove --auto-remove git
+
+Purging git
+
+If you also want to delete configuration and/or data files of git from Ubuntu Trusty then this will work:
+
+$ sudo apt-get purge git
+
+To delete configuration and/or data files of git and it's dependencies from Ubuntu Trusty then execute:
+
+$ sudo apt-get purge --auto-remove git
+
+
+
+
+
+
+
+
+
+
+
+INSTALAÇÃO PERMANENTE DO GIT 2.29
+
+
+
+Não consegui chegar a um consenso de como eu consegui instalar permanentemente. 
+Mas me lembro que:
+
+ usei o Aptitude 
+
+Escolhi Não manter arquivos
+
+Instalei novos.
+
+
+
+# GIT V-2.33   (NOV-2021)
+
+https://linoxide.com/how-to-install-git-on-debian/
+

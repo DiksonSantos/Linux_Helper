@@ -1,0 +1,21 @@
+Em 16-12-19 Depois de eu desinstalar alguns programinhas , o Player VLC parou de abrir, usei os seguintes comandos para re-instala-lo:
+
+
+
+Tenta Reinatala-lo:
+
+Terminal
+
+sudo apt-get purge vlc*
+
+sudo apt-get autoremove
+
+sudo apt-get update
+
+sudo apt-get install vlc*
+
+
+Talvez ele não tenha instalado todos os pacotes dele, executa dessa forma e responde aqui, se de erro, copia e tras aqui beleza. Corre rsrs.
+
+
+

@@ -1,0 +1,35 @@
+Install Wine 7.X from WineHQ repository
+
+With this method, you will be guaranteed the latest available version of Wine. But you will have to go through a series of steps to have wine installed on your Debian 11 system as below.
+
+First, we need to add the WineHQ repositories to our Debian 11 system. Begin by importing the GPG keys as shown
+
+sudo apt -y install gnupg2 software-properties-common
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+The output should be “OK” to show that the keys have been added successfully. Now add the WineHQ repositories to your Debian 11 system.
+
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
+
+The above command adds the WineHQ repository to /etc/apt/sources.list. Now update your APT package index.
+
+sudo apt update
+
+Now download the latest stable version of Wine on Debian 11 using the command:
+
+sudo apt install --install-recommends winehq-stable
+
+
+$ wine --version
+wine-7.0
+
+
+
+
+
+
+
+
+
+https://techviewleo.com/install-and-use-wine-on-debian-11-bullseye/

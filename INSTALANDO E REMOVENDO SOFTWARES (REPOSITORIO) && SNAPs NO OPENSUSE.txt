@@ -1,0 +1,38 @@
+O Suse utiliza o Zypper, que é um gerenciador de pacotes.
+
+zypper                 # exibir a lista de opções e comandos globais
+zypper help search     # exibir a ajuda para o comando search
+zypper lu              # ver quais correções são necessárias
+zypper up              # aplicar as correções
+zypper se sqlite       # procurar por 'sqlite'
+zypper rm sqlite2      # remover o 'sqlite2'
+zypper in sqlite3      # instalar o 'sqlite3'
+zypper in yast*        # instalar todos os pacotes que coincidam com 'yast*'
+zypper up -t package   # atualizar todos os pacotes instalados com versões novas, onde for possível
+
+
+
+FONTE:
+https://pt.opensuse.org/Zypper/Uso
+
+https://cursos.alura.com.br/forum/topico-comandos-equivalente-apt-get-do-debian-no-suse-93447
+_____________________________________________________________________
+
+# INSTALAR .RPMs
+
+rpm -i DeathStar0_42b.rpm
+
+ATUALIZAR:
+
+rpm -U DeathStar0_42b.rpm
+
+
+
+HELP:
+man rpm
+
+_____________________________________________________________________
+
+
+# INSTALANDO SNAPS:
+https://snapcraft.io/docs/installing-snap-on-opensuse

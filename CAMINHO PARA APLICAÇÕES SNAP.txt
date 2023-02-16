@@ -1,0 +1,48 @@
+CAMINHO PARA APLICAÇÕES SNAPs INSTALADAS:
+
+
+/var/lib/snapd/desktop/applications
+
+
+"Pra onde foi o app "Video_Downloader
+instalado com o comando $ sudo snap install Video-Downloader"
+
+____
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#PARA INSTALAR O MEDIA-PLAYER CLASSIC NO LINUX  (edge == Instavel):
+Passo 1. Abra um terminal;
+Passo 2. Instale a versão edge do programa, usando esse comando:
+
+sudo snap install mpc-hc --edge
+
+Passo 3. Mais tarde, se você precisar atualizar o programa, use:
+
+sudo snap refresh mpc-hc
+
+#DESINSTALAR:
+sudo snap remove mpc-hc

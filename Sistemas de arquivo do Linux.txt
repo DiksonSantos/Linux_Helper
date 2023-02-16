@@ -1,0 +1,58 @@
+
+Linux Hint
+Disk Management
+5 Best Linux File Systems
+1 year ago
+by Swapnil Tirthakar
+File Systems are very important for every operating system and Linux and its distributions are no exception. Most of the recent Linux distributions use Ext4 file system which is modern and upgraded version of older Ext3 and Ext2 file systems. Reason behind most of the Linux distributions use Ext4 file systems is that it is one of the most stable and flexible file systems out there.
+
+Many of you might have heard about BtrFS and it becoming default file system for Linux distributions. BtrFS is still under development and has long road to cover. Choosing the best file system for Linux and its distributions might be difficult task. Data safety and security is so important in this world, so finding the reliable and stable file system for Linux is important to avoid data loss and corruption. So today in this article I’m going to give you round-up of best file systems for Linux and its distributions.
+Ext4
+
+There should be no surprise that Ext4 tops the list of best Linux file systems. Ext stands for Extended file system and it was first developed especially for Linux and its distributions. Ext4 is upgrade to Ext3 and Ext2 file systems and comes with new features such as less fragmentation, larger volumes and files and improved flash memory life with the help of delayed memory allocation.
+
+As mentioned earlier, Ext4 is one of the most modern file systems and default one in recent Linux and its various distributions.
+ReiserFS
+
+If you’re looking for a file system which will help you store huge number of small files then ReiserFS is the best alternative file system for you. It offers compact file allocation and small files along with metadata for preventing using large file system blocks. When first introduced in 2001 and then upgraded in 2004 it was a major competitor to Ext file systems until further development stalled by developers of ReiserFS.
+
+Since this file system stopped receiving active support from developers, this paved the way for file systems like BtrFS which could become next big thing in Linux file system world.
+BtrFS
+
+BtrFS initially developed and designed by Oracle stands for B-Tree File System. Many experts think BtrFS is a long-term solution as compared to Ext4 File system and they are spot on thanks to features like drive pooling, snapshots, ability to do online defragmentation and also transparent compression. As mentioned earlier in the article, many think BtrFS is going to replace Ext4 as a default file system on many Linux distributions as well as enterprise server.
+
+Many BtrFS fans call it as Butter FS or Better FS, tells how much they love working on this File System. As it is still undergoing development phase, you might find it unstable but still love it thanks to its unique features. Many of you might have heard of TRIM especially those who own SSD. Keeping Solid State Drives (SSD) healthy on Linux is necessary, TRIM helps you wipe out unused blocks which is very important. What I liked most about this File System is its snapshot feature.
+XFS
+
+Initially developed for SGI IRX operating system in 1994 by Silicon Graphics and then in 2001 it was ported to Linux operating system. I find it almost similar to Ext4 File System because various features of XFS match with Ext4 in many ways. Some of its features are file fragmentation with delayed allocation; it offers really great performance while dealing large files. Like BtrFS it doesn’t offers snapshot feature which is very popular.
+
+If you’re going to work with small files then I would recommend not to use this File System as its performance is worst in case of small files. But when it comes to large files it has to be the most reliable as compared to competitors. XFS also supports SSD features, which is great for modern Linux machines.
+F2FS
+
+F2FS is File System which is specially recommended for power user like system administrators or developers. It was initially designed and developed by Samsung. You need to first configure and tweak Linux kernel before using this File System on Linux and its distributions. It takes great deal of hard work and patience to setup F2FS on Linux.
+
+It deals with the flash memory and that is how modern day SSD’s store the data. Pro users will like working on Linux with F2FS. Even though this is not the straight forward File System as other listed here, it is worth a shot because once you get used to it, you can do whole lot of things with this on Linux.
+
+So these are the 5 Best File Systems which you can use on top of Linux and its distributions like Ubuntu. There are some other File System which are not listed here and many of you might be using them then share your thoughts at @LinuxHint and @SwapTirthakar.
+About the author
+Swapnil Tirthakar	
+Swapnil Tirthakar
+
+A Software Engineer who loves football and passionate about traveling. I often spend my free time playing with gadgets and exploring new possibilities in tech world. I am Linux enthusiast and have about 6 years of experience in web development. I have good command on Python, Java, SQL and system security.
+View all posts
+RELATED LINUX HINT POSTS
+
+    Find Disk Space Used by Specific User Linux
+    How to Make Disk Images in Linux with DD Command
+    Copy Secure and Fast with these Top Flash Drive Duplicators
+    Use fdisk Format Partition
+    How to Resize and Format Disk with PartedMagic
+    How to check the disk space in Ubuntu 20.04 and 20.10?
+    Sfdisk Tutorials
+
+Linux Hint LLC, editor@linuxhint.com
+1210 Kelly Park Cir, Morgan Hill, CA 95037
+
+
+
+https://linuxhint.com/best_linux_file_systems_5/

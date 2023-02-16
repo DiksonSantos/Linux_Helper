@@ -1,0 +1,19 @@
+Go to the WINEPREFIX/drive_c/ folder and look for Program Files folder. If you only see the Program Files and NO ProgramFiles(x86) , Then you are using 32 bit Wine Prefix. If you see BOTH then you are using 64 Bit Wine Prefix.
+
+
+Comando Para criar arquitetura de 64 Bits:
+
+WINEPREFIX="/home/dikson/.wine_64/" winecfg 
+
+
+
+
+Para criar uma de 32 Bits:
+
+Winearch=win32 WINEPREFIX="/home/username/.newprefix32/" winecfg
+
+
+
+
+FONTE:
+https://www.addictivetips.com/ubuntu-linux-tips/create-wine-prefixes-on-linux/

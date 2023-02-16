@@ -1,0 +1,29 @@
+Resolver o Bug de Transição de telas de fundo da area de trabalho (Depois de feita a inatalação do Drive da Nvidia:
+
+Crie o arquivo "i915.conf"   no endereço -> "/etc/modprobe.d/"  com o seguinte teor:
+
+options i915 enable_psr=0
+
+
+
+Isto desativa o Buffer por via de Hardware da Intel HD Graphics e ativa-o via Software, o que em teoria ficaria um pouco mais lento, porém no meu Hardware (muito bom) não se sente a diferença.
+
+Depois disso apenas logue num temrinal como root e use o comando apt-get update (nem precisa reiniciar o SO inteiro pra aplicar as mudanças, só este comando já basta Debian é fód...).
+
+
+
+FONTE:
+
+https://www.dedoimedo.com/computers/intel-microcode-atomic-update.html
+
+
+
+
+
+Obs: Usei o comando "lshw" , copiei o resultado para um bloco de notas e localizei "915" , sendo assim a aplicação é realmente válida para este Hardware.
+
+____________________
+
+
+
+O QUE EFETIVAMENTE\REALMENTE RESOLVEU O PROBLEMA FOI PURA E SIMPLESMENTE LOGAR NO CINNAMON COM "SOFTWARE RENDERING"

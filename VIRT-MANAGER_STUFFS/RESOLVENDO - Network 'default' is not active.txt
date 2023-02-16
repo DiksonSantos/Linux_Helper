@@ -1,0 +1,74 @@
+
+
+
+Após tentar inserir a Nvidia na VM encarei o seguinte problema:
+
+
+BUG:
+Network 'default' is not active -- after every reboot--Virtual Manager in Antergos
+
+
+1 - CHEQUEI O STATUS == INATIVO:
+
+sudo virsh net-list --all
+ Nome      Estado    Auto-iniciar   Persistente
+-------------------------------------------------
+ default   inativo   não            sim
+
+
+
+
+SOLUÇÃO/Comando:	(RE-ATIVA A REDE):
+
+cd /etc/libvirt/qemu/networks/
+sudo virsh net-define default.xml 
+
+
+OU ainda/apenas:
+
+sudo virsh net-start default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FONTEs:
+https://www.xmodulo.com/network-default-is-not-active.html
+
+https://youtu.be/hNudjoiXsSk
+
+
+
+
+
+
+
+
+
+
+
+
+
+LOCAIS / ARQUIVOS IMPORTANTES:
+/usr/sbin/iptables-nft
+
+/usr/sbin/ebtables
+
+LOCAL DO ARQUIVO DEFAULT DA REDE:
+/usr/share/libvirt/networks/default.xml
+
+
+

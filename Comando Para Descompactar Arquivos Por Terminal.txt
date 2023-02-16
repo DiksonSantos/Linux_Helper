@@ -1,0 +1,57 @@
+﻿You can extract and install file_name.tar.xz file on Ubuntu Linux easily.
+Terminal command:
+
+Para descompactar zip:
+unzip nomedoarquivo.zip.
+unrar x nomedoarquivo.rar.
+tar -xvf nomedoarquivo.tar.
+tar -vzxf nomedoarquivo.tar.gz.
+tar xjf file. tar. bz2
+#bunzip nomedoarquivo.bz2.
+tar -Jxvf nomedoarquivo.
+
+
+
+
+
+
+
+
+
+
+
+
+DESCOMPACTAR  .TAR:
+tar -xvf nomedoarquivo.tar
+
+Para descompactar tar.gz:
+tar -vzxf nomedoarquivo.tar.gz
+
+Para descompactar bz2:
+bunzip nomedoarquivo.bz2
+
+
+
+MAIS INFORMAÇÕES E METODOS:
+Para descompactar estes formatos de arquivos os comandos são simples:
+
+zip:
+$ unzip nomedoarquivo.zip
+
+rar:
+$unrar x nomedoarquivo.rar
+
+tar:
+
+$tar -xvf nomedoarquivo.tar
+
+tar.gz:
+$tar -vzxf nomedoarquivo.tar.gz
+
+bz2:
+$bunzip nomedoarquivo.bz2
+
+tar.bz2:
+$tar -jxvf nomedoarquivo.tar.bz2
+
+https://sempreupdate.com.br/como-descompactar-arquivos-no-terminal-linux/

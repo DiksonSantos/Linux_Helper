@@ -1,0 +1,39 @@
+INSTALANDO O ANACONDA:
+
+25-08-2020
+
+baixe o anaconda no site .org dele:
+
+
+NO TERMINAL DIGITE:
+bash Anaconda3-2020.07-Linux-x86_64.sh
+
+(Sendo "Anaconda3-2020.07-Linux-x86_64.sh" o arquivo baixado)
+
+CONCORDE COM TUDO (YES YES YES)
+
+DIGITE :
+source .bashrc
+
+Para o Sistema Saber que foram feitas alterações no Arquio bashSrc da Pasta pessoal do Usuario Logado.
+
+
+Curiozidade:
+(base) dikson01@notebook:~$ python --version
+Python 3.8.3
+
+->Dentro do ambiente (base) anaconda, o Python Padrão é o Python do Anaconda.
+
+
+
+TUDO FUNCIONANDO !!
+
+(Como Foi que eu soffri tanto das primeiras tentativas ??!!)
+
+
+
+
+
+ABRIR A SUITE ANACONDA:
+
+$anaconda-navigator

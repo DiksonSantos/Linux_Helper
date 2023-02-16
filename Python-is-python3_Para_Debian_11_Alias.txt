@@ -1,0 +1,7 @@
+No Debian 11 Não existe mais python 2, Se digitar 'python --version' no terminal ele não entende o que é python (sem o 3 no final).
+
+Para tornarmos o python em python3 , e apensas digitar python --version para que nos seja apresentada a versão 3.9x
+
+Instale o seguinte:
+
+sudo apt install python-is-python3

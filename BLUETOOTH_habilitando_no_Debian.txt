@@ -1,0 +1,50 @@
+
+
+
+
+
+No Synaptic, procure e Instale:
+
+
+blueman   -> E seus componentes como (bluez etc...) {Vão ser selecionados automaticamente}
+
+qml-module-org-kde-bluezqt
+
+qml-module-qtbluetooth
+
+
+TUTORIAL:
+https://youtu.be/8f4YwAD06IY
+
+
+
+
+CASO PRECISE CONFERIR SE TODAS AS DEPENDENCIAS FORAM INSTALADAS:
+
+dependencias: 
+bluetooth, gnome-bluetooth, pulseaudio-module-bluetooth, libgnome-bluetooth13,
+libqt5bluetooth5, libqt5bluetooth5-bin, bluez-cups, *?bluez-dbg*, libbluetooth3,
+bluez, *blueztools*, libbluetooth3dbg, bludevil, blueman
+
+
+CHECK:
+systemctl status bluetooth**
+
+___________________________________________
+
+
+
+ADENDOS 23-12-22
+
+sudo apt install bluez*
+
+
+_____
+
+O que resolve pra mim é o seguinte é editar o arquivo /etc/modprobe.d/blacklist.conf e adicionar essa linha no final dele: blacklist acer_wmi
+
+Depois rodar esse comando comando:
+
+    sudo update-initramfs -c -k all
+
+Tenta reiniciar e o bluetooth deve funcionar.

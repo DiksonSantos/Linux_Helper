@@ -1,0 +1,10 @@
+
+ADICIONAR REPOSITORIO:
+
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+
+
+
+
+REMOVER REPOSITORIO:
+sudo add-apt-repository --remove ppa:webupd8team/y-ppa-manager

@@ -1,0 +1,5 @@
+https://chromedriver.storage.googleapis.com/index.html
+
+Sempre o ultimo da lista -> É o mais moderno.
+
+A versão deve condizer com a versão do Chrome em uso no sistema

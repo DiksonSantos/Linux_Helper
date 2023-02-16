@@ -1,0 +1,22 @@
+
+ABRE A TELA DE WINDOWS "ADICIONAR OU REMOVER PROGRAMAS"
+Sendo possivel instalar programas por lá também:
+
+wine uninstaller
+
+wine64 uninstaller 
+
+
+wine control
+
+
+
+
+CRIANDO UM WINE DE 64 BITS
+
+WINEPREFIX="/home/username/.newprefix/" winecfg
+
+
+DE 32 BITS
+
+Winearch=win32 WINEPREFIX="/home/username/.newprefix32/" winecfg

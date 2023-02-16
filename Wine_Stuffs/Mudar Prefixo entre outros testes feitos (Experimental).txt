@@ -1,0 +1,37 @@
+
+
+WINEARCH=win64 WINEPREFIX="/home/dikson/.Game_/" wine wineboot
+
+WINEARCH=win32 WINEPREFIX="/home/dikson/Game" wine wineboot
+
+
+
+
+
+WINEARCH=win64 WINEPREFIX="/home/dikson/Game" winecfg
+
+WINEARCH=win64 WINEPREFIX="/home/dikson/.wine" winecfg
+
+
+
+
+
+WINEPREFIX=”/home/dikson/Game_” ./setup_dxvk.sh install
+
+
+WINEPREFIX=”$HOME/Game_” ./setup_dxvk.sh install
+
+
+WINEARCH=win64 WINEPREFIX=”$HOME/Game” DXVK_HUD=1 wine MaxPayne.exe
+
+_________________________________________________
+
+MUDANDO DE 64 PARA 32:
+
+# Move the old prefix (if one exists)
+# You could rm -rf it if you don't want it.
+mv ~/.wine/ ~/oldwine/
+
+# Create prefix with right arch, per
+# http://wiki.winehq.org/FAQ#32_bit_wineprefix
+WINEARCH=win32 winecfg

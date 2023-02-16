@@ -1,0 +1,3 @@
+Press Ctrl+Alt+S to open the IDE settings and select Editor | Natural Languages. in the list of languages and select your language.
+
+https://www.jetbrains.com/help/pycharm/proofreading.html

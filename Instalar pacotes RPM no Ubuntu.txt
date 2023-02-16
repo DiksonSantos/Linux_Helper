@@ -1,0 +1,27 @@
+RPM é um sistema de instalação / desinstalação / atualização criado pela Red Hat, 
+equivale ao DEB. O RPM é usado por muitas distribuições populares como Fedora, SUSE,
+ entre outras, mas o Ubuntu Linux não se encontra nesta lista. 
+
+Mas este problema é bem simples de ser solucionado, no Ubuntu existe um comando chamado
+ alien. Este comando não vem instalado por padrão, vamos precisar fazer a instalação dele
+ antes de continuar
+
+Instalando o alien: $ sudo apt-get install alien 
+
+Através do alien geramos um arquivo deb do pacote rpm, comando:  
+
+$ sudo alien nome_do_pacote.rpm
+
+Depois instalamos pelo pacote deb gerado... 
+
+$ sudo dpkg -i nome_do_pacote.deb 
+
+Caso queira saber mais algumas informações sobre este comando leia o manual: 
+
+$ man alien 
+
+Lembrando que o alien não realiza conversão apenas destes formatos citados, é possível converter para deb, rpm, tgz, pkg entre outros.
+
+
+_____________________________________________________
+https://www.youtube.com/watch?v=AqbjEd3E3C4

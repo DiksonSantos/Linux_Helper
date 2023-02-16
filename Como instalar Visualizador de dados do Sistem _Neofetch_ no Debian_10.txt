@@ -1,0 +1,22 @@
+Como Instalei o Visualizador de Informações do Sistema "neofetch" no Debian:
+
+ADICIONAR REPOSITORIO:
+echo "deb http://dl.bintray.com/dawidd6/neofetch buster main" | sudo tee -a /etc/apt/sources.list
+
+CHAVE PARA O NEOFEtch:
+curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
+
+REFRESH NA SOURCE_LISTs:
+apt-get update
+
+INSTALAÇÃO:
+apt-get install neofetch
+
+
+CHAMAR PROGRAMA (NO TEMRINAL):
+neofetch
+
+
+
+
+Simples de mais.

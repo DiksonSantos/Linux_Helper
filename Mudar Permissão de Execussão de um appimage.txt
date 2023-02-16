@@ -1,0 +1,12 @@
+Para dar permissão para um Software\programa.appimage funcionar como executavel:
+
+
+$chmod +x nome_do_programa.appimage
+
+
+Habilitando FUSE:
+
+sudo apt-get install fuse libfuse2
+
+FONTE:
+https://docs.appimage.org/user-guide/troubleshooting/fuse.html

@@ -1,0 +1,20 @@
+
+RESOLVENDO O PROBLEMA:
+Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'https://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 InRelease' doesn't support architecture 'i386'
+
+..QUE ACONTECE AO INSTALAR O MONGODB ,O QUAL NÃO TRABALHA COM ARQUITETURA I386
+
+
+LINHA ORIGINAL NO ARQUIVO "source.list"  :
+deb https://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main
+
+
+ADICIONEI "[arch=amd64]"  :
+deb [arch=amd64] https://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main
+
+
+
+$sudo apt update 
+
+
+ALL RIGHT !!!

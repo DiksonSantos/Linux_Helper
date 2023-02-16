@@ -1,0 +1,15 @@
+
+
+
+sudo apt install sct 
+
+
+A temperatura padrão do sistema operacional é de 6500k, você pode usar o sct para ajustar a temperatura em qualquer valor entre 1000k e 10000k. Temperaturas abaixo de 6500k reduzem a emissão de luz azul e acima aumentam. 
+
+
+
+COMO USAR 
+
+sct 4000   -> Modo Noturno
+
+sct 6500  -> Modo Diurno

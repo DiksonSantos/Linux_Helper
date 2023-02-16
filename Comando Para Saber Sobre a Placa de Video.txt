@@ -1,0 +1,4 @@
+glxinfo | grep OpenGL
+
+glxinfo | grep render
+

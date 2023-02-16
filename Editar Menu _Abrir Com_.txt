@@ -1,0 +1,25 @@
+
+Caso precisa retirar algum programa do "Abrir com" do clique direito do mouse. 
+Remova o atalho de dentro desta pasta.
+
+
+
+/home/dikson/.local/share/applications/
+
+FONTE:
+https://ubuntuforum-br.org/index.php?topic=84108.0
+
+
+
+
+
+
+    wine-notepad creates a local mime association for text/plain and some other types in the file ~/.local/share/applications/mimeinfo.cache; this effectively allows it as an alternative to anything gedit (or your default GUI editor) would otherwise open
+    To disable, open ~/.local/share/applications/mimeinfo.cache in a text editor and delete the lines with the MIME types text/plain and text/html
+    Also move/delete wine-extension-txt.desktop and wine-extension-htm.desktop from ~/.local/share/applications/
+    Most text or text-like files should default back to your GUI editor
+
+CRIEI UMA COPIA DO ARQUIVO -> "mimeinfo.cache" & APAGUEI ELE -> OS MENUS DO WINE SUMIRAM DO "ABIR COM"
+
+FONTE:
+https://askubuntu.com/questions/186494/remove-wines-notepad-from-open-with-options

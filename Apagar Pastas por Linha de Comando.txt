@@ -1,0 +1,43 @@
+$ sudo rm -rf /home/usuario/seu-DIRETORIO-CHEIO
+
+ou
+
+# rm -rf /home/usuario/seu-DIRETORIO-CHEIO
+
+
+
+_____
+
+
+Diretorios Vazios:
+
+rmdir nomeDaPasta
+
+_____
+
+
+
+Arquivos:
+
+# rm ArquivoCriado.py
+
+
+
+______________________________________
+
+
+LIMPAR LIXEIRA:
+
+rm -rf ~/.local/share/Trash/*
+
+The rm command removes (deletes) files or directories.
+
+-f, --force     Ignore nonexistant files, and never prompt before removing.
+-r, -R, --recursive     Remove directories and their contents recursively.
+
+The trash folder is found at: $HOME/.local/share/Trash
+
+Be careful how you use the rm command - the files aren't sent to a trash can where you can undelete them, so it's not easy to undo.
+
+FONTE:
+https://askubuntu.com/questions/468721/how-can-i-empty-the-trash-using-terminal

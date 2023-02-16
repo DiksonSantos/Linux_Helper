@@ -1,0 +1,6 @@
+su
+
+tasksel
+
+
+-> Selecione o Ambiente \gŕafico a ser instalado. TAB e ENTER. 

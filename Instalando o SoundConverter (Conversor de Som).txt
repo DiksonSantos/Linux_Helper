@@ -1,0 +1,11 @@
+Para instalar o soundconverter:
+
+$ sudo apt-get install soundconverter
+
+
+FONTE:
+https://www.vivaolinux.com.br/dica/Conversor-de-audio-para-Ubuntu-e-Debian
+
+
+
+Converter videos para MP-3 e outros formatos

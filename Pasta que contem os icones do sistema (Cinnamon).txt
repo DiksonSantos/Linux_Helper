@@ -1,0 +1,37 @@
+Pasta que contem os icones do sistema Cinnamon:
+
+
+
+#ESTA AQUI !!
+/usr/share/applications
+
+
+OU
+Para aplicações do Usuario Logado:
+
+~/.local/share/applications
+
+
+
+
+
+____
+
+
+
+sudo update-icon-caches /usr/share/icons/*
+
+
+
+
+
+PALAVRAS CHAVE/BUSCA;
+Se você abrir com o editor de textos (kate) um desses icones da pasta aplications  -> você vera que , por exemplo no icone da loja de softwares do "gnome-softwares" existe uma linha que contem a palavra "loja" que é uma palavra que eu digito no menu "iniciar" do Cinnamon quando queor abrir a loja de softwares. 
+
+    Se você quiser inserir uma palavra personalizada em algum desse icones pra abrir ou achar com mais facilidade ao digitar no menu iniciar ...    :)
+
+    
+    
+    Esta linha ( do idioma Portugues do Brasil:
+    
+Keywords[pt_BR]=Atualizações;Upgrade;Atualização;Fontes;Repositórios;Preferências;Instalação;Instalar;Desinstalar;Programa;Software;Aplicativo;App;Loja;Store;

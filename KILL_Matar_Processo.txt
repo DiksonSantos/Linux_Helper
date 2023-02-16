@@ -1,0 +1,26 @@
+
+
+
+kill -9 211136
+
+
+comando argumento numero_do_processo
+
+
+
+
+# CONSEGUIR NUMERO DO PROCESSO:
+
+SOFTWARE -> GLANCES
+
+sudo pip install glances[gpu]
+
+COMANDO:
+
+glances
+
+
+
+
+FONTE:
+https://www.tecmint.com/how-to-kill-a-process-in-linux/

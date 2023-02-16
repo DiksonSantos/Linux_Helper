@@ -1,0 +1,20 @@
+Passo 1. Abra um terminal;
+Passo 2. Use o comando abaixo para instalar o programa via Flatpak. Tenha paciência, pois muitas vezes pode demorar vários minutos para que o Flatpak faça o download de tudo o que precisa;
+flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flatpakref
+Passo 3. Para atualizar o programa, quando uma nova versão estiver disponível, execute o comando:
+_____
+flatpak --user update com.snes9x.Snes9x
+Passo 4. E se precisar desinstalar o programa, execute o seguinte comando no terminal:
+
+flatpak --user uninstall com.snes9x.Snes9x
+_______
+
+Pronto! Agora, quando quiser iniciar o programa, digite: 
+flatpak run com.snes9x.Snes9x
+em um terminal.
+
+Ou apenas digite snes9x em um terminal
+
+
+Data da instalação:
+31-12-2019

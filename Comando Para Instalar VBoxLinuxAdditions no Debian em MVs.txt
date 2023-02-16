@@ -1,0 +1,23 @@
+SOLUÇÃO QUE RESOLVEU O PROBLEMA DE PERMISSÃO NEGADA AO TENTAR INSTALAR  O "VBoxLinuxAdditions" no Maquina Virtual:
+
+
+RODEI:
+
+sudo apt install linux-headers-$(uname -r) build-essential dkms
+
+REINICIE A MV
+__________________
+
+
+Dentro da pasta do CD Convidados (que esta na barra de ferramentas em "Dispositivos\Inserir_Imagem..."  :
+
+Ao invés de ./VBox...run  , 
+
+Digitei o comando a baixo:   
+
+sh ./VBoxLinuxAdditions.run
+
+
+
+
+FORAM VÁRIAS REINICIADAS DE MV, MAS FUNCIONOU EM FIM  :)  

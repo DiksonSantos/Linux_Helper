@@ -1,0 +1,9 @@
+Checking your current BIOS version
+
+The current BIOS version can be checked by this command from Ubuntu -> Versão Atual:
+
+sudo dmidecode -s bios-version
+
+The current BIOS release date can be obtained by invoking -> Data de Lançamento:
+
+sudo dmidecode -s bios-release-date

@@ -1,0 +1,106 @@
+01/05/2021
+
+
+
+
+/etc/modprobe.d/i915.conf
+
+options i915 enable_guc=2
+
+https://wiki.archlinux.org/index.php/Intel_graphics
+
+_____
+
+enable_psr is already set to 0 on my system using the linux-lts (currently 4.9.75-1-lts) kernel (the default is "-1 (use per-chip default)", so YMMV.)
+
+cat /sys/module/i915/parameters/enable_psr
+
+returns zero
+
+Have you enabled "GuC" ? See
+https://wiki.archlinux.org/index.php/Intel_graphics
+
+Perhaps try i915.enable_rc6=0 ?
+
+Last edited by paulkerry (2018-01-07 20:30:28)
+
+
+
+Thanks, I am gonna try this out tonight and see if it works out.
+
+Enabling GuC seems to have fixed my issue! Thanks for your help!
+
+Last edited by exad (2018-01-11 11:31:56)
+
+FONTE:
+https://bbs.archlinux.org/viewtopic.php?id=233230
+
+_____
+
+
+
+    /etc/modprobe.d/i915.conf
+
+    options i915 enable_guc=2
+
+So I did that and ran sudo mkinitcpio -P rebooted and ran sudo -E cat /sys/kernel/debug/dri/0/i915_huc_load_status and also sudo -E cat /sys/kernel/debug/dri/0/i915_guc_load_status
+
+both GuC and HuC are now running. I thought I had enabled them before, hopefully this does the trick.
+
+FONTE:
+https://forum.endeavouros.com/t/i915-drm-error-atomic-update-failure-on-pipe-a/9449/2
+
+
+____________________________________________________________________________________________________________________________
+
+24/12/21
+
+Ultima alternativa\Recurso\Tentativa\Chance -> para tentar conter os erros com o driver da intel:
+
+-> INSTALAR O MAIS NOVO DRIVER DO i915 DRIVER
+
+
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt update
+sudo apt dist-upgrade
+
+
+________________
+
+CONSEGUIR INFORMAÇÕES SOBRE AS PLACAS DE VIDEO:
+
+sudo apt install lshw
+sudo lshw -C display
+
+OU
+Interface Gráfica (Fraca ,tráz Pouca Informação):
+sudo apt install lshw-gtk
+
+OU
+MUITA INFORMAÇÃO:
+sudo dmesg | grep i915
+
+____________________
+
+
+
+COMO ULTIMO RECURSO A SE TENTAR EM CASO DA INSISTENCIA DE TRAVAMENTOS:
+
+INSERIR A LINHA
+options i915 modeset=1 enable_rc6=1 enable_fbc=1 enable_guc_loading=1 enable_guc_submission=1 enable_huc=1 enable_psr=1 disable_power_well=0
+
+NO ARQUIVO DE CONFIGURAÇÃO
+/etc/modprobe.d/i915.conf
+
+E, regenerar as imagens de inicialização com o update-initramfs:
+
+Para todos os kernels (se você tiver mais de um instalado)
+
+update-initramfs -u -k all
+
+OU
+
+Somente Para o kernel atualmente usado (se você não quiser tocar nos outros):
+
+update-initramfs -u
+

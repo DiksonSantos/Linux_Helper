@@ -1,0 +1,14 @@
+Usar aceleração da Nvidia numa Aba/PERFIL especifica do Navegador Firefox:
+
+
+
+# Profile Comum (Usado quando se abre normalmente o Navegador):
+optirun firefox -P default-esr --no-remote
+
+# Selecione um Perfil Diferente:
+optirun firefox-esr -P default_profile --no-remote
+
+
+
+FONTE:
+https://askubuntu.com/questions/396489/optirun-with-running-browser

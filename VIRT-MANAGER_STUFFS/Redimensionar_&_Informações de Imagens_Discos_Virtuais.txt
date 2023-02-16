@@ -1,0 +1,10 @@
+qemu-img resize disk.qcow2 +30G
+
+
+FONTE:
+https://linuxconfig.org/how-to-resize-a-qcow2-disk-image-on-linux
+
+
+
+
+https://maunium.net/blog/resizing-qcow2-images/

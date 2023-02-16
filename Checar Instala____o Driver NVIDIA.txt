@@ -1,0 +1,30 @@
+
+
+INSTALAÇÃO:
+sudo apt install inxi
+
+USO:
+$ inxi -Gx
+
+
+OUTPUT:
+Graphics:  Device-1: Intel HD Graphics 620 vendor: Acer Incorporated ALI driver: i915 
+           v: kernel bus ID: 00:02.0 
+           Device-2: NVIDIA GM107 [GeForce 940MX] vendor: Acer Incorporated ALI 
+           driver: nvidia v: 460.91.03 bus ID: 01:00.0 
+           Device-3: Chicony HD WebCam type: USB driver: uvcvideo bus ID: 1-7:5 
+           Display: x11 server: X.Org 1.20.11 driver: loaded: modesetting,nvidia 
+           unloaded: fbdev,nouveau,vesa resolution: 1920x1080~60Hz 
+           OpenGL: renderer: llvmpipe (LLVM 11.0.1 256 bits) v: 4.5 Mesa 20.3.5 
+           direct render: Yes 
+
+
+
+OU
+
+
+-> Checa o uso da placa e nome das aplicações:
+
+nvidia-smi -l 1
+
+This will loop and call the view at every second.

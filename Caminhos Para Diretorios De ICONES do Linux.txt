@@ -1,0 +1,12 @@
+
+
+Globally:
+/usr/share/icons/ 
+
+
+
+
+
+Or in your home folder:
+
+~/.local/share/icons

@@ -1,0 +1,61 @@
+﻿
+How to Fix ‘E: Could not get lock /var/lib/dpkg/lock’ Error in Linux
+
+
+ps aux | grep -i apt
+
+
+
+
+
+Corrigir a mensagem /var/lib/dpkg/lock
+
+sudo rm -rf /var/lib/apt/lists/lock
+
+
+Se após executar o comando o problema persistir, execute um dos comandos abaixo, você não precisa executar todos, mas passe para o próximo caso a opção escolhida não resolva o problema.
+
+sudo apt-get update
+sudo dpkg --configure -a
+sudo apt-get -f install
+
+
+
+https://sempreupdate.com.br/como-destravar-o-var-lib-dpkg-lock-ubuntu-debian-linux-mint/
+
+
+
+PROBLEMA SIMILAR:
+
+dpkg: erro: dpkg frontend lock está bloqueado por outro processo
+
+SOLUÇÃO:
+
+cd /var/lib/dpkg/
+sudo rm lock-frontend
+sudo rm lock
+sudo apt upgrade
+
+
+_________________________________________________________
+
+# METODO MAIS SEGURO DO QUE APAGAR AS TRAVAS "LOCK"  :
+Solução para
+
+" Impossível criar acesso exclusivo ao directório /var/cache/apt/archives/ "
+
+
+Verifica se outra instância do apt-get está em execução:
+
+
+
+ps aux | grep apt
+
+
+
+Se tiver anota o PID do arquivo e mata o processo:
+
+kill pid-do-arquivo
+
+FONTE:
+https://www.vivaolinux.com.br/topico/Iniciantes-no-Linux/Impossivel-criar-acesso-exclusivo

@@ -1,0 +1,30 @@
+Abrir o Nautilus em Modo Root:
+
+
+(Porém ele faz você voltar pra raiz do sistema, Não te mantem na mesma pasta   :/   )
+
+Ctrl+L
+
+admin:/
+
+
+
+
+MUITO MAIS FACIL:
+Serve para Debian ou Ubuntu
+
+
+
+sudo apt-get install nautilus-admin
+
+
+
+
+Isso instala a opção de Clicar com o Botão Direito e Abir qualquer pasta como Admin (só digitar a senha Root).
+
+
+
+
+
+FOONTE:
+https://qastack.com.br/ubuntu/156998/how-do-i-start-nautilus-as-root

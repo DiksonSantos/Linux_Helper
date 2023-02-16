@@ -1,0 +1,9 @@
+lsb_release -a
+
+
+Checa versão especifica do Sistema (Release/Versão)
+
+
+
+
+https://linuxize.com/post/how-to-check-linux-version/

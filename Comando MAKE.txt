@@ -1,0 +1,25 @@
+Como remover um programa que foi instalado utilizado o código fonte com o comando make install.
+
+No diretório do fonte:
+
+make uninstall
+
+
+
+
+Caso você não tenha essa sorte, você pode usar o comando:
+
+make -n install
+
+
+
+
+Comando make é para compilar programas.
+
+
+
+GERALMENTE OS PASSOS PARA A INSTALAÇÃO SÃO:
+
+$ ./configure
+$ make
+$ sudo make install

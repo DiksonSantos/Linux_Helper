@@ -1,0 +1,45 @@
+#INSTALAR A INTERFACE GRAFICA GNOME -> SEM TODOS OS SOFTWARES ADICIONAIS :
+
+
+
+sudo apt-get install gnome-session --no-install-recommends
+
+
+
+Poucos Kbites e esta tudo instalado. 
+
+
+
+
+#OU   Gnome-Classic
+
+gnome-session-flashback
+
+
+KDE-PLASMA:
+sudo apt install plasma-desktop --no-install-recommends
+
+
+
+
+
+#ESTA CONTEM UNS 11 MB DE TAMANHO:
+sudo apt-get install gnome-session-flashback --no-install-recommends
+
+
+#INSTALE O EDITOR DE MENUS PARA ORGANIZAR OS ICONES NAS SEÇÕES QUE QUISER EX:
+Colocar o icone do navegador na seção "Internet" etc...
+
+Pela loja ou com o comando:
+
+sudo apt install menulibre
+
+
+
+#NUNCA SE ESQUEÇA DO COMANDO :
+
+tasksel
+
+#USE ESTA LINHA DE COMANDO PARA FAZER O "ALT + TAB" FUNCIONAR EM UM SÓ AMBIENTE POR VEZ NO GNOME
+
+gsettings set org.gnome.shell.app-switcher current-workspace-only true

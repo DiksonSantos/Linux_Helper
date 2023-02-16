@@ -1,0 +1,163 @@
+
+
+In safe-mode or command line, edit /etc/default/grub and replace in the existing configuration line
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+with
+
+GRUB_CMDLINE_LINUX_DEFAULT="dis_ucode_ldr"
+
+the issue is either caused by restarting in a different display configuration that it was prior. Either previously having connected a display and starting without it, or not having and starting with it. It happens when having set up UEFI startup mode, and might be fixed by BIOS update.
+
+The usual way of fixing ramdisk issue here apt update && apt upgrade here did not help, or helped in connection with the mentioned solution.
+
+FONTE:
+https://askubuntu.com/questions/1240152/boot-freezes-and-loading-initial-ramdisk
+
+
+
+
+
+CONGELAMENTO APÓS SUSPENSÃO OU HIBERNAÇÃO ("SOLUÇÃO"):
+
+Edit /etc/default/grub
+
+    Open with e.g. vim: sudo nano /etc/default/grub
+
+    Add amd_iommu=off to option of GRUB_CMDLINE_LINUX_DEFAULT. (For me it was GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" to begin with, and 
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=off" 
+
+(after editing).
+
+
+
+
+
+# 13-08-2022  SOLUÇÃO (APARENTE) P/  CONGELAMENTO DE SUSPENSÃO
+
+->  INSTALEI O "LIGHTDM"  Ao inves do "GDM3"
+
+
+ALTERAÇÕES NO LIGHTDM (PARA MEMORIZAR O ULTIMO USUARIO A LOGAR)
+
+sudo nano /etc/lightdm/lightdm.conf
+
+Once there change the "true" out to "false". it should look something like this:
+
+Code: Select all
+
+greeter-hide-users= true
+
+greeter-hide-users=false
+
+# PESSOALMENTE EU FIZ ISSO -> Descomentei a linha de cima e adicionei 'false' , e acrescentei a linha de baixo (Funcionou na Maquina Virtual):
+
+#greeter-hide-users = false to hide the user list
+greeter-hide-users = false
+ 
+
+
+& Também no bloco a baixo de [Seat:*]
+
+greeter-hide-users = false
+
+
+
+Then update the system using: sudo apt update.
+________
+
+# TROCAR PLANO DE FUNDO E FONTE DO LOGIN NO "LIGHTDM" :
+
+# EDITE A CESSÃO FINAL DO ARQUIVO:
+
+/etc/lightdm/lightdm-gtk-greeter.conf 
+
+[greeter]
+background= /home/dikson/Imagens/unique.png
+user-background=false
+theme-name= Adwaita [GTK2/3]
+icon-theme-name= gnome [GTK2/3]
+font-name= Monospace 12
+xft-antialias= true
+#xft-dpi=
+#xft-hintstyle=
+#xft-rgba=
+#indicators=
+#clock-format=
+#keyboard=
+#reader=
+#position=
+#screensaver-timeout=
+
+
+
+FONTE:
+https://youtu.be/9DHe9HHZVmI
+
+______________________________________________________________
+
+
+# 18-08-22
+POSSIVEL CAUSADOR DOS CONGELAMENTOS/TRAVAMENTOS/FALHAS AO SUSPENDER O SISTEMA DEBIAN LINUX:
+
+Aparentemente o causador dos congelamentos na suspensão do sistema éra o "GDM3". Assim que trocado por LIGHTDM os travamentos não se repetiram. Porém o LIGHTDM não memoriza o ultimo usuário logado. Então resolvi testar o "SDDM".
+18-08-2022 ainda em teste.
+
+$ sudo apt install sddm
+
+
+# TROCAR PICTURE/FOTO DO LOGIN DO SDDM :
+
+To change the picture for your user when you login simply copy the file you want as your user picture to in your home folder with the name .face.icon
+
+OU
+
+Use as Configurações do Sistema / Account Details  Para Inserir uma foto para o seu User.
+
+
+____________________________________
+
+# INSTALAR TEMAS NO SDDM:
+
+# PARA INSTALAR TODOS (DESNECESSÁRIO):
+sudo apt install sddm-theme*
+
+# Meu preferido:
+sudo apt install sddm-theme-breeze
+
+OU/&
+sudo apt install sddm-theme-elarun
+
+# PASTA QUE CONTEM OS TEMAS:
+/usr/share/sddm/themes
+
+# SELECIONAR UM DOS TEMAS (Arquivo .conf):
+
+Crie o arquivo .conf em /etc/     :
+
+sudo touch /etc/sddm.conf
+
+Com o seguinte conteudo:
+
+[Theme]
+#Current=elarun
+Current=breeze
+
+( Apenas Descomente o tema que quiser usar)
+
+
+
+# MAIS INFORMAÇÕES / FONTE:
+https://linuxdicasesuporte.blogspot.com/2018/07/temas-para-o-sddm-para-debian-ubuntu-e.html
+
+https://linuxconfig.org/how-to-customize-the-sddm-display-manager-on-linux
+
+________________________________________
+
+# COMANDO -> TROCAR GESTOR DE LOGIN:
+
+sudo systemctl disable lightdm && sudo systemctl enable sddm
+
+

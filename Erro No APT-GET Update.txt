@@ -1,0 +1,17 @@
+ERRO APT-GET UPDATE
+
+W: chmod 0700 of directory /var/lib/apt/lists/partial failed - SetupAPTPartialDirectory (1: Operação não permitida)
+E: Não foi possível abrir arquivo de trava /var/lib/apt/lists/lock - open (13: Permissão negada)
+E: Impossível criar acesso exclusivo ao directório /var/lib/apt/lists/
+
+
+
+
+
+
+
+
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/lib/dpkg/lock
+sudo apt-get update
+sudo apt-get upgrade

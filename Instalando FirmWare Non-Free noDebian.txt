@@ -1,0 +1,55 @@
+deb http://deb.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+deb http://deb.debian.org/debian buster-updates main contrib non-free
+
+
+Depois de modificar a source.list com as terminações "non-free" como a cima. Use o comando:
+
+sudo apt-get install firmware-linux
+
+Para instalar suporte a Hardware\Firmware que não tenha codigo aberto.
+
+
+No caso deste Notebook foi o i915 (controlador gráfico).
+
+
+
+# FIRMWARE DO BLUETOOTH:
+
+sudo apt-get install firmware-atheros
+
+FONTE:
+https://tttwrites.wordpress.com/2014/11/09/resolved-bluetooth-loading-patch-failed-in-debian-wheezy/
+
+
+___________________________________________________________________
+FIRMWARE i915 FALTANTE (Ao instalar ou atualizar o S/O):
+
+sudo apt install apt-file
+
+sudo apt-file update
+
+# Refere-se ao firmware (ou aos..) em falta (com problemas) Apresentado(s) durante a inicialização:
+
+apt-file search rtl8107e-2.fw
+
+
+
+
+EX: Firmware apresentado como faltante (mensagem de erro):
+
+Possible missing firmware /lib/firmware/i915/""bxt_dmc_ver1_07.bin"" for module i915
+
+Como localiza-lo ou Instala-lo:
+
+apt-file search bxt_dmc_ver1_07.bin
+
+Ele vai mostrar assim quem é necessário instalar, neste caso:
+firmware-realtek
+
+Então:
+sudo apt install firmware-realtek firmware-misc-nonfree
+
+
+FONTE:
+https://www.vivaolinux.com.br/dica/Erro-W-Possible-missing-firmware-for-module-Resolvido

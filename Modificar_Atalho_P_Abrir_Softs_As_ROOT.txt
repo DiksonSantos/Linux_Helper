@@ -1,0 +1,36 @@
+# COMO CRIAR ATALHOS PARA ABIR PROGRAMAS 'AS ROOT'
+
+# MODIFICAÇÕES:
+
+[Desktop Entry]
+Type=Application
+Name=...
+Exec=sudo -i sh -c "myprogram &"
+Terminal=true
+
+
+
+
+
+# EXEMPLO DE ABRIR VIRTUALBOX AS ROOT:
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=VirtualBox_(Oracle_VM)
+GenericName=Virtual Machine
+Type=Application
+Exec=sudo -i sh -c "VirtualBox"
+TryExec=VirtualBox
+Keywords=virtualization;
+MimeType=application/x-virtualbox-vbox;application/x-virtualbox-vbox-extpack;application/x-virtualbox-ovf;application/x-virtualbox-ova;
+DocPath=file:///usr/share/doc/virtualbox-6.1/UserManual.pdf
+Icon=virtualbox
+Categories=Emulator;System;
+Actions=Manager;
+StartupWMClass=VirtualBox Manager
+Comment=Run several virtual systems on a single host computer
+Terminal=true
+
+[Desktop Action Manager]
+Exec=VirtualBox
+Name=Open VM Manager

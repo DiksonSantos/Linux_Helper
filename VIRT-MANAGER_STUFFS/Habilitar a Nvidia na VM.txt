@@ -1,0 +1,43 @@
+________________
+
+
+# PARA MOSTRAR INFORMAÇÕES DO HARDWARE DE VIDEO:
+lspci -nn | grep "NVIDIA"
+
+
+video
+10de:179c
+
+
+som do video
+10de:0fbc
+
+_____
+
+sudo nano /etc/default/grub
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on vfio-pci.ids=10de:179c, 10de:0fbc"
+
+CTRL O & CTRL X
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+sudo reboot
+
+
+CRIE O ARQUIVO vfio.conf 
+
+cd /etc/modprobe.d
+
+sudo touch vfio.conf
+
+COMO -> Root:
+sudo update-initramfs -u
+
+
+FONTE:
+https://www.youtube.com/watch?v=KVDUs019IB8
+
+
+
+https://gist.github.com/davesilva/445276f9157e7cb3a4f6ed2fe852b340

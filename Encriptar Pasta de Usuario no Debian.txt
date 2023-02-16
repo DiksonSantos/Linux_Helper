@@ -1,0 +1,34 @@
+
+Recurso inexistente no Debian 10. 
+Funcionou no 9 & 11
+
+Baixe o Pacote .deb
+ecryptfs-utils_111-4_amd64.deb
+
+Site:
+https://debian.pkgs.org/11/debian-main-amd64/ecryptfs-utils_111-5_amd64.deb.html
+
+
+SINTAXE DE USO:
+'NUNCA USE ESTE COMANDO NA MESMA CONTA A TER A PASTA CRIPTOGRAFADA !'
+
+/usr/bin/ecryptfs-migrate-home -u usuario
+
+
+
+Faça login na conta original e conclua o processo de criptografia. 
+
+Siga as instruções para adicionar uma senha à pasta recém-criptografada. Se você não o vir, digite:
+
+ecryptfs-add-passphrase
+
+______________________________________________________________________
+
+
+Desvantagens em criptografar sua pasta pessoal. Eles são:
+
+    O desempenho do seu computador pode ser prejudicado se a pasta de início estiver criptografada.
+    Se o seu disco rígido falhar, é muito mais fácil recuperar os dados se eles não estiverem criptografados.
+    Se você esquecer seu nome de usuário e senha, perderá seus dados.
+
+Criptografar as pastas pessoais no Linux é uma decisão que deve ser tomada com caltela, pois existem desvantagens.

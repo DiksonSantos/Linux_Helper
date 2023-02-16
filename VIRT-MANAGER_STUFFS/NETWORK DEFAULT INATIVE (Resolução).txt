@@ -1,0 +1,9 @@
+
+
+entre como SU e;
+
+sudo virsh net-start default
+
+
+FONTE:
+https://youtu.be/2lrX1BbWhjI

@@ -1,0 +1,10 @@
+sudo apt-get install mono-complete
+
+
+
+FONTE:
+https://www.dedoimedo.com/computers/wine-dotnet-mono.html
+
+
+
+Wine can use a Windows build of Mono to run . NET applications.

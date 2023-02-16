@@ -1,0 +1,4 @@
+tasksel remove gnome-desktop
+
+
+https://elias.praciano.com/2017/06/como-remover-o-gnome-do-debian-e-instalar-outro-desktop-grafico/

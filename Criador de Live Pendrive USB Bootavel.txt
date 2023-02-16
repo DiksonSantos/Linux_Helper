@@ -1,0 +1,6 @@
+https://www.balena.io/etcher/
+
+
+
+Live USB drive
+https://www.youtube.com/watch?v=Ojg8ZnA0ph4&t=224s

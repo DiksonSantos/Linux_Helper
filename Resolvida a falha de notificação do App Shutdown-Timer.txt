@@ -1,0 +1,13 @@
+Resolvida a falha de notificação do App Shutdown-Timer.txt
+
+
+sudo apt install libnotify-bin
+
+
+sudo apt-get install notify-osd
+
+
+
+
+FONTE:
+https://elcio.com.br/notify-send-notificacoes-do-gnome-em-seu-shell-script/

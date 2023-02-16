@@ -1,0 +1,26 @@
+Rodando_Arquivos _bundle
+
+
+sudo sh ./myFile.bundle
+
+
+(Usei para Instalar o VM-Ware -> Concorrente do VirtualBox).
+
+
+FONTE:
+https://superuser.com/questions/67249/what-is-a-bundle-file-and-how-do-i-run-it
+
+
+
+
+# COMANDO QUE USEI P/ DESINSTALAR VMWARE.BUNDLE :
+
+
+vmware-installer -u vmware-workstation
+
+sudo vmware-installer -u vmware-player
+
+
+
+FONTE:
+https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-05E4C876-F32C-49D2-82B4-8C759691E7F5.html

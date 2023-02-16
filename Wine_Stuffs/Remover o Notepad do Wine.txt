@@ -1,0 +1,1 @@
+move/delete wine-extension-txt.desktop and wine-extension-htm.desktop from ~/.local/share/applications/

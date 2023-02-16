@@ -1,0 +1,16 @@
+Caso a Loja Gnome-Software trave (Ou seja , fique apresnetando a necessidade de atualização quando tudo já esta atualizado (OU qualquer coisa do tipo)) , Use este comando:
+
+
+killall gnome-software
+
+
+
+ESTE AQUI EU NEM PRECISEI USAR. MAS ...
+rm -rf ~/.cache/gnome-software
+
+
+
+
+
+FONTE:
+https://www.linuxuprising.com/2019/03/fix-gnome-software-stuck-with-software.html

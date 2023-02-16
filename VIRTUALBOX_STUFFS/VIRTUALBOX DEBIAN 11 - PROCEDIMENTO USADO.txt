@@ -1,0 +1,30 @@
+Install VirtualBox on Debian 11 using Linux DEB Binary
+
+Download the DEB binary from the VirtualBox downloads page.
+
+Please note that currently, there is no official DEB binary for Debian 11 bullseye, as of this writing. Hence, we use for Debian 10.
+
+wget https://download.virtualbox.org/virtualbox/6.1.26/virtualbox-6.1_6.1.26-145957~Debian~buster_amd64.deb
+
+Next, run the command below to Download the required dependencies;
+
+wget http://ftp.br.debian.org/debian/pool/main/libv/libvpx/libvpx5_1.7.0-3+deb10u1_amd64.deb
+
+sudo apt install ./libvpx5_1.7.0-3+deb10u1_amd64.deb libsdl-ttf2.0-0 linux-image-$(uname -r)
+
+Next, install VirtualBox on Debian 11;
+
+sudo apt install ./virtualbox-6.1_6.1.26-145957~Debian~buster_amd64.deb
+
+
+FONTE:
+https://kifarunix.com/install-virtualbox-on-debian-11-desktop/
+
+
+
+
+
+RESUMO:
+
+Da pau. Instala o Python 2
+Desativa o "Python-is-Python3"

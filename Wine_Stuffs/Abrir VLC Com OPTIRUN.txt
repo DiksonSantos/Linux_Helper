@@ -1,0 +1,15 @@
+# NÃO APARECE O USO DE PROCESSAMENTO DA GPU NO NVIDIA-SETTINGS   (Não surtiu efeito no Totem - Não usa GPU)
+
+optirun -b primus vlc Filme.mkv
+
+
+
+
+# FICOU MAIS FLUIDO & APARECE O USO DE PROCESSAMENTO DA GPU NO NVIDIA-SETTINGS   (Totem Mais Fluido)
+
+primusrun totem filme.mkv
+
+
+
+FONTE:
+https://askubuntu.com/questions/669011/what-is-the-difference-between-optirun-and-primusrun

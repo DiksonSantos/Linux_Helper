@@ -1,0 +1,12 @@
+
+Deixando o Desenho\Simbolo de Engrenagem do Cinnamon no Debian 11 , Igual ao Debian 10:
+
+Clique com o menos usado no menu,
+
+configurações
+
+Clique em 'Icon'
+
+E na barra de URL digite o seguinte caminho:
+
+/usr/share/cinnamon/theme/menu-symbolic.svg

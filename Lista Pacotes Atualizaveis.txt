@@ -1,0 +1,5 @@
+﻿sudo apt list –upgradable
+
+snap refresh --list
+
+flatpak list

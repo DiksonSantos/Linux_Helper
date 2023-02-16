@@ -1,0 +1,23 @@
+
+PARA MODIFICAR A INICIALIZAÇÃO DO SISTEMA (DEBIAN 11) DE MODO TEXTO (onde aparecem os "OKs" / inicialização) , PARA O MODO GRÁFICO (onde é mostrado o LOGO Grafico do Debian).
+Edite o arquivo:
+
+sudo nano /etc/default/grub
+
+
+Adicione a palavra 'splash'  (sem aspas) depois de quite -> "quite splash"
+
+
+
+PARA EVITAR ERROS DE CONGELAMENTO DURANTE A INICIALIZAÇÃO, Use -> "dis_ucode_ldr"
+
+
+
+"dis_ucode_ldr quite splash"
+
+OU
+
+"dis_ucode_ldr quite"
+
+
+https://youtu.be/NbxrSaclKRc

@@ -1,0 +1,17 @@
+libpq-dev : Depende: libpq5 (= 11.10-0+deb10u1) mas 12.4-1.pgdg100+1 está para ser instalado
+
+
+
+
+
+Problem is solved!
+
+I solved this with remove libpq5 :
+
+sudo apt-get remove libpq5
+sudo apt-get install libpq-dev
+
+
+
+
+libpq-dev Depende de libpq5   -> Então apagamos a "Mãe" (libpq5) E re instalamos a "Filha" , que será instalada com uma filha Atualizada. (Acredito EU).

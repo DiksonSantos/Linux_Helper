@@ -1,0 +1,3 @@
+https://tecadmin.net/setup-selenium-with-chromedriver-on-debian/
+
+Instalar o Selenium com Google Chrome no Debian 

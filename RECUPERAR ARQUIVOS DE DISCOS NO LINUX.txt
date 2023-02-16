@@ -1,0 +1,10 @@
+RECUPERAR ARQUIVOS DE DISCOS NO LINUX
+
+SOFTWARE:
+
+sudo apt install testdisk
+
+
+
+FONTE:
+https://youtu.be/MLyoBCJmTZo
