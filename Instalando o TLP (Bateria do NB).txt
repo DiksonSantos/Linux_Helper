@@ -8,7 +8,7 @@ Comandos:
 INICIALIZADO (?)
 sudo systemctl status tlp
 
-CONFERIR - ATIVO ou INATIVO
+CONFERIR - ATIVO ou INATIVO + Informações do Sistema
 sudo tlp-stat -s 
 
 CONFIGURAÇÕES
