@@ -1,0 +1,12 @@
+
+Como converter um vídeo em um GIF animado usando ffmpeg
+
+
+ffmpeg -i exemplo.avi exemplo.gif -hide_banner
+
+ffmpeg -i SVG_Pop.mp4 SVG_POP.gif -hide_banner
+
+
+FONTE:
+
+https://www.edivaldobrito.com.br/como-converter-um-video-em-um-gif-animado-usando-ffmpeg/

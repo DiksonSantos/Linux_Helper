@@ -1,0 +1,39 @@
+SDDM Mudando Tema:
+
+Baixe qualquer tema para o gestor de Login (SDDM):
+
+https://store.kde.org/browse?cat=101&ord=latest
+
+
+Eu baixei o Uttery Nord:
+https://store.kde.org/p/1909606
+
+
+# EXTRAIA E COLE ELE EM:
+
+/usr/share/sddm/themes/
+
+# VÁ ATÉ A PASTA:
+/usr/share/sddm/themes/debian-theme
+
+E, ALTERE O ARQUIVO DE CONFIGURAÇÃO -> "theme.conf"
+
+Eu deixei da seguinte forma (Para usar o Utterly-Nord)
+
+
+
+[General]
+showlogo=showing
+logo=/usr/share/sddm/themes/Utterly-Nord/default-logo.svg
+type=image
+color=#5e81ac
+fontSize=10
+background=/usr/share/sddm/themes/Utterly-Nord/background.png
+needsFullUserModel=false
+
+
+
+#COMO VEMOS A CIMA, É SÓ ALTERAR O DESTINO DAS LINHS 'logo' & 'background' .
+
+FONTE:
+https://stackoverflow.com/questions/67094497/cant-change-sddm-display-manager-theme

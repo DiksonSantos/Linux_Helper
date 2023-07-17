@@ -1,0 +1,51 @@
+cd /media/dikson/Store_02/Metro_Last_Light_Redux/; optirun -b primus gamemoderun ./metro.sh
+
+
+
+(cd ~/user/scripts/; ./someScript)
+
+
+
+FONTE:
+https://askubuntu.com/questions/74780/how-to-execute-a-script-in-a-different-directory-than-the-current-one
+
+
+
+
+
+# PROCEDIMENTOS:
+
+1 Copiei um atalho (DIC Michaellis)
+
+2 Em propriedades, colei em "Command" a seguinte linha;
+
+env cd /media/dikson/Store_02/Metro_Last_Light_Redux/; optirun -b primus gamemoderun ./metro.sh
+
+Abri o Atalho com um editor de textos e ficou da seguinte forma;
+
+[Desktop Entry]
+Name=Metro
+Exec=env cd /media/dikson/Store_02/Metro_Last_Light_Redux/; optirun -b primus gamemoderun ./metro.sh
+Type=Application
+StartupNotify=true
+Comment=Atalho
+Icon=""
+StartupWMClass=metro.sh
+
+
+
+
+
+3 Copiei este atalho para a pasta "/usr/bin" 
+
+4 Renomeei ele tirando a extensão .desktop
+
+5 Ao criar um Atalho no Menu "Iniciar" apenas indique o Caminho da pasta /usr/bin
+
+5.5 O Atalho .desktop pode ser colocado na Mesma Pasta do Jogo. Funcionu !
+
+
+
+
+
+# Pode ser feito o mesmo procedimento para qualque app Que antes só esra possivel rodar usando o PyAutoGui.

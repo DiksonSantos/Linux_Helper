@@ -1,0 +1,10 @@
+ncdu (NCurses Disk Usage):
+
+ O "ncdu" é uma ferramenta interativa baseada em texto que fornece uma visão hierárquica do uso do espaço em disco.
+Ele permite que você navegue pelos diretórios e identifique os maiores arquivos. Se não estiver instalado, você pode instalá-lo usando:
+
+sudo apt install ncdu
+
+
+# FORMA DE USO:
+ncdu <diretório>

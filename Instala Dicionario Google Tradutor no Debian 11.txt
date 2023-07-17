@@ -1,0 +1,58 @@
+
+
+Baixe:
+
+wget https://github.com/crow-translate/crow-translate/releases/download/2.6.1/crow-translate_2.6.1_amd64.deb -O crow.deb
+
+
+
+
+
+Lembre-se de que, como este aplicativo foi desenvolvido com o Framework Qt5, você pode precisar instalá-lo com antecedência para evitar fazê-lo mais tarde, através da resolução de dependências. Isso através da seguinte ordem de comando:
+
+
+sudo apt install qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools
+
+
+
+Além disso, você certamente precisará instalar outros pacotes relacionados, como:
+
+
+
+libqgsttools-p1 libqt5multimedia5 libqt5multimedia5-plugins libqt5multimediawidgets5 qtgstreamer-plugins-qt5
+
+
+
+Pronto!
+
+
+
+
+
+
+
+
+Agora instale o programa com os comandos abaixo:
+
+sudo dpkg -i crow.deb
+
+sudo apt-get install -f
+
+
+
+
+Se preferir, use o comando abaixo para instalar o programa;
+
+sudo apt install ./crow.deb
+
+
+
+
+Depois, se precisar desinstalar o programa, use esse comando:
+
+sudo apt-get remove crow*
+
+
+
+
+https://www.edivaldobrito.com.br/crow-translate-no-ubuntu-debian-e-derivados/

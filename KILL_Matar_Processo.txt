@@ -1,0 +1,59 @@
+
+
+
+kill -9 211136
+
+
+comando argumento numero_do_processo
+
+
+
+
+# CONSEGUIR NUMERO DO PROCESSO:
+
+SOFTWARE -> GLANCES
+
+sudo pip install glances[gpu]
+
+COMANDO:
+
+glances
+
+
+
+
+FONTE:
+https://www.tecmint.com/how-to-kill-a-process-in-linux/
+
+
+
+
+STEAM:
+
+Comandos Para Encontrar o Processo:
+
+ps auxc
+
+(#ps ax | grep "steam")
+
+# Forma de uso (Deb 12):
+ps auxc | grep steam
+
+
+
+ENCONTRE O PROCESSO:
+dikson     78256  0.0  0.0   6284  2996 ?        S    03:47   0:00 steam
+
+KILL HIM
+sudo kill -9 78256
+
+sudo xkill ...
+
+OU  (Não Mostra o Nome, só o Numero do Processo) :
+pgrep steam
+
+
+
+
+FONTE:
+https://askubuntu.com/questions/927105/how-to-kill-a-program

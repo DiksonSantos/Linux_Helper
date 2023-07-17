@@ -1,0 +1,14 @@
+sudo apt install lm-sensors
+
+sensors
+
+watch sensors
+
+_____
+
+sudo apt install psensor
+
+
+FONTE:
+https://www.cyberciti.biz/faq/how-to-check-cpu-temperature-on-ubuntu-linux/
+

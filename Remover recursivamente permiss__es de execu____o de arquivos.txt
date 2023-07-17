@@ -1,0 +1,21 @@
+
+
+chmod -R -x+X *
+
+O -x remove permissões de execução para todos
+O +X adicionará permissões de execução para todos, mas apenas para diretórios.
+
+
+Usei:
+dikson@debian:~/Imagens/DESKTOP_THEMES$ chmod -x *
+
+chmod -x *
+
+
+Removi a permissao de execução de todas as fotos desta pasta.
+
+
+
+
+FONTE:
+https://qastack.com.br/unix/296967/how-to-recursively-remove-execute-permissions-from-files-without-touching-folder

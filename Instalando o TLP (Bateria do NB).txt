@@ -1,0 +1,52 @@
+Melhora a vida da bateria do NoteBook
+
+sudo apt install tlp tlp-rdw
+
+
+Comandos:
+
+INICIALIZADO (?)
+sudo systemctl status tlp
+
+CONFERIR - ATIVO ou INATIVO + Informações do Sistema
+sudo tlp-stat -s 
+
+CONFIGURAÇÕES
+sudo tlp-stat -c
+
+CONFIGURAÇÕES/STATUS
+sudo tlp-stat
+
+INFORMAÇÕES
+sudo tlp-stat -b
+
+TEMPERATURA da CPU
+sudo tlp-stat -t
+
+
+FONTE:
+https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/
+
+
+
+_______________________________________________
+
+
+# VERIFICAR STATUS DA BATERIA:
+
+sudo apt install lshw
+
+sudo lshw -c power
+
+
+______________________________________________
+
+# OUTROS PACOTES PARA ADM DE BATERIA:
+
+"acpi" and "powerdevil"
+
+sudo apt install  ...
+
+acpi -i
+acpi -b
+

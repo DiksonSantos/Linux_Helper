@@ -1,0 +1,51 @@
+# COMO INSTALAR FIREWALL UFW NO DEBIAN 11
+
+sudo apt update && sudo apt install ufw
+
+
+# VERIFICAR STATUS
+
+sudo ufw status
+
+# (Des)/HABILITAR PARA USO JÁ DURANTE A INICIALIZAÇÃO DO SISTEMA:
+
+sudo ufw enable
+
+sudo ufw disable
+
+__________________________________
+
+To allow port number 8080 in UFW, the command will be:
+
+sudo ufw allow 8080
+
+to Deny Access:
+
+sudo ufw deny 8080
+
+__________________________________
+
+CONFIG PROTEÇÃO:
+
+Comando 
+
+sudo ufw default deny incoming
+
+ Configura o firewall UFW para recusar todas as conexões de entrada. Significa que todas as tentativas de conexão de um host externo à rede ou sistema serão bloqueadas.
+
+
+
+Comando; 
+
+sudo ufw default allow outgoing
+
+Configura o firewall UFW para permitir todas as conexões de saída por padrão. Ou seja, se ele já não foi configurado, serão criadas regras no firewall para permitir todas as conexões de saída.
+
+
+__________________________________
+
+
+FONTE:
+https://www.how2shout.com/linux/install-and-configure-ufw-on-debian-11-or-10/
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04

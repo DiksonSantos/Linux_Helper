@@ -1,0 +1,5 @@
+sudo apt install handbrake
+
+
+
+https://sempreupdate.com.br/5-maneiras-de-converter-arquivos-de-video-no-linux/

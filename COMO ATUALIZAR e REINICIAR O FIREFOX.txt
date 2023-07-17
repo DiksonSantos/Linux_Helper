@@ -1,0 +1,52 @@
+        COMO REINICIAR O FIREFOX DEPOIS DE ATUALIZAR:
+
+BAIXAR COM WGET:
+64 Bits OS:
+wget "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=pt-BR" -O firefox.tar.bz2
+
+32 Bits OS:
+wget "https://download.mozilla.org/?product=firefox-latest&os=linux&lang=pt-BR" -O firefox.tar.bz2
+
+
+MAIS INFORMAÇÕES:
+https://ftp.mozilla.org/pub/firefox/releases/latest/README.txt
+
+_____
+
+
+Problema que enfrentei -> Firefox não queria abrir:
+
+sudo apt update && sudo apt install --reinstall libdbus-glib-1-2
+        
+        
+        
+        
+        
+    1 - Com o Firefox aberto, digite “about:support” e tecle Enter; ...
+    2 - Clique no botão “Restaurar o Firefox”, e depois, no botão “Restaurar o Firefox”;
+    3 - O Firefox será fechado e restaurado, e ao reiniciar ele exibirá uma janela, com as informações importadas.
+
+
+
+Para atualizar o Firefox -> Baixe a nova versão compactada no site da Mozilla, e descompacte ele na pasta do antigo Firefox. (N meu caso na /opt/firefox)
+
+
+
+
+#CASO QUEIRA ABRIR O FIREFOX PELO TERMINAL DIGITANDO "firefox" CRIE UM ATALHO COM O SEGUINTE COMANDO:
+
+ln -s /opt/firefox/firefox /usr/bin/firefox
+
+Esteja como Super Usuario para isto.
+
+(ln é um comando unix/linux usado para criar uma ligação (atalho ou link simbólico como é mais conhecido) entre arquivos do sistema de arquivos.)
+
+
+___________________________________________________________
+
+
+PARA INSTALAR A VERSÃO "QUANTUM" DO FIREFOX:
+
+https://www.edivaldobrito.com.br/firefox-quantum-no-linux/
+
+-> Não notei diferença de performance. Mas seria legal testar um dia.

@@ -1,0 +1,17 @@
+EMULADOR YUZU PARA -> NINTENDO SWITCH
+
+
+
+INSTALAÇÃO VIA FLATPAK:
+flatpak install flathub org.yuzu_emu.yuzu
+
+EM:
+https://flathub.org/apps/details/org.yuzu_emu.yuzu
+
+
+Arquivos para colar em -> /home/dikson/.var/app/org.yuzu_emu.yuzu/data/yuzu/keys
+Esta pasta é mostrada clicando em -> Arquivo>Abrir_Pasta_do_Yuzu
+no proprio emulador.
+
+Baixe os arquivos para a pasta "Keys"  aqui:
+https://drive.google.com/drive/folders/1JOB2HuLXyrYgzLcR3IqEuhiFh7aU4eLr

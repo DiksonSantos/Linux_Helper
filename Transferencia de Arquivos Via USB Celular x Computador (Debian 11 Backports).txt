@@ -1,0 +1,18 @@
+Abrir Dispositivo (Celular) Android no Debian 11, com as configurações atuais do sistema;
+
+Backports:
+pipwire 0.3.65 , Gdm3 Etc...
+
+
+# Não é possivel abrir usando o NEMO. Consegui com Pcmanfm
+
+sudo apt install pcmanfm
+
+
+# BAIXE E INSTALE ESTA FERRAMENTA:
+
+wget -c http://ftp.de.debian.org/debian/pool/main/a/android-file-transfer/android-file-transfer_4.2-1_amd64.deb
+
+
+
+PRONTO !

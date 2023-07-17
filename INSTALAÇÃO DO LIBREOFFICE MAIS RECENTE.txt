@@ -1,0 +1,68 @@
+#INSTALAÇÃO DO LIBREOFFICE MAIS RECENTE (7.1):
+
+Baixe do site a versão mais recente:
+https://pt-br.libreoffice.org/baixe-ja/libreoffice-novo/?type=deb-x86_64&version=7.1.4&lang=pt-BR
+
+
+Baixe o Pacote de Idioma Português:
+->  "Translated User Interface: português (Brasil)"
+
+Escolha versão Linux 64.deb (Clique em Download).
+
+Primeiro Instale o LibreOffice entrando na pasta DEBS e usando o comando $sudo dpkg -i *.deb 
+
+Depois entre na pasta Languages e faça a mesma coisa na pasta DEBS dela.
+
+
+
+
+#PÓS INSTALAÇÃO:
+
+
+Ao Instalar o LibreOffice 7.1.4.2 . Ele perde o arquivo que na versão anteror existia na pasta "/usr/bin"
+Assim fica impossivel abrir o LibreOffice por linha de comando, ou checar a versão. Assim:
+
+
+
+Na pasta  -> /opt/libreoffice7.1/program/soffice    (Ou as vezes em  /usr/local/bin )
+
+Existe o arquivo executavel do LibreOffice ("libreoffice7.1")
+
+
+Copiei este arquivo Para a pasta ->  /usr/bin
+
+E renomeie ele para "libreoffice"
+
+
+
+Agora você pode abrir ele pelo prompt Usando o comando libreoffice
+Isso faz com que abra-se uma tela para escolher Qualquer uma das aplicações do LibreOffice7 (texto, planilha etc). 
+
+ _____________________________________________________________________
+ 
+ 
+ 
+ #PARA INSTALAR O OPENOFFICE DA APACHE É BASICAMENTE A MESMA COISA:
+ 
+ 
+ Muito importante:
+
+Antes de instalar o Open Office é preciso remover o Libre-Office 
+sudo apt-get remove --purge libreoffice*
+
+
+OU Melhor -> sudo apt-get remove libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+
+(Não sei se da conflitos com o WPS Office TAMBÉM).
+
+
+https://tecadmin.net/install-apache-openoffice-on-ubuntu-debian/
+
+
+
+
+# PARA REMOVER VERSÃO ESPECIFICA DO LIBRE-OFFICE:
+
+sudo apt-get remove --purge libreoffice7.0*

@@ -1,0 +1,35 @@
+Ativar ou Desativar automaticamente o Ambiente virtual do Anaconda:
+
+
+
+
+To set it false
+
+Para deixar ativado por Default:
+
+conda config --set auto_activate_base True
+source ~/.bashrc
+
+
+Desativado Por Default:
+conda config --set auto_activate_base False
+source ~/.bashrc
+
+To reactivate set it to True
+
+
+Assim quando entrar no Terminal já fica automaticamente Ativo ou Desativo.
+
+
+
+conda config --set auto_activate_base True && source ~/.bashrc
+
+
+
+
+
+OU SIMPLESMENTE 
+-> "conda activate" 
+-> "conda deactivate"
+
+Também funcionaram, e assim, não existe a necessidade de deixar sempre acionado por Default.

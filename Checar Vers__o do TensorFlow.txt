@@ -1,0 +1,10 @@
+pip list | grep tensorflow
+
+pip list | grep tensorflow will also show the version of Tensorflow installed.
+
+
+import tensorflow as tf
+tf.VERSION
+
+
+pip show tensorflow

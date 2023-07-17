@@ -1,0 +1,12 @@
+baixar o timeshift (pgks.org)
+
+sudo depkg -i timeshift.deb
+
+sudo apt -f install
+
+sudo depkg -i timeshift.deb
+
+
+
+INSTRUÇÕES DE USO:
+https://youtu.be/h8yUp795tXA

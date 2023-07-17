@@ -1,0 +1,49 @@
+
+
+Editei o aruivo:
+
+/etc/default/grub
+
+
+Exemplo de como ficaram as 2 ultimas linhas do segundo 'paragrafo' do arquivo:
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=off dis_ucode_ldr"
+GRUB_CMDLINE_LINUX="noveau.modset=0"
+
+
+FONTE:
+https://www.youtube.com/watch?app=desktop&v=Prkx6zREh9M
+
+
+
+
+DESCUBRA QUAL O GESTOR DE LOGINS EM USO NO SISTEMA:
+
+cat /etc/X11/default-display-manager
+
+FONTE:
+https://unix.stackexchange.com/questions/20370/is-there-a-simple-linux-command-that-will-tell-me-what-my-display-manager-is
+
+
+_______________________________________
+
+
+#  FEV-2023   -> PROBLEMA DE CONGELAMENTO AO VOLTAR DA SUSPENSÃO.
+
+CRIEI O ARQUIVO: blacklist.conf
+
+EM:
+/etc/modprobe.d/"blacklist.conf"
+
+COM A LINHA:
+blacklist ucsi_ccg
+
+# APÓS EDITAR/CRIAR O ARQUIVO USE O COMANDO (Como SU):
+update-initramfs -u
+
+APARENTEMENTE O PROBLEMA NÃO RETORNOU MAIS.
+FONTE:
+https://askubuntu.com/questions/1218057/slow-return-from-sleep
+
+
+

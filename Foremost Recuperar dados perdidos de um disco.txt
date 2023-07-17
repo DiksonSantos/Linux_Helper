@@ -1,0 +1,19 @@
+Foremost Recuperar dados perdidos de um disco
+
+INSTALAÇÃO:
+sudo apt-get install foremost
+
+
+Executar o Foremost:
+Abra o terminal e execute o comando a seguir, substituindo /dev/sdx pelo caminho da partição ou dispositivo que você deseja recuperar:
+
+
+sudo foremost -i /dev/sdx -o <pasta_de_saida>
+
+
+Onde:
+
+-i /dev/sdx especifica o dispositivo ou partição a ser analisado.
+-o <pasta_de_saida> define o diretório de saída onde os arquivos recuperados serão salvos. Escolha um diretório adequado onde você tenha permissões de gravação.
+Aguardar a conclusão:
+O Foremost começará a analisar a partição ou o dispositivo especificado em busca de arquivos excluídos ou perdidos. O tempo necessário para a conclusão dependerá do tamanho e da complexidade dos dados.

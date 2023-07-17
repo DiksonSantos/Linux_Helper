@@ -1,0 +1,15 @@
+ZERANDO A MEMORIA SWAP:
+
+
+
+sudo swapoff -a
+sudo swapon -a
+OR alternatively as a single line
+
+sudo swapoff -a; sudo swapon -a
+
+
+
+
+
+https://askubuntu.com/questions/1357/how-to-empty-swap-if-there-is-free-ram

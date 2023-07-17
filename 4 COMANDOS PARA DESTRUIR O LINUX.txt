@@ -1,0 +1,44 @@
+# 4 COMANDOS PARA DESTRUIR O LINUX:
+
+O comando que apaga tudo
+
+A função do comando rm é remover arquivos — e ele pode remover diretórios inteiros também, sem pedir qualquer confirmação.
+Ao executar o comando rm -rfv /, com privilégios de root todos os arquivos e diretórios do seu sistema serão eliminados.
+Veja o que ele faz:
+
+    r — indica a recursividade. Todos os arquivos do diretório atual e seus subdiretórios sofrerão a ação do comando;
+    f — indica a ‘forçabilidade’. Todos os arquivos serão forçosamente removidos, independente de suas permissões;
+    v — liga a ‘verbosidade’. Torna tudo mais lindo ao exibir os arquivos à medida em que são eliminados no seu terminal;
+    / — indica o local em que a operação ocorrerá. Neste caso, a raiz. É isto que torna o comando todo tão perigoso;
+
+Se você executar a linha sem privilégios administrativos, só os arquivos nos quais você tem permissão de escrita serão afetados.
+
+
+
+Como executar uma fork bomb
+
+Esta é uma das formas de se fazer um ataque de negação de serviços, que consiste em, basicamente, saturar os recursos de um servidor ao ponto de torná-lo indisponível.
+A fork bomb apresentada a seguir faz com que o Linux ou o Unix opere definindo uma função, chamada ‘:’ e que refira-se a si mesma duas vezes – em background e foreground:
+: (){ : | : & };:
+
+No Linux, o administrador pode prevenir este tipo de ataque com o comando ulimit que impõe restrições à quantidade de processos simultâneos por usuário.
+Formatar uma partição
+
+Qualquer instalação decente do Linux estará distribuída em várias partições. O comando:
+mkfs.ext4 /dev/sdaX</code>
+
+vai aplicar uma formatação completa à partição /dev/sdaX.
+Formatar um disco completamente, desta forma, pode ser útil no caso de se estar repassando a máquina para uma outra pessoa.
+Escrever diretamente no disco rígido
+
+Ao enviar a saída de um comando diretamente pro endereço do dispositivo de disco rígido não é apenas desaconselhável. É uma ação muito perigosa e danosa pro sistema de arquivos, em sua máquina.
+Pode ser feito da seguinte forma:
+ls > /dev/sda
+
+Há várias outras formas de se danificar um sistema Linux/Unix — e, na maior parte delas, é necessário ter privilégios especiais para ter sucesso.
+Distribuições Linux voltadas para usuários com menor nível de conhecimento costumam vir com algumas configurações que previnem a maior parte dos acidentes.
+
+
+
+
+https://elias.praciano.com/2013/07/lista-de-4-comandos-mortais-que-voce-nunca-deve-executar-no-linux/

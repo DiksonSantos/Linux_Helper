@@ -1,0 +1,135 @@
+Você vai inserir no final do arquivo interfaces, que está na pasta /etc/network, os comandos abaixo:
+Verifique qual o nome de sua rede, no meu caso é eth0, veja qual o seu device que vai estar conectado, com o comando nmcli d:
+
+auto eth0
+iface eth0 inet dhcp
+
+OUTRO Exemplo:
+
+auto enp6s0
+iface enp6s0 inet dhcp
+
+Reinicie o Pc e já estará pronto.
+
+Se nada disso funcionar, mas o comando sudo dhclient funcionou, torne ele fixo desde a inicialização:
+
+Fixando o dhclient na inicialização, se precisar ...
+
+Abra o arquivo rc.local com o comando abaixo:
+
+sudo nano /etc/rc.local
+
+E escreva o código abaixo nesse arquivo:
+
+#!/bin/bash
+dhclient
+exit 0
+
+Essa linha #!/bin/bash parece que já vem escrita no arquivo. Se ele já existir, então deixa ela quieta e coloca o dhclient e o exit 0
+Se o arquivo não existe, então com o comando "sudo nano /etc/rc.local" (sem aspas) você vai criar ele.
+
+Agora salve:
+Combinação de teclas que Salvam e Fecham o arquivo que foi aberto com o nano: Control+o depois Enter e então Control+x
+
+Dê permissão 755 ao arquivo com o comando:
+
+sudo chmod 755 /etc/rc.local
+
+Agora habilite, reinicie e veja o status com os comandos abaixo. Se algum deles falhar, não tem problema:
+
+sudo systemctl enable rc-local
+sudo systemctl restart rc-local
+sudo systemctl status rc-local
+
+Seria bom reiniciar pra ter certeza que vai funcionar.
+
+
+_____________________________________________________________________________
+
+
+# CONTEUDO DO ARQUIVO 'interfaces' EM "/ETC/NETWORK/" :
+
+cat /etc//network/interfaces
+───────┬──────────────────────────────────────────────────────────────────────────────────────
+       │ File: /etc//network/interfaces
+───────┼──────────────────────────────────────────────────────────────────────────────────────
+   1   │ source /etc/network/interfaces.d/*
+   2   │ auto lo
+   3   │ iface lo inet loopback
+   4   │ 
+   5   │ 
+   6   │ auto enp4s0f1
+   7   │ iface enp4s0f1 inet dhcp
+───────┴────────────────────────────
+
+
+
+-> COM O COMANDO 'ifconfig' , descobri o nome da placa de rede 'enp4s0f1'
+-> Para instalar o ifconfig Use -> sudo apt install net-tools
+(sudo apt install net-tools)
+
+
+# FONTE:
+https://www.youtube.com/watch?v=rWQorbSzoRE
+
+
+
+
+
+________________________________________________________________________________________
+
+	# STEP DOIS:
+
+The following fixed the issue:
+
+My /etc/network/interfaces file: removed all lines except:
+
+auto lo
+iface lo inet loopback
+Then I edited /etc/NetworkManager/NetworkManager.conf from:
+
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=true
+
+[device]
+wifi.scan-rand-mac-address=no
+Add in [keyfile] string
+
+[keyfile]
+unmanaged-devices=*,except:type:wifi,except:type:wwan,except:type:ethernet
+Current /etc/NetworkManager/NetworkManager.conf
+
+[main]
+plugins=ifupdown,keyfile
+
+[keyfile]  
+unmanaged-devices=*,except:type:wifi,except:type:wwan,except:type:ethernet
+
+[ifupdown]
+managed=true
+
+[device]
+wifi.scan-rand-mac-address=no
+Last run command:
+
+
+# REINICIAR REDE:
+sudo service network-manager restart 
+
+systemctl restart NetworkManager
+
+# FONTE:
+https://askubuntu.com/questions/904545/networkmanager-doesnt-show-ethernet-connection
+
+________________________________________________________________________________________
+
+# COMANDO PARA REESTABELECR AS CONEXÕES DE REDE:
+
+
+sudo dhclient
+
+
+

@@ -1,0 +1,25 @@
+INSTALANDO GAMEMODE NO DEBIAN
+
+sudo apt install gamemode
+
+
+
+USANDO:
+
+optirun gamemoderun ./metro
+
+optirun gamemoderun ./start.sh
+
+
+gamemoderun wine Jogo.exe
+
+optirun gamemoderun wine Jogo.exe
+
+
+
+PARA USAR NAS CONF DO STEAM:
+gamemoderun %command%
+
+
+FONTE:
+https://linuxhint.com/gamemode-improve-gaming-performance-in-linux/

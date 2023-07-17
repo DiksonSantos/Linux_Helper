@@ -1,0 +1,35 @@
+﻿INSTALAÇÃO DO COUCHDB NO DEBIAN 10:
+
+
+
+
+https://linuxize.com/post/how-to-install-couchdb-on-debian-10/
+
+
+
+ACESSAR A INTERFACE GRAFICA  -> COLE NO NAVEGADOR :
+
+http://127.0.0.1:5984/_utils/
+
+
+USER NAME É "ADMIN"
+
+PASSWORD -> O QUE FOI CONFIGURADO DURANTE A INSTALAÇÃO.
+
+INTERFACE GRÁFICA POSTMAN:
+
+sudo snap install postman
+
+
+https://medium.com/@rahulbagul330/how-to-install-postman-on-debian-10-88cb2d54795d
+
+
+
+CASO SEJA NECESSÁRIO INSTALAR O SNAP:
+
+sudo apt update
+sudo apt install -y snapd
+Mais informações de como remover pacotes Snap & ++
+https://computingforgeeks.com/how-to-install-snap-on-ubuntu-debian-linux/
+
+

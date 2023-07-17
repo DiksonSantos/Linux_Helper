@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?app=desktop&v=0SUzwPgw2co
+
+
+sudo apt-get remove lightdm
+
+sudo apt install gdm3
+
+
+
+
+OU:
+
+sudo dpkg-reconfigure lightdm
+
+sudo dpkg-reconfigure gdm3
+
+sudo dpkg-reconfigure sddm
+
+FONTE:
+https://linuxhint.com/change-display-manager-debian-linux/
+
+
+
+
+# DESCOBRIR QUAL GESTOR DE LOGIN ESTA EM USO:
+
+cat /etc/X11/default-display-manager

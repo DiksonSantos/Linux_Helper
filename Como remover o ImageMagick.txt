@@ -1,0 +1,4 @@
+sudo dpkg --purge --force-all imagemagick
+
+DEB 12:
+sudo apt-get remove imagemagick-6.q16 

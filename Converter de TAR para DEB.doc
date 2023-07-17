@@ -1,0 +1,4 @@
+sudo alien --to-deb nome_do_arquivo.tar.gz 
+
+
+pode ser tar.gz  ou tar.bz2   etc... tanto faz. Ele converte tbm (Até agora).

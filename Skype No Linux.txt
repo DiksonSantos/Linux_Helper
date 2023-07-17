@@ -1,0 +1,35 @@
+Como instalar a versão mais recente do Skype no Linux Ubuntu, Debian e derivados
+
+
+Passo 1. Abra um terminal;
+Passo 2. Instale a dependência do programa com esse comando;
+
+sudo apt install apt-transport-https -y
+Passo 3. Baixe e importe a chave do repositório com o comando:
+
+wget -q -O - https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
+Passo 4. Se ainda não tiver, adicione o repositório do programa com este comando ou use esse tutorial;
+
+echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
+Passo 5. Atualize o gerenciador de pacotes com o comando:
+
+sudo apt-get update
+Passo 6. Agora use o comando abaixo para instalar o programa;
+
+sudo apt-get install skypeforlinux
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.edivaldobrito.com.br/versao-mais-recente-skype-no-linux/

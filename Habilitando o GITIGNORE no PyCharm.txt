@@ -1,0 +1,9 @@
+Go to Settings
+Go to Plugins
+Search for: .ignore
+Install
+Restart PyCharm
+.gitignore should now be included in .ignore along with .hgignore etc.
+
+
+https://stackoverflow.com/questions/36251746/how-to-use-gitignore-in-pycharm

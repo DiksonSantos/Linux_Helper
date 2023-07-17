@@ -1,0 +1,12 @@
+
+
+
+INSTALL
+flatpak install flathub com.github.rajsolai.textsnatcher
+
+
+RUN:
+flatpak run com.github.rajsolai.textsnatcher
+
+
+https://flathub.org/apps/details/com.github.rajsolai.textsnatcher

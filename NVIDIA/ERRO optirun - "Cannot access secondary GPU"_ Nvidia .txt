@@ -1,0 +1,31 @@
+optirun pluma
+[24916.273291] [ERROR]Cannot access secondary GPU - error: [XORG] (EE) Unable to locate/open config directory: "/etc/bumblebee/xorg.conf.d"
+
+
+# SOLUÇÃO:
+
+command on Debian 11:
+
+sudo ln -s /etc/X11/xorg.d/20-nvidia.conf /etc/bumblebee/20-nvidia.conf
+
+Deb
+sudo ln -s /etc/X11/xorg.conf.d/20-nvidia.conf /etc/bumblebee/20-nvidia.conf
+
+I also had to install the following:
+
+sudo apt install xserver-xorg-input-mouse
+sudo apt install xserver-xorg-input-kbd
+Furthermore, I had to purge xserver-xorg-legacy:
+
+sudo apt purge xserver-xorg-legacy
+
+
+
+-> E, Reinicie a Máquina.
+
+
+FONTE:
+https://unix.stackexchange.com/questions/654946/primusrun-optirun-allegedly-cannot-locate-open-config-directory-etc-bumblebee
+
+
+25/04/2023

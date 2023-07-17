@@ -1,0 +1,3 @@
+O que este comando "sudo mkfs.ext4 -L hdd_misha /dev/sdb1" faz?
+
+Este comando cria um sistema de arquivos em ext4 (um dos principais sistemas de arquivos Linux) na unidade de disco especificada (no caso, /dev/sdb1) com a etiqueta de volume "hdd_misha". A etiqueta de volume é uma forma de identificar a unidade de disco.

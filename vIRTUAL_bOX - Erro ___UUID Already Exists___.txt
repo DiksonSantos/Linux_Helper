@@ -1,0 +1,15 @@
+VBoxManage internalcommands sethduuid X:\diretório\MeuVHD.vhd
+
+
+COMANDO:
+VBoxManage internalcommands sethduuid Deepin.vdi
+
+RESULTADO:
+UUID changed to: 16573fb7-4ded-474c-ab5f-76732d9c128d
+
+
+Isso muda o ID da máquina, e consegui recuperar o Debian 11 Virtual assim. Poré "TEM QUE REINICIAR O PC ANTES" se não ele não reconhece a mudança de ID.
+
+
+FONTE:
+https://www.lambda3.com.br/2012/05/erro-uuid-already-exists-ao-registrar-o-hd-virtual-no-virtualbox/

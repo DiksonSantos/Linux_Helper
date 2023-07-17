@@ -1,0 +1,22 @@
+
+# O PROTON SUBSTITUI O WINE:
+
+
+Change working directory to Proton's:
+
+cd ~/.local/share/Steam/steamapps/common/Proton*
+
+cd ~/.local/share/Steam/steamapps/common/Proton\ 3.7/
+
+
+
+
+
+STEAM_COMPAT_DATA_PATH="$HOME/.local/share/Steam/steamapps/compatdata/$appid" optirun -b primus ./proton run /media/dikson/Store_02/Tomb_Raider_Anniversary/tra.exe
+
+
+STEAM_COMPAT_DATA_PATH="$HOME/.local/share/Steam/steamapps/compatdata/$appid" optirun -b primus ./proton run /home/dikson/.wine/drive_c/Max_Payne_2/MaxPayne2.exe
+
+
+FONTE:
+https://askubuntu.com/questions/1073691/error-on-executing-steam-proton-app-via-command-line

@@ -1,0 +1,34 @@
+
+
+# MOSTRAR QUAL O MONITOR EM USO?
+echo $DISPLAY
+
+
+# ???
+su - dikson
+
+
+# ???
+xhost +
+
+
+
+# SELECIONAR UM DOS DOIS MONITORES  ( 0 ou 1):
+export DISPLAY=:0
+
+# LISTAR MONITORES CONECTADOS:
+$ xrandr --listmonitors
+
+
+
+
+____________________________________________
+
+
+FONTES:
+
+https://www.vivaolinux.com.br/topico/Wine-Wine-X-Cedega/Erro-ao-executar-comando
+
+https://unix.stackexchange.com/questions/651209/how-change-monitors-from-terminal-xrandr-cant-open-display
+
+https://askubuntu.com/questions/1192102/xhost-produce-access-control-disabled-message-but-do-not-works

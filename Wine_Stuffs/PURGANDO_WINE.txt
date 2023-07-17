@@ -1,0 +1,47 @@
+
+sudo apt remove --purge wine*
+
+cd $HOME
+    
+rm -r .wine
+    
+rm .config/menus/applications-merged/wine*
+    
+rm -r .local/share/applications/wine
+    
+rm .local/share/desktop-directories/wine*
+
+
+    sudo apt-get update
+    sudo apt-get autoclean
+    sudo apt-get clean
+    sudo apt-get autoremove
+
+OU:
+
+sudo apt-get update && sudo apt-get autoclean && sudo apt-get clean && sudo apt-get autoremove
+
+
+
+
+FONTE:
+https://forum.winehq.org/viewtopic.php?t=33906
+
+
+
+
+
+
+
+
+
+
+
+
+sudo apt-get update && sudo apt-get autoclean && sudo apt-get clean && sudo apt-get autoremove -s
+
+
+
+
+
+rm -r .wine && rm .config/menus/applications-merged/wine* && rm -r .local/share/applications/wine && rm .local/share/desktop-directories/wine*

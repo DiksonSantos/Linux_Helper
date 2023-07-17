@@ -1,0 +1,9 @@
+Para que o Ambiente Gnome mude o plano de fundo com fotos / pasta selecionada por mim, instale o "variety"  
+
+
+sudo apt install variety
+
+
+
+Fonte:
+https://www.vivaolinux.com.br/topico/GNOME/apresentacao-de-slides-como-plano-de-fundo

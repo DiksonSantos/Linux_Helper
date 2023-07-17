@@ -1,0 +1,28 @@
+Tornar Scrips Python Executaveis no Lunux:
+
+
+
+Basta colocar isso na primeira linha do seu script:
+
+#!/usr/bin/env python
+
+
+
+Torne o arquivo executável com:
+
+chmod +x myfile.py
+
+
+
+# RENOMEIE A EXTENSÃO PARA ".sh"    :
+
+
+Executar com:
+
+./myfile.sh
+
+
+
+
+FONTE:
+https://qastack.com.br/programming/304883/what-do-i-use-on-linux-to-make-a-python-program-executable

@@ -1,0 +1,10 @@
+Novos_Softwares_para_Terminal-Linux.txt
+
+
+sudo snap install bashtop
+
+
+Ferramenta de diagnostico do sistema  -  Só instala se as Linhas de BackPorts estiverem na Source.List em 
+/etc/apt/
+sudo apt install duf
+

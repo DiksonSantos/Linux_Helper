@@ -1,0 +1,24 @@
+# INSTALAÇÃO DA FERRAMENTA:
+
+apt-get install libguestfs-tools
+
+FONTE:
+https://command-not-found.com/virt-copy-in
+
+___________
+
+
+COMANDO:
+virt-copy-in -a windows10.qcow2 /home/dikson/data.zip /
+
+
+IMPORTANTE !
+Enquanto a Maquina Virtual Estiver DESLIGADA
+
+
+
+This copies the file /tmp/data.zip from your host to 
+the root C:\ directory in the Windows guest image windows10.qcow2.
+
+
+

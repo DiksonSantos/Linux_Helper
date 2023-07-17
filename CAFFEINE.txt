@@ -1,0 +1,11 @@
+CAFFEINE
+
+Para impedir que a proteção de tela se ative em cima dos videos do VLC e similares.
+
+
+sudo apt-get install -y caffeine
+
+
+
+FONTE:
+https://zoomadmin.com/HowToInstall/UbuntuPackage/caffeine

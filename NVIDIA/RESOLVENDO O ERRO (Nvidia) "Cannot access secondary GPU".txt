@@ -1,0 +1,25 @@
+
+RESOLVENDO O ERRO (Nvidia) "Cannot access secondary GPU"
+
+NO ARQUIVO ->   /etc/bumblebee/xorg.conf.nvidia
+
+DESCOMENTE A LINHA;
+
+#   BusID "PCI:01:00:0"
+
+TIRANDO O # , SALVE E USE O COMANDO;
+
+Sendo este o BUSID fa Placa de Video. 
+Para saber use o comando:
+lspci | grep 3D
+
+
+
+# ENTÃO:
+systemctl restart bumblebeed
+
+# AGORA TESTE O "optirun" / "primusrun"
+
+
+# FONTE:
+https://askubuntu.com/questions/290443/bumblebee-cannot-access-secondary-gpu-error-xorg-ee-no-devices-detected

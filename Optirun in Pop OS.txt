@@ -1,0 +1,28 @@
+For seeing which gpu is in use:
+
+sudo system76-power graphics
+
+Switch to Nvidia:
+
+sudo system76-power graphics nvidia
+
+sudo reboot
+
+Switch to intel:
+
+sudo system76-power graphics intel
+
+sudo reboot
+
+Switch to  Hybrid Graphics:
+
+sudo system76-power graphics hybrid
+
+sudo reboot
+
+
+
+FONTE:
+https://www.reddit.com/r/pop_os/comments/ctkqfa/how_to_get_nvidia_optimus_bumblebee_to_work_on/
+
+https://www.fosslinux.com/39438/switching-graphics-in-pop_os-gui-command-line-ways.htm

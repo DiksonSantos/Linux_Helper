@@ -1,0 +1,12 @@
+
+
+
+sudo apt install fbreader
+
+
+FONTE:
+https://sempreupdate.com.br/4-melhores-leitores-de-ebooks-epub-para-linux/
+
+
+PLUGIN PARA O WATERFOX:
+https://chrome.google.com/webstore/detail/epubreader/jhhclmfgfllimlhabjkgkeebkbiadflb

@@ -1,0 +1,116 @@
+SETAR MOUSE LINHA DE COMANDOS:
+https://unix.stackexchange.com/questions/588252/how-do-i-pair-a-bluetooth-mouse-in-debian
+This is on Debian 10, but I think it worked exactly the same on Debian 9...
+
+Make sure that the bluez and bluez-tools packages are installed and that bluetoothd process is running (systemctl status bluetooth).
+
+Hold down the "Connect" button on the mouse until the bluetooth status LED on the mouse starts to blink rapidly, to make the mouse pairable.
+
+Run bt-adapter -d to discover devices in range. For each discovered device, a series of lines identifying the device's name, alias, address, icon type, etc. will be displayed. Find the block of lines referring to the mouse to confirm it is discoverable for pairing. When done, press Ctrl-C to stop the discovery. (The mouse seems to be a Bluetooth Low Energy device, so this step will verify that the system's Bluetooth receiver can communicate with it.)
+
+Then run bt-device -c aa:bb:cc:dd:ee:ff to start the connection attempt and automatically attempt to pair the device since it isn't already paired. It may prompt for a pairing PIN (for devices like mice, usually 0000) or just confirm that you want to pair with the device.
+
+Later, if the mouse won't connect automatically, you can use this same command to establish a connection to it. If the pairing already exists, it should not prompt you for anything.
+
+Finally, run bt-device --set aa:bb:cc:dd:ee:ff Trusted true to allow it to connect automatically from now on.
+
+
+
+bt-device --set DC:F5:FA:27:F7:07 Trusted true
+
+
+
+_________________________________________________
+
+
+# Mouse Blue Logitech Quebrando o WIFI
+
+Crie um arquivo em -> /etc/modprobe.d/iwlwifi.conf 
+
+IDEIA;
+options iwlwifi <any of the above option, can be both with space separated, but I suggest trying one by one starting from the top>
+
+EX:
+options iwlwifi bt_coex_active=0 11n_disable=1
+
+# Then reboot
+
+
+# RESULTADO;
+Thank you,
+Using only the 1st option (bt_coex_active=0) solved the problem.
+
+https://forum.manjaro.org/t/using-logitech-m650-bluetooth-mouse-breaks-wifi-connectivity/130997
+
+_____________________________________________
+
+
+# PAREAR MOUSE POR LINHA DE COMANDO:
+
+As you mentioned in your original question, bluetoothctl should be used for pairing. You can also use btmgmt beforehand to set up your device properly. These are the steps that I usually follow in order to pair devices on Linux:
+
+Configure your device to be discoverable, connectable, and pairable
+sudo btmgmt power off
+sudo btmgmt discov on
+sudo btmgmt connectable on
+sudo btmgmt pairable on
+sudo btmgmt power on
+Set up your device to accept numerical pairing
+bluetoothctl --agent KeyboardDisplay
+Then, if your device is the peripheral, you should just wait until a pairing request is made from the remote device.
+If your device is the central, then you can initiate pairing using the following command:
+
+pair 00:11:22:33:44:55
+
+pair DC:F5:FA:27:F7:07
+
+FONTE:
+https://unix.stackexchange.com/questions/678573/how-to-pair-a-ble-device-in-linux-without-using-gatttool
+
+___________________________________________________
+
+
+# CUSTOMIZANDO BOTOES DO MOUSE NO LINUX:
+https://diolinux.com.br/sistemas-operacionais/configure-o-seu-mouse-logitech-no-linux.html
+_________________________________________________
+
+# CONFIGURAR MOUSE EM LINHA DE COMANDOS (MELHOR TUTORIAL):
+
+https://www.dz-techs.com/pt/fix-bluetooth-device-doesnt-auto-connect-linux
+
+
+
+
+_________________________________________________
+
+# SCRIPT DE CONFIGURAÇÃO DO BLUETOOTH:
+
+/etc/bluetooth/main.conf
+
+
+Aleterei as linha;
+
+AutoEnable = true  -> Descomentei
+
+Descomentei uma destas duas;
+ControllerMode = dual
+ControllerMode = bredr
+
+
+
+
+
+
+
+
+
+______________________________________________
+
+
+# BRILHO DO MONITOR:
+
+Sobre Bright -> Pergunte chatgpt
+
+/sys/class/backlight/
+
+

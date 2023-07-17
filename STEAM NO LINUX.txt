@@ -1,0 +1,96 @@
+
+wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb 
+
+sudo dpkg-i steam.deb 
+
+
+
+# EU PREFERI USAR FLATPAKs (INSTALAÇÃO MAIS LIMPA)
+
+flatpak install flathub com.valvesoftware.Steam 
+
+
+
+# CONFIGURAÇÕES (LINUX SUPPORT)
+
+	Abra o menu do Steam e clique em “Configurações” para acessar a área de configurações do Steam. 
+	Quando o menu de configurações do Steam estiver aberto, localize a área “Steam Play” e marque as caixas “Habilitar Steam Play para títulos suportados” e “Habilitar Steam Play para todos os outros títulos”. 
+
+
+FONTE:
+https://br.atsit.in/archives/55884
+
+https://www.edivaldobrito.com.br/como-ativar-o-proton-para-jogar-jogos-do-windows-no-linux/
+
+
+_____________________________________
+
+# MUDAR RESOLUÇÕES DE TELA:
+
+https://osgamers.com/frequently-asked-questions/how-do-i-force-a-steam-game-to-run-at-1080p
+
+https://youtu.be/oHF5U4QsaeA?t=38
+
+_____________________________________
+
+# PROTONUP:
+
+pip3 install protonup
+
+cd ~
+
+source .profile
+
+sudo apt-get install libgl1-nvidia-glvnd-glx:i386
+
+
+-> Habilite o Proton-GE nas configurações da Steam (Settings...)
+
+PASTAs DE INSTALAÇÃO:
+/home/dikson/.steam/root/compatibilitytools.d/GE-Proton7-51-diablo_4_beta
+OU
+/home/dikson/.local/bin/protonup
+
+# BAIXE O PROTONUO-QT:
+https://davidotek.github.io/protonup-qt/
+
+DOWNLOAD DIRETO (FlatPak):
+https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.8.1/ProtonUp-Qt-2.8.1-x86_64.AppImage
+
+
+FONTE:
+https://diolinux.com.br/tutoriais/proton-ge-atualizacoes-automaticas.html#:~:text=Para%20instalar%20o%20Proton%2DGE,a%20seguir%20no%20seu%20terminal.&text=Nesse%20momento%20voc%C3%AA%20receber%C3%A1%20algumas,para%20continuar%20com%20a%20instala%C3%A7%C3%A3o.
+
+DEPENDENCIA:
+https://steamcommunity.com/app/221410/discussions/0/1471967615844737370/
+
+
+
+_______________________________________________
+
+# PROTON P/ JOGOS OFFLINE
+
+https://www.vivaolinux.com.br/dica/Como-jogar-jogos-para-Windows-usando-o-Proton
+
+
+____________________________________________________
+
+How To Enable/Disable Background Processing Vulkan Shaders Steam
+
+https://www.youtube.com/watch?v=IbIlBv9Yejo&ab_channel=Linnet%27sHowTo
+
+___________________________________________________________________
+
+
+# CONFIGURANDO O STEAM LAUCHER:
+
+https://www.alphr.com/steam-launch-options/
+
+
+___________________________________________________________________
+
+# CONFIRA SE O JOGO RODA NO LINUX:
+
+https://www.protondb.com/search?q=Call%20o%20Duty
+
+

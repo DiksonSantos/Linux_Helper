@@ -1,0 +1,61 @@
+INSTALAÇÃO DO GIT LFS 
+
+Permite postar arquivos com mais de 50 MB no GitHub.
+
+ONDE BAIXAR O SCRIPT DE INSTALAÇÃO:
+https://packagecloud.io/github/git-lfs/install
+
+
+Rode o arquivo 'script.deb.sh' como sudo.
+
+
+INSTRUÇÕES DE USO:
+
+Select the file extension you would like Git LFS to manage 
+(i.e., Serpent ouput files has extension .m)
+
+git lfs track "*.ipynb"
+
+
+Make sure ".gitattributes" is tracked -> Contém lista de arquivos Grandes para Upar com Git LFS:
+
+git add .gitattributes
+
+
+You can always check tracked file types
+
+nano .gitattributes
+Do it from the top level directory of the repository.
+
+
+
+Success! Just commit and push to GitHub as you normally would
+
+git add ubattery_dep.m
+git commit -am "Add isotopic composition after depletion"
+git push origin master
+
+
+
+
+
+
+FONTE:
+http://arfc.github.io/manual/guides/git-lfs
+
+
+17/01/22
+
+
+________________________________________________________________________________________________________
+
+RESOLVENDO O PROBLEMA DE FALTA DE RENDERIZAÇÃO NO GITHUB PARA ARQUIVOS MAIORES QUE 50MB
+
+Instalação:
+conda install -c conda-forge nbstripout
+
+Make sure that there is no whitespace in the filename:
+nbstripout filename.ipynb
+
+
+-> Isso esconde os OutPuts do arquivos .ipynb , E assim ele é renderizado no site (GitHub).

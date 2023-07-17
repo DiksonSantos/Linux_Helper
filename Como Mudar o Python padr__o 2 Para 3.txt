@@ -1,0 +1,27 @@
+Como Mudar o Python padrão 2 Para 3 
+(Ou seja Digitando python ele já entra na versão 3 , sem precisar digitar python3 no terminal)
+
+
+dikson01@notebook:~$ ls -l /usr/bin/python
+lrwxrwxrwx 1 root root 7 mar  4  2019 /usr/bin/python -> python2
+
+Aqui ele muda o nome do atalho usado pelo sistema para chamar Python -> Muda o atalho Python3 para Python, assim quando você digita no bash python, ele vai estar chamando o atalho do Python3 que agora tem o nome de Python (Que era o 2.7): 
+dikson01@notebook:~$ sudo ln -sf /usr/bin/python3 /usr/bin/python
+[sudo] senha para dikson01: 
+
+dikson01@notebook:~$ python -V
+Python3.7.3
+
+
+OK
+
+
+
+
+
+
+
+
+ln is the command creating the links between files, here is man page.
+
+ln -sfn means force creating a new symlink.

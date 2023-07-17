@@ -1,0 +1,10 @@
+terminal window.
+
+Change directory to:
+cd ~/.wine/drive_c/windows
+
+Run regedit as follows Code:
+
+	wine regedit.exe
+
+

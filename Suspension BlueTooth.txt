@@ -1,0 +1,32 @@
+/usr/lib/systemd/system-sleep/bluetooth.sh
+
+#!/usr/bin/bash
+
+if [[ $1 == "pre" ]]
+then
+    /usr/sbin/rfkill block bluetooth
+elif [[ $1 == "post" ]]
+then
+    /usr/sbin/rfkill unblock bluetooth
+fi
+
+It worked a treat on my Dell XPS15.
+Share
+Improve this answer
+Follow
+answered Nov 18, 2022 at 12:29
+Se6's user avatar
+Se6
+89199 silver badges2222 bronze badges
+
+    I had the same problem. But I didn't read your answer carefully and missed to make the script executable: $ sudo chmod a+x /usr/lib/systemd/system-sleep/bluetooth.sh
+
+
+___________________________________________________
+
+/usr/sbin/rfkill block bluetooth
+/usr/sbin/rfkill unblock bluetooth
+
+
+FONTE:
+https://askubuntu.com/questions/1429462/bluetooth-hci0-timeout-waiting-for-suspend-events

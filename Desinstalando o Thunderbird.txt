@@ -1,0 +1,8 @@
+Desinstalando o Thunderbird:
+Para desinstalar o Thunderbird no Ubuntu e derivados, faça o seguinte:
+
+Passo 1. Abra um terminal;
+Passo 2. Desinstale o programa, usando o comando abaixo;
+
+
+sudo apt-get remove thunderbird --auto-remove

@@ -1,0 +1,30 @@
+Avidemus:
+
+
+INSTALAÇÃO:
+
+-> Só foi possivel instalar no Debian usando um .appimage
+
+-> Comando para abrir -> Não funcionou com "optirun" ou "primusrun"
+-> gamemode run "./avidemus.appimage"
+
+
+TUTORIAL (Segundo o Chat GPT)
+
+Open Avidemux and select File > Open to import your normal video file.
+
+Under Video Output, select "MPEG-4 AVC (x264)" as the codec.
+
+Under Filters, select "Anaglyph 3D" and click "Add". This will open the Anaglyph 3D filter dialog box.
+
+In the Anaglyph 3D filter dialog box, select "Anaglyph red-cyan" as the Anaglyph type.
+
+Adjust the depth and convergence settings to your liking. You can preview the Anaglyph 3D effect in real-time.
+
+Click "OK" to apply the Anaglyph 3D filter.
+
+Under Audio Output, select the appropriate audio codec for your output file.
+
+Select File > Save to export your Anaglyph 3D video file.
+
+Once you've saved your Anaglyph 3D video file, you can watch it using red-cyan glasses to experience the 3D effect. Note that the quality of the 3D effect will depend on the quality of the original video and the settings you've chosen in the Anaglyph 3D filter.

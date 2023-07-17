@@ -1,0 +1,47 @@
+
+Usando Pendrive MultiBoot para instalar W7, W10  ...
+
+# NA TELA DE PARTICIONAMENTO DE DISCOS DO WINDOWS 7/10 DIGITE:
+
+Shift F10
+
+diskpart
+
+list disk
+
+# Digite "select" e, o Numero correspondente á unidade/partição/disco
+
+EX:
+select disk 0
+
+# APAGAR DISCO:
+clean
+
+# CRIAR PARTIÇÃO (Referenciar tamano em MBs):
+create partition primary size=5000
+
+
+# FORMATAR EM NTFS:
+format fs=ntfs quick
+
+assign
+
+active
+
+# CONFERIR  (A unidade nomeada do disco já será mostrada agora)
+list volume
+
+exit
+
+# AGORA (estamos no prompt de comandos normal). Entre na unidade de DVD (Ou source/origem dos arquivos de instalação do Windows.
+EX:
+cd e:
+
+# DENTRO DA SOURCE USE O COMANDO:
+xcopy e: c:/e/h/k
+
+# REINICIE A MAQUINA E SELECIONE A UNIDADE DE DISCO QUE RECEBEU OS ARQUIVOS (PARA BOOT).
+
+
+# FONTE
+https://youtu.be/o4ilMAAk1Q8

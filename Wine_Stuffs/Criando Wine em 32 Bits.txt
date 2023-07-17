@@ -1,0 +1,14 @@
+mkdir -p ~/.wine_32/prefix
+
+export WINEPREFIX=$HOME/.wine_32/prefix 
+
+export WINEARCH=win32 
+
+export WINEPATH=$HOME/.wine_32 
+
+wineboot --init
+
+
+
+FONTE:
+https://forum.manjaro.org/t/wine-could-not-load-kernel32-dll-status-c0000135/69811

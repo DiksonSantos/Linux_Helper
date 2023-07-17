@@ -1,0 +1,47 @@
+NVIDIA 520 DEBIAN 11
+
+# Parar a area Gráfica (CTR Alt F6, ou F7 etc...):
+sudo service lightdm stop
+
+# First, ensure you install the following packages, which may be already installed.
+
+sudo apt install dirmngr ca-certificates software-properties-common apt-transport-https dkms curl -y
+
+
+# Import GPG key for Debian 11 Bullseye:
+
+curl -fSsL https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/3bf863cc.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/nvidia-drivers.gpg > /dev/null 2>&1
+
+
+# Import Nvidia Repository for Debian 11 Bullseye:
+
+echo 'deb [signed-by=/usr/share/keyrings/nvidia-drivers.gpg] https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/ /' | sudo tee /etc/apt/sources.list.d/nvidia-drivers.list
+
+
+sudo apt update
+
+
+# Next, install the latest NVIDIA drivers.
+# Install NVIDIA Drivers With Cuda Support (Proprietary):
+
+sudo apt install nvidia-driver cuda nvidia-smi nvidia-settings
+
+____
+
+SUPORT A 32 BITS:
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install libcuda1-i386 nvidia-driver-libs-i386
+sudo reboot
+
+
+FONTE:
+https://www.linuxcapable.com/install-nvidia-drivers-on-debian/
+
+
+
+
+IF YOU RUN INTO TROUBLE:
+
+sudo apt-get remove --purge '^nvidia-.*'
+sudo apt autoremove nvidia* --purge

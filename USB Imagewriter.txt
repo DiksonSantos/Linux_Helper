@@ -1,0 +1,11 @@
+
+
+# BAIXE A VERSÃO DE LINUX MINT 21.1
+wget -c https://ftp5.gwdg.de/pub/linux/debian/mint/packages/pool/main/m/mintstick/mintstick_1.5.0_all.deb
+
+sudo dpkg -i mintstick_1.5.0_all.deb
+
+# DEPENDENCIAS
+sudo apt -f install
+
+sudo dpkg -i mintstick_1.5.0_all.deb

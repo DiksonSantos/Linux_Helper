@@ -1,0 +1,52 @@
+
+Etapa 01 – Vamos criar o script
+
+Abra o terminal e digite o comando:
+
+vi Limpeza_Cache_MemoriaRAM.sh
+
+Cole o conteúdo abaixo:
+
+echo "Exibindo o consumo da memória RAM"
+free -h
+echo "Limpando Cache da Memória RAM"
+echo 3 > /proc/sys/vm/drop_caches
+sysctl -w vm.drop_caches=3
+clear
+echo "Limpeza do Cache da Memória RAM efetuada com sucesso"
+echo "Exibindo o consumo da mamória RAM"
+free -h
+
+Para salvar o arquivo, siga a instrução:
+
+Aperte a tecla ESC + wq! + Enter
+
+Etapa 02 – Mova o arquivo para Área de Trabalho, com o comando:
+
+mv + arquivo + diretório de destino
+
+Alterar as permissões do arquivo, digite:
+
+chmod 777 + Limpar_Memoria.sh (nome do arquivo)
+
+Etapa03 – Executar o script criado:
+
+Navegue até o diretório onde o arquivo esta salvo e execute o seguinte comando:
+
+su e digite a senha de root
+
+./Limpar_Memoria.sh
+
+Verificar o consumo da memória:
+
+free - m (Verificar o consumo de memória utilizada)
+
+Pronto!
+
+
+
+FONTE:
+https://ar7technology.com.br/limpar-cache-da-memoria-no-linux-mint-ubuntu-e-derivados/
+
+
+

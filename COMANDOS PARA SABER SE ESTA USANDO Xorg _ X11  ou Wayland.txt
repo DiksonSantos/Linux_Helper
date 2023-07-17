@@ -1,0 +1,27 @@
+COMANDOS PARA SABER SE ESTA USANDO Xorg / X11  ou Wayland
+
+
+echo $XDG_SESSION_TYPE
+ps -e | grep X
+
+
+
+
+
+dikson@debian:~/Downloads$ ps -e | grep X
+  940 tty1     00:00:09 Xorg
+ 1303 tty2     02:51:52 Xorg
+dikson@debian:~/Downloads$ echo $XDG_SESSION_TYPE
+x11
+
+
+
+
+
+
+
+
+
+OU:
+
+echo $XDG_SESSION_TYPE

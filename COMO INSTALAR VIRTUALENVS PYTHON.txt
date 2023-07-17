@@ -1,0 +1,75 @@
+# Como Instalar Ambientes Virtuais (Python):
+
+INSTALE O PIP3 :
+
+sudo apt update
+sudo apt install python3-venv python3-pip
+
+
+CASO O PIP TENHA SITO INSTALADO CORRETAMENTE:
+INSTALE OS DOIS PACOTES DE AMBIENTES VIRTUAIS NECESSÁRIOS:
+
+sudo pip3 install virtualenv virtualenvwrapper
+
+
+# DEBIAN 12 (Não aceita mais os comandos PIP) SOLUÇÃO:
+
+sudo rm /usr/lib/python3.11/EXTERNALLY-MANAGED
+
+FONTE:
+https://www.reddit.com/r/debian/comments/14g9np9/debian_12_pip_makes_trouble/
+
+
+
+NO DEBIAN 10.5 & 12  O VIRTUALENV FOI INSTALADO EM :
+/home/dikson/.local/bin/'virtualenvwrapper.sh'
+
+AO INVÉS DE :
+/usr/local/bin/'virtualenvwrapper.sh'
+
+TRECHO DO CONFIGURAÇÃO\CÓDIGO QUE DEVE SER ADICIONADO AO ARQUIVO .bashrc Que se encontra oculto na pasta HOME:
+
+#CONFIGURAÇÕES DO VIRTUALENV & VIRTUALENVWRAPPER:
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.9
+source /usr/local/bin/virtualenvwrapper.sh      
+#source /home/dikson01/.local/bin/virtualenvwrapper.sh #-> Aqui é outro local arquivo.sh poderia tbm estar.
+
+#CRIADO O ALIAS (E FUNCIONA!), AGORA python VAI SEMPRE SER PYTHON3.7.3
+alias python=python3
+
+
+ABRA UM TERMINAL E ELE VAI EXECUTAR VÁRIAS LINHAS DO CODIGO\CONFIGURAÇÕES (DEVIDO ÁS ALTERAÇÕES NO ARQUIVO bashrc).
+
+
+PARA CRIAR UM AMBIENTE DIGITE:
+mkvirtualenv nome-do-ambiente -p python3.7
+
+Como Já criei um ALIAS (no arquivo .bashrc) para definir python como Sempre Sendo o 3.7, é só digitar isso:
+mkvirtualenv NomeDoAmbienteVirtual     (SEM o -p python3.7)
+
+PARA APAGAR UM AMBIENTE VIRTUAL:
+rmvirtualenv NomeDoAmbienteVirtual
+
+
+
+CASO ESSA PORRA DÊ PROBLEMA, BASTA DESINSTALAR E INSTALAR DE NOVO:
+
+sudo apt-get remove virtualenv
+
+sudo apt-get install virtualenv
+
+OU:
+sudo apt install --reinstall virtualenv
+
+
+
+
+
+
+ALL OK !
+
+
+
+
+

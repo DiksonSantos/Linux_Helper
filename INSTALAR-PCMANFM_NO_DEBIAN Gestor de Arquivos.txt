@@ -1,0 +1,130 @@
+PCMAN NO DEBIAN 11 (COM TODOS OS RECURSOS NECESSÁRIOS):
+
+
+sudo apt install pcmanfm
+
+sudo apt install lxqt-sudo
+
+# CASO NÃO TENHA ATIVADO A ARQUITETURA "i386" USE O COMANDO:
+
+sudo dpkg --add-architecture i386
+
+
+
+
+#CRIE AS PASTAS 
+file-manager/actions
+DENTRO DE
+/home/dikson/.local/share/
+
+RESULTADO:
+/home/dikson/.local/share/file-manager/actions
+
+
+
+#CRIE O ARQUIVO:
+
+ ->    terminal.desktop 
+
+EM
+ ~/.local/share/file-manager/actions/
+
+
+EDITE COM KATE INSIRA:
+
+[Desktop Entry]
+Type=Action
+Tooltip=Open Terminal
+Name=Open Terminal
+Profiles=profile-one;
+Icon=utilities-terminal
+
+
+[X-Action-Profile profile-one]
+MimeTypes=inode/directory;
+Exec=qterminal -w %f
+Name=Default profile
+
+
+Sendo Qterminal o terminal selecionado.
+
+** CASO QUEIRA USAR O XFCE4-TERMINAL A LINHA 'EXEC' FICA ASSIM:
+
+Exec=xfce4-terminal --working-directory=%f
+___________________________________________________________
+
+NA MESMA PASTA CRIE O ARQUIVO:
+
+->     root.desktop
+
+COM O SEGUINTE CONTEÚDO:
+
+[Desktop Entry]
+Type=Action
+Tooltip=Open Folder As Root
+Name=Open Folder As Root
+Profiles=profile-zero;
+Icon=gtk-dialog-authentication
+
+Exec=/usr/bin/lxqt-sudo /usr/bin/pcmanfm %u
+
+[X-Action-Profile profile-zero]
+MimeTypes=inode/directory;
+Exec=/usr/bin/lxqt-sudo /usr/bin/pcmanfm %u
+Name=Default profile
+
+
+
+___________________________________________________________
+
+É PRECISO DIGITAR A SENHA DO USUÁRIO ( E NÃO A DO ROOT) QUANDO ELE PEDIR SENHA PARA TER SUPER-PODERES NA PASTA EM QUESTÃO.
+___________________________________________________________
+
+CONCLUSÃO:
+
+NO DEBIAN 11 , TANTO O NEMO QUANTO O NAUTILUS, NÃO MANTEM OS ESTILOS\TEMAS DAS PASTAS NA COLUNA ESQUERDA. O 'PCMANFM' SIM. 
+
+ELE TEM O BOTÃO 'NIVEL A CIMA'
+
+ELE TEM A BARRA DO CAMINHO DA PASTA
+
+PARECE MELHOR QUE O NAUTILUS
+
+
+
+
+
+Precisa fazer todo estes mesmos procedimentos dentro da /root para que o super usuario possa ter os mesmos botões de 'Abrir-Terminal_Aqui'
+
+
+
+03-11-2021
+
+MANEIRA ANTIGA:
+
+[Desktop Entry]
+Type=Action
+Tooltip=Open Folder As Root
+Name=Open Folder As Root
+Icon=gtk-dialog-authentication
+Profiles=on_folder;
+
+[X-Action-Profile on_folder]
+Exec=lxqt-sudo pcmanfm %f
+MimeTypes=inode/directory;
+
+
+
+
+
+
+
+
+
+
+
+FONTE:
+https://forum.archlabslinux.com/t/open-pcmanfm-as-root-from-context-menu/800/3
+
+
+

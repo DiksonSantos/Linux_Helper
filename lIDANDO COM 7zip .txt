@@ -1,0 +1,10 @@
+Lidando com 7zip.txt
+
+EXTRAÇÃO:
+7z e data.7z
+
+
+
+
+FONTE:
+https://www.digitalocean.com/community/tutorials/install-7zip-ubuntu

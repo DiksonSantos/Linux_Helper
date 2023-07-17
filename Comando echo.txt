@@ -1,0 +1,14 @@
+echo "# Geek-Git_01" >> README.md
+
+
+Comando "echo" Cria um arquivo de texto , já com um conteudo dentro.
+
+
+echo "# Texto Dentro do Arquivo de Texto.md" >> README.md
+
+
+
+
+OPÇÕES PARA O COMANDO ECHO:
+
+https://guialinux.uniriotec.br/echo/

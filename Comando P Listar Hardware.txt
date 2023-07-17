@@ -1,0 +1,15 @@
+Comandos Para Listar Todo o hardware da Ma  uin:
+
+(se precisar instalar o visualizador):  -> sudo apt install lshw
+
+
+#Mostra Tudo:
+lshw
+
+
+Mostra muitas informações:
+lspci
+
+
+Constou a HD Graphis ainda esta ativa (Junto com a Nvidia provavelmente):
+lspci | grep VGA  

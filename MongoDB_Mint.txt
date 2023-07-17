@@ -1,0 +1,24 @@
+wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+
+echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+
+sudo rm /etc/apt/sources.list.d/impish-security.list
+
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+sudo dpkg -i ./libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+sudo rm -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+
+sudo apt-get update
+
+sudo apt-get install libssl1.1
+
+sudo apt install mongodb-org
+
+sudo systemctl start mongod
+
+sudo systemctl enable mongod
+
+mongo
+

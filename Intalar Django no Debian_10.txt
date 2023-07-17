@@ -1,0 +1,62 @@
+
+Install Django on Debian 10
+1) Install Python and PIP3 on Debian 10
+Django is a Python framework so make sure it is installed. On the other hand, Django is easily installable if we use PIP. So, the first step is to install them both.
+
+To do this, open a Terminal session and run the following:
+
+:~$ sudo apt install python3 python3-pip
+1.- Install Python and PIP on Debian 10
+1.- Install Python and PIP on Debian 10
+At the end of the installation, you can check the installed version of PIP with the following command:
+
+:~$ pip3 -V
+pip 18.1 from /usr/lib/python3/dist-packages/pip (python 3.7)
+2) Install Django on Debian 10
+Once PIP is installed, you can start installing Django. It’s really simple, just use the following command:
+
+:~$ sudo pip3 install Django
+2.- Install Django on Debian 10
+2.- Install Django on Debian 10
+Then, check the installed version.
+
+:~$ django-admin --version
+2.2.4
+So, Django is ready to create a new project.
+
+3) Create a new Django project
+Now we can create new projects to start working with Django. To do this, we first choose a destination folder. In my case, I will choose /var/www/ as an example. Inside it, I will create a new project called example.
+
+:~$ cd /var/www/
+:~$ sudo django-admin startproject example
+Next, navigate into the example folder and migrate to set the initial configuration.
+
+:~$ cd example 
+:~$ sudo python3 manage.py migrate
+3.- Creating a new Django project
+3.- Creating a new Django project
+Also, you have to create the superuser to manage the project.
+
+:~$ sudo python3 manage.py createsuperuser
+4.- Creating the new super user for Django on Debian 10
+4.- Creating the new superuser for Django on Debian 10
+As you can see, it only requires a username, email, and password. If you do not type any username, it will take root as the superuser.
+
+The next step is to edit the project configuration file to make it accessible from any computer. This is vital if you work remotely on a network computer.
+
+So, open the following file using nano.
+
+:~$ sudo nano example/settings.p
+And edit the following entry:
+
+ALLOWED_HOSTS = ['COMPUTER_IP_WHICH_IS_RUNNING_DJANGO']
+5.- Edit the configuration file
+5.- Edit the configuration file
+Next, serve the project:
+
+:~$ sudo python3 manage.py runserver 0.0.0.0:8000
+6.- Running the project
+6.- Running the project
+
+
+https://www.osradar.com/install-django-on-debian-10/

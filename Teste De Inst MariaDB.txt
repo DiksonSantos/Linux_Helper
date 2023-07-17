@@ -1,0 +1,8 @@
+https://linuxize.com/post/how-to-install-mariadb-on-debian-10/
+
+
+Usei o Debian XFCE Virtual Para Testar
+
+
+Fui até o comando :
+sudo apt install mariadb-server

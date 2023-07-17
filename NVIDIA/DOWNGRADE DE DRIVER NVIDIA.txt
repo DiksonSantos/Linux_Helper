@@ -1,0 +1,40 @@
+DOWNGRADE DE DRIVER NVIDIA
+
+# LISTA DRIVERS INSTALADOS:
+
+apt list '*nvidia-driver*'
+
+# APAGUE AS CHAVES GPG:
+
+/usr/share/keyrings/nvidia-drivers.gpg
+
+/etc/apt/sources.list.d/nvidia-drivers.list
+
+
+# REMOVE TUDO (Comprovado)
+
+sudo apt-get purge '*nvidia*'
+
+# ESCOLHA UM DRIVER E INSTALE :
+
+Ex;
+sudo apt install nvidia-driver-470-server
+
+
+FONTE:
+https://www.reddit.com/r/pop_os/comments/r1ofn7/how_do_you_downgrade_nvidia_driver/
+
+
+
+
+# COMO REINICIAR O XORG:
+
+sudo service gdm3 restart
+
+
+# COMO DESINSTALAR O CUDA TOOL-KIT
+
+/usr/local/cuda/bin/cuda-uninstaller
+
+FONTE:
+https://www.if-not-true-then-false.com/2021/install-nvidia-cuda-toolkit-on-ubuntu-debian-linux-mint/2/

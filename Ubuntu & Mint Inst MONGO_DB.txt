@@ -1,0 +1,4 @@
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian/
+
+
+A instalação para Ubuntu da certo no MINT tbm.

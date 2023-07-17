@@ -1,0 +1,69 @@
+
+
+
+
+
+No Synaptic, procure e Instale:
+
+
+blueman   -> E seus componentes como (bluez etc...) {Vão ser selecionados automaticamente}
+
+qml-module-org-kde-bluezqt
+
+qml-module-qtbluetooth
+
+
+TUTORIAL:
+https://youtu.be/8f4YwAD06IY
+
+
+
+
+CASO PRECISE CONFERIR SE TODAS AS DEPENDENCIAS FORAM INSTALADAS:
+
+dependencias: 
+bluetooth, gnome-bluetooth, pulseaudio-module-bluetooth, libgnome-bluetooth13,
+libqt5bluetooth5, libqt5bluetooth5-bin, bluez-cups, *?bluez-dbg*, libbluetooth3,
+bluez, *blueztools*, libbluetooth3dbg, bludevil, blueman
+
+
+CHECK:
+systemctl status bluetooth**
+sudo systemctl status bluetooth.service
+
+___________________________________________
+
+
+
+ADENDOS 23-12-22
+
+sudo apt install bluez*
+
+
+_____
+
+O que resolve pra mim é o seguinte é editar o arquivo /etc/modprobe.d/blacklist.conf e adicionar essa linha no final dele: blacklist acer_wmi
+
+Depois rodar esse comando comando:
+
+    sudo update-initramfs -c -k all
+
+Tenta reiniciar e o bluetooth deve funcionar.
+
+
+12-05-23 (Desespero)
+https://raspberrypi.stackexchange.com/questions/40839/sap-error-on-bluetooth-service-status
+
+
+__________________________________________
+
+
+# BUG "Falha de Conexão: br-connection-profile-unavailable"
+
+https://unix.stackexchange.com/questions/703088/bluetooth-headset-unable-to-connect-org-bluez-error-failed-br-connection-profil
+
+
+https://www.linuxquestions.org/questions/linux-hardware-18/br-connection-profile-unavailable-4175720918/
+
+RESOLVEU (07-06-23)
+https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-pulseaudio-ubuntu-2204/

@@ -1,0 +1,3 @@
+sudo update-icon-caches /usr/share/icons/*
+
+kbuildsycoca5

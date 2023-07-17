@@ -1,0 +1,82 @@
+Instrucções fidedignas de Instalação do Python-3.7          :
+
+At writing time of this article Python 3.7.3 latest stable version of 3.7 series is available to install. This article will help you to install Python 3.7.3 on Ubuntu and LinuxMint operating system. You can visit here to read more about Python releases.
+
+Step 1 – Prerequsiteis
+Use the following command to install prerequisites for Python before installing it.
+
+sudo apt-get install build-essential checkinstall
+sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev \
+    libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+Step 2 – Download Python 3.7
+Download Python using following command from python official site. You can also download latest version in place of specified below.
+
+cd /usr/src
+sudo wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz
+Now extract the downloaded package.
+
+sudo tar xzf Python-3.7.3.tgz
+Step 3 – Compile Python Source
+Use below set of commands to compile Python source code on your system using altinstall.
+
+cd Python-3.7.3
+sudo ./configure --enable-optimizations
+sudo make altinstall
+
+## make altinstall is used to prevent replacing the default python binary file /usr/bin/python.##
+
+Step 4 – Check Python Version
+Check the latest version installed of python using below command
+
+python3.7 -V
+
+
+
+
+https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
+
+
+_______________________________
+
+INSTALAÇÃO DO PYCHARM
+
+1-Baixe no site:
+https://www.jetbrains.com/pycharm-edu/download/download-thanks.html?platform=linux
+
+2-Com o Terminal, Va ate a pasta 'bin' dentro de Pycharm.. e digite ./pysharm.sh  (Ou ./ antes do arquivo com final SH).
+
+3- Crie um lançador para o arquivo .SH (na area de trabalho).
+
+4- Encontrei o caminho para o Interpretador do Python 3.7.4 no Linux, mas deu pau, então;
+O Caminho é o Seguinte -> /usr/local/bin/    "Dentro desta ultima tem alguns arquivos Python3.7, é um deles.
+É possivel saber onde esta o interpretador usando o comando -> which python3.7  (3.7 pode ser qualquer versão...)
+
+5- Baixei um programinha chamado Zlib em:
+https://sourceforge.net/projects/libpng/files/zlib/1.2.11/zlib-1.2.11.tar.xz/download
+INSTRUÇÕES DE INSTALAÇÃO DO ZLIB:
+https://cercal.io/baixando-e-instalando-a-biblioteca-zlib/
+
+E, segui as seguintes instruçoes:
+
+Here are the commands to download, unpack, and install Python from source:
+curl -OL http://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+tar xzvf Python-2.7.11.tgz
+cd Python-2.7.11
+./configure --prefix=/usr/local --enable-shared
+make
+make install
+
+
+________________________________________________________________
+
+Desinstalar programa:
+
+-Logar como root
+-apt-get purge "+Nome_Do_Programa "
+
+________________________________________________________________
+
+Resolveu o problema de incompatibilidade entre PyCharm e Python3.7
+
+(Fiz no Debian 10)
+https://superuser.com/questions/1319047/cant-install-virtual-interpreter-in-pycharm-in-linux

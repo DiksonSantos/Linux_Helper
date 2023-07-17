@@ -1,0 +1,68 @@
+Na pasta dos arquivos .py  OU no prompt do PyCharm (Já posicionado na pasta dos arquivos .py):
+
+
+git init
+git status
+
+
+Para incluir TODOS OS ARQUIVOS digite um Ponto FInal . Se quiser subir apenas UM arquivo em especifico. Digite o nome
+do mesmo (O ponto final deve ter UM Espaço de Distancia):
+
+git add . 
+
+
+
+git commit -m "Primeiro_Commit"
+
+
+
+
+AGORA ENTRE NO SITE DO GITHUB E CRIE UM REPOSITORIO.
+ONDE ESTIVER ESCRITO 
+
+
+..or push an existing repository from the command line:
+"git remote add origin https://......."  
+
+Copie (onde começa com git) e cole no temrinal do PyCharm, ou no Terminal comum (porém posicionado na pasta onde se encontram os arquivos .py a serem subidos).
+_______________________________________________________________________________________________________________________
+
+AGORA CONFIGURE O PYCHARM PARA FAZER COMMIT & PUSH DAS ALTERAÇÕES FEITAS NOS .PY
+
+1 - In the Settings/Preferences dialog Ctrl+Alt+S, select Version Control.
+
+2 - The Version Control page shows a list of project directories and version control systems associated with them (if no directories have been added, the list only contains the project root).
+
+3 - Click the Add button icons.welcome.createNewProject.svg on the right.
+
+4 - In the Add VCS Directory Mapping dialog that opens, select the Directory option. Type the path to the directory that you want to associate with a version control system, or click the Browse button the Browse button and select the directory in the dialog that opens.
+
+5 - From the VCS list, select the version control system that will be used to control the files in this directory. Note that this list only contains the version control systems for which the corresponding plugins are currently enabled.
+
+6 - Optionally, click the Configure VCS button that allows you to specify the settings for the selected version control system. The same settings are also available under the Version Control settings node.
+
+7 - Click OK to save the mapping and return to the Version Control page.
+
+_______________________________________________________________________________________________________________________
+
+CASO ENFRENTE PROBLEMAS TENTE USAR ISTO:
+Make new repo and push the existing code again to the new repo
+
+git init doesn’t initialize if you already have a .git/ folder in your repository. So, for your case, do -
+
+(1) rm -rf .git/
+
+(2) git init
+
+(3) git remote add origin https://github.com/DiksonSantos/Curso_Do_Guanabara      
+
+(4) git commit -m “Commit message”
+
+(5) git push -f origin master
+
+Note that all git configs like remote repositories for this repository are cleared in step 1. So, you have to setup all remote repository URLs again.
+
+Also, take care of the -f in step 5 : The remote already has some code base with n commits, and you’re trying to make all those changes into a single commit. So, force-pushing the changes to remote is necessary.
+
+
+________________________________________________________________________________________________________________________

@@ -1,0 +1,41 @@
+
+
+Instalando Cinnamon no Ubuntu 18.04 LTS
+
+
+Para instalar o ambiente Cinnamon no Ubuntu 18.04 LTS, abra um terminal e insira os seguintes comandos:
+
+sudo add-apt-repository ppa:embrosyn/cinnamon
+$ sudo apt-get update
+$ sudo apt-get install cinnamon
+
+
+#GERENCIADOR DE LOGIN:
+$sudo apt install gdm3
+
+
+
+#Nunca se esqueça do comando:
+tasksel
+
+
+
+#INSTALAÇÃO MINIMA:
+
+sudo apt-get install cinnamon-core --no-install-recommends
+
+_____________________________________________________________________________
+
+
+apt show cinnamon cinnamon-desktop-environment cinnamon-core
+Basically you can say that cinnamon is a part of cinnamon-core which itself is a part of cinnamon-desktop-environment.
+
+cinnamon is the most basic and minimal Cinnamon installation you can get.
+
+cinnamon-core is a minimal Cinnamon desktop, but it also includes few more packages than cinnamon, like the e.g. file manager nemo.
+
+cinnamon-desktop-environment is a full desktop environment suite which also includes standard applications like a browser, mail client, document viewer, editor, picture viewer, multimedia viewer, etc...
+
+
+FONTE:
+https://askubuntu.com/questions/799751/whats-the-difference-between-the-apt-packages-cinnamon-and-cinnamon-desktop

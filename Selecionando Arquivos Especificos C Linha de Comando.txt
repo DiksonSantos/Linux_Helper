@@ -1,0 +1,37 @@
+Linha de Comando.
+Selecionar trechos de letras especificos dos nomes de arquivos de uma pasta
+
+Ex:
+Para selecionar todos os arquivo .txt & PDFs de uma Pasta com Varios tipos de Extensão:
+
+
+ls /pasta/*.{txt, pdf}
+
+
+
+Para Copiar:
+cp /pasta/*.{txt, pdf} /pasta2/
+
+Copia todos os txt & pdf da /pasta Para /pasta2
+
+
+
+
+COnteudo retirado da Aula 8 Do Guanabara (Linux).
+
+METODOS A CIMA PODRES -> NÃO CONSEGUI FAZER FUNCIONAREM. 
+
+_____________________________________________________________________________
+
+
+
+METODO QUE EU CONSEGUI FAZER FUNCIONAR:
+
+kate Curso_Do_GuanaBara/*.py
+
+dikson01@notebook-debian:~/PycharmProjects$ kate Curso_Do_GuanaBara/*.py
+____
+Abrir Mais de Um Tipo de Arquivo ao mesmo Tempo:
+
+dikson01@notebook-debian:~/PycharmProjects$ vlc Curso_Do_GuanaBara/*.mp3, *.mp4
+

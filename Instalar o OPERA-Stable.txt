@@ -1,0 +1,24 @@
+Como instalar a mais recente versão estável do Opera no Linux:
+
+Como instalar o Opera no Ubuntu, Debian, Mint e derivados via repositório
+
+
+
+sudo sh -c 'echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
+
+Passo 3. Adicione a chave do repositório;
+
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
+
+Passo 4. Atualize o gerenciador de pacotes com o comando:
+
+sudo apt-get update
+
+Passo 5. Se quiser o Opera estável, use o comando;
+
+sudo apt-get install opera-stable
+
+
+
+
+https://www.edivaldobrito.com.br/instalar-opera-no-linux/

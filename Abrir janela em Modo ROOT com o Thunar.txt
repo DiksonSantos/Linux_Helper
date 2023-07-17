@@ -1,0 +1,7 @@
+Abrir janela em Modo ROOT com o Thunar:
+
+
+
+Abra um terminal na pasta e use:
+
+sudo -i thunar

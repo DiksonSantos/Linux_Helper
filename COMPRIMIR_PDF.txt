@@ -1,0 +1,4 @@
+Converter ou COMPRIMIR  arquivos PDF em Tamanho MENOR :
+
+
+convert arquivo.pdf -resize 50% saida.pdf 

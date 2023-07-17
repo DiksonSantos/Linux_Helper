@@ -1,0 +1,36 @@
+# ALGUNS SITES NÃO CONECTAM.txt
+
+Adicionei a linha " mtu 1500" no arquivo "/etc/network/interfaces"  (em 22-06-23)
+
+________________________________________________
+
+Alterei o arquivo "/etc/resolv.conf" (em 22-06-23) e deixe como :
+
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+O Conteudo padrão deste arquivo (aqui no caso) é o;
+
+nameserver 192.168.15.1
+
+FONTEs:
+https://www.dotsharp.com.br/linux/como-configurar-mtu-placa-rede-linux.html
+https://www.vivaolinux.com.br/topico/Navegadores/Ola-13
+
+Como alterar para o padrão Google
+https://linuxdicasesuporte.blogspot.com/2021/07/nao-consigo-navegar-em-alguns-sites-no.html
+
+__________________________________________________________________________-
+
+VALORES DE "MTU"
+
+Para uma rede com cabo, ou seja, ethernet, o valor do MTU deve ser de 1500 bytes. Já para a conexão via WiFi, o número exato deve ser 1492 bytes.
+
+FONTE:
+https://www.minhaconexao.com.br/blog/internet/mtu#:~:text=Sendo%20assim%2C%20%C3%A9%20importante%20saber,exato%20deve%20ser%201492%20bytes.
+
+
+__________________________________________________________________________-
+
+
+

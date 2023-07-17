@@ -1,0 +1,74 @@
+install MongoDB Server & client on Debian 11
+
+During this article, the official repository of MongoDB is available for Debian 11 Bullseye, hence we can use the same.
+1. Add MongoDB Repository on Debian 11
+
+As we know the MongoDB packages are not available to install directly from the base repository of Debian 11 or 10., therefore, we need to add the official one offered by the developers of this NoSQL database.
+
+echo "deb http://repo.mongodb.org/apt/debian bullseye/mongodb-org/6.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+
+2. Integrate the MongoDB GPG key
+
+To ensure the packages we will receive to install this database on our Linux are from an authentic source. Add the GPG signed key by the developers of the Database server.
+
+curl -sSL https://www.mongodb.org/static/pgp/server-6.0.asc  -o mongoserver.asc
+
+gpg --no-default-keyring --keyring ./mongo_key_temp.gpg --import ./mongoserver.asc
+
+gpg --no-default-keyring --keyring ./mongo_key_temp.gpg --export > ./mongoserver_key.gpg
+
+sudo mv mongoserver_key.gpg /etc/apt/trusted.gpg.d/
+
+ 
+3. Run system update
+
+On your Debian 11 or 10 command terminal run the system update command to make sure all the existing packages are up to date.
+
+sudo apt update
+
+ 
+4. Install MongoDB 6.0 on Debian 11
+
+That’s it. We have configured already what we need to install “database-tools, mongosh, extra tools, mongos; database server and shell” on our Debian 11 or 10 Linux.
+
+Hence, just run a simple command:
+
+sudo apt install mongodb-org
+
+
+
+5. Start and Enable MongoDB service
+
+Once the installation is completed, let’s enable and also start the service of the Database server, so that we don’t need to run it again and again with system boot.
+
+sudo systemctl enable --now mongod
+
+to check the status:
+
+sudo systemctl status mongod
+
+
+# CONFIGURA MONGODB P/ CARREGAR DURANTE A INICIALIZAÇÃO DO LINUX:
+
+systemctl enable mongod.service
+
+OU
+
+systemctl desable mongod.service
+
+# INICIAR PELO SHELL / PROMPT / TERMINAL
+
+mongosh
+
+
+
+FONTE:
+https://www.how2shout.com/linux/install-mongodb-6-0-server-on-debian-11-bullseye/
+
+_________________________________________________________________________________________________________
+
+
+# INTERFACE GRÁFICA (MONGO COMPASS):
+
+https://www.mongodb.com/try/download/compass2
+

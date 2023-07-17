@@ -1,0 +1,61 @@
+
+
+.VMDK para .QCOW2 :
+
+
+qemu-img convert -f vmdk vmware_image.vmdk -O qcow2 kvm_image.qcow2
+
+FONTE:
+https://support.hpe.com/hpesc/public/docDisplay?docId=c02946277&docLocale=en_US
+
+
+VDI to .QCOW2 :
+qemu-img convert -f vdi Zorin_OS_16.vdi -O qcow2 Zorin_OS_16.qcow2
+
+OUTRAS FORMAS DE CONVERSÃO:
+
+
+VDI Image to RAW:
+
+$ VBoxManage clonehd --format RAW /home/james/VirtualBox\ VMs/debian/debian.vdi debian_10_Server.img
+OR
+$ vboxmanage clonehd --format RAW /home/james/VirtualBox\ VMs/debian/debian.vdi debian_10_Server.img
+
+
+
+RAW Image Disk Format to KVM Format:
+
+$ qemu-img convert -f raw debian_10_Server.img -O qcow2 debian_10_Server.qcow2
+
+
+
+FONTE:
+https://www.tecmint.com/migrate-virtualbox-vms-into-kvm-vms/
+
+
+____________________________________________________________________________
+
+
+# COMANDO QUE USEI PARA CONV DE ".VHD"  PARA ".qcow2"  :
+
+qemu-img convert -f vpc Debian.vhd -O qcow2 Debian_11_Mysql_LXDE_Home.qcow2
+
+
+# TABELA DE CONVERSÃO PARA MAIS POSSIBILIDADES & FORMATOS:
+
+Siga a fonte a baixo;
+
+FONTE:
+https://docs.openstack.org/image-guide/convert-images.html
+
+
+
+__________________________________________________________________________________
+
+
+# CONVERTER ".OVA" PARA 'QCOW2' :
+
+1 - Use o Engrampa para extrair somente o arquivo '.vmdk' de dentro do .OVA e o converta.
+
+FONTE:
+https://www.vinchin.com/en/blog/convert-ova-to-qcow2.html

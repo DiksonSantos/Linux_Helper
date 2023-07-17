@@ -1,0 +1,9 @@
+ISSO MOSTRA O "PID" DE CADA PROCESSO ALÉM DO USO DE RECURSOS DE HARDWARE:
+
+
+INSTALL:
+sudo pip install glances[gpu]
+
+
+To launch: 
+sudo glances

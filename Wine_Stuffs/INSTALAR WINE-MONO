@@ -1,0 +1,35 @@
+sudo apt-get install mono-complete
+
+
+
+FONTE:
+https://www.dedoimedo.com/computers/wine-dotnet-mono.html
+
+
+
+Wine can use a Windows build of Mono to run . NET applications.
+
+
+_____________________________________________
+# ALL IN ALL
+sudo apt install wine mono-complete wine32
+
+
+sudo apt install wine --no-install-recommends
+
+does not install wine32, while
+
+sudo apt install wine --install-recommends
+sudo apt install wine64 --install-recommends
+
+does, if i386 architecture is added.
+
+OU
+
+sudo apt install -t bullseye-backports wine64 --install-recommends
+
+sudo apt install -t bullseye-backports wine --install-recommends
+
+_____________________________________________
+# WINE32 ( BACKPORTS )
+sudo apt install -t bullseye-backports wine32

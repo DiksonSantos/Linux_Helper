@@ -1,0 +1,19 @@
+Yaru Tema Dark para o Cinnamon
+
+BAIXE O ARQUIVO 
+
+wget -c https://www.dropbox.com/s/sbbpdap72m5agrf/yaru.zip?dl=0 -O yaru.zip
+
+
+Extraia nas devidas pastas ocultas dentro da Pasta HOME.
+
+Vá em configurações , Temas , E mude icone e tudo mais. 
+
+
+Yaru em japones significa 'comer alguém' o mesmo que fuck em ingles.
+
+
+
+FONTE:
+
+https://info.wsouza.com.br/2020/03/tema-yaru-do-ubuntu-no-debian-e-em-outras-distribuicoes-linux.html

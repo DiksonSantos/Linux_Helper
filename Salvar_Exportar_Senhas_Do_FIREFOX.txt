@@ -1,0 +1,27 @@
+Passo 1: Modelo about:config na barra de endereços do Firefox e pressione o botão Enter.
+
+Passo 2: Ao chegar na tela a seguir, clique no botão Accept the Risk and Continue. Esta ação abrirá a página Configuração do arquivo.
+
+Etapa 3: Na caixa de nome de preferência de pesquisa, copie e cole o nome de preferência a seguir e pressione a tecla Enter para pesquisar o mesmo.
+
+signon.management.page.fileImport.enabled
+
+Passo 4: Verifique se a opção está habilitada. Se sim, você verá o True ao lado do nome da preferência. Se desabilitado, um False aparecerá em seu lugar.
+
+E se a preferência estiver desativada (se você vir a tag False), clique no botão de alternância no final do nome da preferência para ativar o Import from a file.
+
+___
+
+
+Para importar senhas, consulte as instruções abaixo.
+Importar senhas de um arquivo CSV para o Firefox
+
+Passo 1: Inicie o navegador Firefox. Clique no Menu e depois clique no Logins and Passwords para abrir a página de senhas.
+
+Alternativamente, você pode digitar about:logins na barra de endereço e, em seguida, pressione a tecla Enter para abrir rapidamente a mesma página.
+
+
+
+
+FONTE:
+https://howpedia.net/pt-br/como-importar-senhas-para-o-firefox-de-um-arquivo-csv

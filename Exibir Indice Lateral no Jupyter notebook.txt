@@ -1,0 +1,24 @@
+Aqui está um passo a passo para configurar a extensão nbextensions e exibir a tabela de conteúdos:
+
+Instale a extensão nbextensions. Você pode instalar usando o comando:
+
+COMANDO:
+pip install jupyter_contrib_nbextensions
+
+Habilite a extensão nbextensions. Execute o seguinte comando no terminal:
+COMANDO:
+jupyter contrib nbextension install --user
+
+Ative a extensão Table of Contents. Execute o seguinte comando no terminal:
+
+
+COMANDO:
+jupyter nbextension enable toc2/main
+
+Reinicie o servidor do Jupyter Notebook para aplicar as alterações.
+
+Após seguir essas etapas, você deve ser capaz de ver a tabela de conteúdos no lado esquerdo do Jupyter Notebook. A tabela de conteúdos será gerada automaticamente com base nos títulos e cabeçalhos dos notebooks.
+
+
+FONTE:
+Chat-GPT

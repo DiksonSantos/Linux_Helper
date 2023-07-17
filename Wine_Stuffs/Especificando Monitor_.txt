@@ -1,0 +1,12 @@
+DISPLAY=:0 wine ...
+
+DISPLAY=:0 wine app.exe
+
+
+
+Mais informações no Memo "Multiplos Monitores"
+
+
+
+FONTE
+https://unix.stackexchange.com/questions/253810/how-to-start-application-in-wine-from-a-terminal-window

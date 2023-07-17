@@ -1,0 +1,16 @@
+sudo apt-get install libsdl2-mixer-2.0-0 libsdl2-image-2.0-0 libsdl2-ttf-2.0-0
+
+and on Lubuntu 18.04 minimal install and also on Ubuntu 16.04.6, you have to add one lib for lua
+
+sudo apt-get install liblua5.3-0
+
+
+
+
+-> Instalei estas LIBs para tentar rodar o TombRaider 3 Nativo de Linux em 15-03-23.  Resolveu o problema das Libs, mas mesmo assim o jogo teve outro problema com o Vulkan e não funcionou. 
+	Mas resolvi deichar as LIBs instaladas no sistema pelo fato de que algum jogo no futuro possa depender delas. 
+
+
+
+FONTE:
+https://github.com/CleverRaven/Cataclysm-DDA/issues/30931

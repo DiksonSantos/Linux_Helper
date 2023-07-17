@@ -1,0 +1,19 @@
+Continue a partial download
+
+If you're downloading a very large file, you might find that you have to interrupt the download. With the --continue (-c for short), wget can determine where the download left off and continue the file transfer. That means the next time you download a 4 GB Linux distribution ISO you don't ever have to go back to the start when something goes wrong.
+
+
+wget -c
+
+https://opensource.com/article/21/10/linux-wget-command
+
+
+________________________________________________________________
+
+CURL:
+
+curl -O
+
+curl -O https://github.com/felipesf05/mdrepo/blob/master/big_five_personality/five_personality_clusters.ipynb
+
+

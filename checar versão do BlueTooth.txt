@@ -1,0 +1,23 @@
+checar versão do BlueTooth
+
+hciconfig -a
+
+| HCI version | Bluetooth version |
+|-------------|-------------------|
+| 0 (0x0)     | 1.0b              |
+| 1 (0x1)     | 1.1               |
+| 2 (0x2)     | 1.2               |
+| 3 (0x3)     | 2.0               |
+| 4 (0x4)     | 2.1               |
+| 5 (0x5)     | 3.0               |
+| 6 (0x6)     | 4.0               |  *
+| 7 (0x7)     | 4.1               |
+| 8 (0x8)     | 4.2               |
+| 9 (0x9)     | 5.0               |
+| 10 (0xa)    | 5.1               |
+| 11 (0xb)    | 5.2               |
+| 12 (0xc)    | 5.3               |
+
+
+FONTE:
+https://askubuntu.com/questions/591803/how-to-check-bluetooth-version-on-my-laptop

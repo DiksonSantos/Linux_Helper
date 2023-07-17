@@ -1,0 +1,28 @@
+NVIDIA - CUDA-TOOLKIT Mais Moderno/recente
+
+wget https://developer.download.nvidia.com/compute/cuda/repos/debian11/x86_64/cuda-keyring_1.0-1_all.deb
+
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+
+sudo add-apt-repository contrib
+
+sudo apt-get update
+
+sudo apt-get -y install cuda
+
+
+FONTE:
+https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Debian&target_version=11&target_type=deb_network
+
+
+____________________________________________________________________________________
+
+
+Como corrigir o erro ‘add-apt-repository not found’ no Ubuntu e derivados
+
+
+sudo apt-get install software-properties-common -y
+
+
+FONTE:
+https://www.edivaldobrito.com.br/corrigir-o-erro-add-apt-repository-not-found-no-ubuntu/

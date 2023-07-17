@@ -1,0 +1,10 @@
+
+GUVCVIEW  
+
+
+wget -c http://ftp.de.debian.org/debian/pool/main/g/guvcview/guvcview_2.0.6+debian-1_amd64.deb
+
+
+
+
+09/06/23

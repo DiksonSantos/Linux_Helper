@@ -1,0 +1,46 @@
+# NÃO APARECE O USO DE PROCESSAMENTO DA GPU NO NVIDIA-SETTINGS   (Não surtiu efeito no Totem - Não usa GPU)
+
+optirun -b primus vlc Filme.mkv
+
+
+
+
+# FICOU MAIS FLUIDO & APARECE O USO DE PROCESSAMENTO DA GPU NO NVIDIA-SETTINGS   (Totem Mais Fluido)
+
+primusrun totem filme.mkv
+
+
+
+FONTE:
+https://askubuntu.com/questions/669011/what-is-the-difference-between-optirun-and-primusrun
+
+
+
+______________________________________________________________________________________
+
+
+Qual a diferença de usar "optirun" e "optirun -b primus" no Linux?
+
+O comando "optirun" é usado para iniciar um aplicativo com o acelerador de GPU dedicado NVIDIA Optimus. O comando "optirun -b primus" é usado para iniciar um aplicativo com o acelerador de GPU dedicado NVIDIA Optimus e comprimindo a imagem de saída de vídeo através do Primus. O Primus permite que a CPU seja usada para processar os gráficos, enquanto a GPU se concentra em processar os efeitos de pós-processamento, o que resulta em um melhor desempenho geral.
+
+
+
+
+# 'PRIMUSRUN' É MAIS MODERNO QUE 'OPTIRUN', E É MELHOR PARA JOGOS DE WINDOWS;
+
+Bumblebee is the current workaround for using Nvidia optimus with linux.
+
+At the heart of bumblebee has been VirtualGL which is now being superseded by Primus.
+
+If you have Bumblebee you'll know that to use your discrete card you need to invoke optirun application from the command line and then after a short wait your application runs using the VirtualGL backend.
+
+Unfortunately the VirtualGL backend does not play nice with some applications, particularly Wine and Crossover.
+
+Primus is the replacement of optirun and it all it means to the end user is that instead of using optirun you now invoke an app with primusrun application.
+
+The developers of Bumbleebee highly recommend primus over VirtualGL because there are a host of benefits.
+
+One benefit is that it works perfectly with Wine and Crossover meaning You can play your Windows games on your discrete card instead of having to use your integrated one and has substantially better performance too.
+
+FONTE:
+https://askubuntu.com/questions/669011/what-is-the-difference-between-optirun-and-primusrun

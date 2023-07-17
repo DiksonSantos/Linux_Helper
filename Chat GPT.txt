@@ -1,0 +1,9 @@
+CHAT_GPT
+https://chat.openai.com/chat
+
+SIMPLIFICADO;
+https://platform.openai.com/playground
+
+
+FOTOS/IMAGENS:
+https://labs.openai.com/

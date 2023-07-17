@@ -1,0 +1,19 @@
+Comando Que Resolveu o problema :
+
+"Unable to download updates from "odrs.gnome.org": failed to download https://odrs.gnome.org/1.0/reviews/api/ratings: Service Unavailable: <html>"
+
+
+COMANDO:
+sudo apt autoremove gnome-software && sudo apt install gnome-software
+
+
+
+FUNCIONOU PARA RESOLVER TAMBÉM O ERRO:
+Não foi possivel baixar atualizações de firmware de fwupd: failed to download http://cdn.fwupd.org/downloads/
+
+
+
+FONTE:
+https://askubuntu.com/questions/1144539/unable-to-download-updates-from-odrs-gnome-org-failed-to-download-https-odr
+
+

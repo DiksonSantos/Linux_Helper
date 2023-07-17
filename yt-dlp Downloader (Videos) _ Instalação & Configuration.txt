@@ -1,0 +1,88 @@
+
+
+# Baixar:
+git clone https://github.com/ytdl-patched/yt-dlp
+
+
+# Abrir:
+chmod +x yt-dlp.sh
+./yt-dlp.sh
+
+# Escolher/Ver formato(s) Para o video a ser Baixado:
+./yt-dlp.sh --list-formats https://www.youtube.com/shorts/7woe9GWpf4U
+
+
+
+# Escolhido - Baixar:
+./yt-dlp.sh -f 137 https://www.youtube.com/shorts/7woe9GWpf4U
+
+
+
+
+
+
+# LISTA DE FORMATOS:
+
+sb1 mhtml 25x45
+sb2 mhtml 48x27
+sb0 mhtml 50x90
+599 m4a   audio only
+600 webm  audio only
+139 m4a   audio only
+249 webm  audio only
+250 webm  audio only
+140 m4a   audio only            *
+251 webm  audio only
+17  3gp   176x144   
+597 mp4   82x144    
+160 mp4   82x144    
+133 mp4   136x240   
+598 webm  144x256   
+278 webm  144x256   
+134 mp4   202x360   
+18  mp4   202x360   
+242 webm  240x426   
+135 mp4   270x480   
+243 webm  360x640   
+22  mp4   406x720   
+136 mp4   406x720   
+244 webm  480x854   
+137 mp4   608x1080  
+247 webm  720x1280  
+
+
+
+
+# ATALHO:
+
+#!/usr/bin/env python3
+
+
+import subprocess
+import time
+import pyautogui
+
+time.sleep(1)
+#subprocess.call('gnome-terminal')
+subprocess.call('gnome-terminal --geometry=140x10 --working-directory=/home/dikson/Downloads/VideoDownloader', shell=True)
+
+ 
+
+
+
+time.sleep(1)
+pyautogui.write(" ./yt-dlp.sh --list-formats ")
+
+time.sleep(9)
+pyautogui.write(" ./yt-dlp.sh -f 140 ") # cole de novo o link agora para baixar em formato audio .m4a OU '140'
+
+
+_____________________
+
+
+
+# Criei um Atalho do executavel yt-dlp na mesma pasta onde quero que os videos sejam baixados.
+
+Ou Crie um atalhoa para ele em -> "/usr/bin/yt"  E baixe ele no diretorio que voce estiver (se conhecer os comandos dele como; -f 140  & --list-formats ...)
+
+

@@ -1,0 +1,5 @@
+mount -t ntfs-3g /dev/sdb1 /media/ -o force
+
+
+
+https://ubuntuforum-br.org/index.php?topic=63951.0

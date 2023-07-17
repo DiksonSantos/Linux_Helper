@@ -1,0 +1,5 @@
+sudo chown -R nomeuser:nomegrupo /diretório
+
+
+
+https://www.vivaolinux.com.br/topico/UbuntuBR/mudar-dono-e-grupo-de-varias-pastas-e-sub-pastas-de-uma-vez-so

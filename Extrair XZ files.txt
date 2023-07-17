@@ -1,0 +1,7 @@
+sudo apt-get install xz-utils
+
+unxz nome_do_arquivo.xz
+
+
+FONTE:
+https://plus.diolinux.com.br/t/como-extrair-arquivos-compactados-em-xz-no-linux/47127

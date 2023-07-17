@@ -1,0 +1,36 @@
+# RESOLVENDO O PROBLEMA:
+ "MESA-INTEL: warning: Performance support disabled, consider sysctl dev.i915.perf_stream_paranoid=0"
+
+
+#Este problema aparecia quando usava o comando:
+
+wine /opt/Swarm_Assault/Swarm_Assault.exe 
+
+
+#SOLUÇÃO:
+sudo /sbin/sysctl -q -w dev.i915.perf_stream_paranoid=0
+
+FONTE:
+https://forums.linuxmint.com/viewtopic.php?t=365743
+
+
+_________________________________________________________
+
+
+# Mensagem no Terminal ao usar WINE:
+ ALSA (snd_pcm_dmix_open) unable to open slave
+
+
+
+# SOLUÇÃO:
+create a file called /etc/modprobe.d/default.conf with this content:
+CODE: SELECT ALL
+
+options snd_hda_intel index=1
+
+Then reboot.
+
+
+# FONTE:
+https://forums.debian.net/viewtopic.php?t=123902
+_________________________________________________________

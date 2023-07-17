@@ -1,0 +1,9 @@
+sudo apt-mark hold PACKAGE
+
+Por exemplo, para impedir que o Firefox seja atualizado o comando é:
+
+sudo apt-mark hold firefox
+
+
+FONTE:
+https://diolinux.com.br/tutoriais/impedir-um-software-de-ser-atualizado.html

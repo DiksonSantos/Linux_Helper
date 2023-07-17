@@ -1,0 +1,27 @@
+# COMANDO NATIVO DO LINUX:
+stat Arquivo.pdf
+
+
+# Traz tambem informações de partições (data das ultimas modificações nelas)
+
+stat /dev/nvme0n1p3
+
+
+FONTE:
+https://www.lostsaloon.com/technology/how-to-view-all-details-or-metadata-of-a-file-in-linux-command-line/
+_____________________________________________________
+# FERRAMENTA DEDICADA  (Traz muito mais detalhes):
+# INSTALAÇÃO:
+sudo apt install exiftool
+
+
+
+# MODO DE USO
+
+exiftool signal-2023-01-16-050857.gif 
+
+
+
+
+FONTE
+https://unix.stackexchange.com/questions/243509/how-to-print-metadata-of-a-file-with-the-help-of-command-line

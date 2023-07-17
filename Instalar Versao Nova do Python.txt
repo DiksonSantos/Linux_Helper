@@ -1,0 +1,27 @@
+
+
+
+https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tgz
+
+
+
+
+Configurar o software: Navegue até o diretório recém-criado que contém o código-fonte extraído. Geralmente, há um arquivo chamado configure nesse diretório. Execute o seguinte comando para configurar o software:
+
+bash
+Copy code
+./configure
+Esse comando verifica as dependências do sistema, configura as opções de compilação e cria os arquivos necessários para a compilação.
+
+Compilar o software: Depois de configurar o software, execute o comando make para iniciar a compilação:
+
+go
+Copy code
+make
+Esse comando compila o código-fonte e gera os executáveis e bibliotecas necessários.
+
+Instalar o software: Após a conclusão do processo de compilação, use o comando make install para instalar o software no sistema:
+
+go
+Copy code
+sudo make install

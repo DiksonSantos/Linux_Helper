@@ -1,0 +1,66 @@
+METODO 2021:
+
+USE (Para ser super user):
+sudo -i
+
+USE O COMANDO ECHO PARA INCLUIR A LINHA NO ARQUIVO/TEXTO DE CONFIGURAÇÃO 'GRUB': 
+echo "GRUB_BACKGROUND=/usr/share/grub/back.jpg">> /etc/default/grub
+
+ENDEREÇO DA IMAGEM:
+/usr/share/grub/
+
+NOME DA IMAGEM\FOTO:
+back.jpg
+
+-> Formatos png Também São aceitos.
+
+ENDEREÇO DO SCRIPT DE CONFIGURAÇÃO DO GRUB:
+/etc/default/grub 
+
+
+
+
+
+-> ECHO é o comando, o que esta entre "" é a linha que vai ser acrescentada ao texto de configuração do Grub,  o endereço deste texto fica depois das >> /etc/default...
+
+
+
+PRA FINALIZAR USE (Como SU):
+sudo update-grub
+
+
+
+# DEBIAN 12 TODAS AS IMAGENS (GRUB ETC...)
+
+/usr/share/desktop-base/active-theme/grub
+
+/usr/share/desktop-base/active-theme/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+METODO DEFASADO:
+/usr/share/images/desktop-base/        'desktop-grub.png'
+
+Para atualizar Imagem:
+sudo update-grub
+
+

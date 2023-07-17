@@ -1,0 +1,35 @@
+
+# Se o atalho já existir em "~/.local/share/applications"  simplesmente edite ele mesmo (use o pluma):
+
+cp /usr/share/applications/totem.desktop ~/.local/share/applications
+
+pluma ~/.local/share/applications/totem.desktop
+
+Find the line that looks like Exec=totem %U
+
+Change it to be Exec=totem --enqueue %U
+
+
+
+FONTE:
+https://askubuntu.com/questions/43925/how-to-configure-movie-player-totem-to-append-to-playlist-instead-of-replacing
+
+
+
+!!!!
+Antes de apagar os aruqivos de video da Playlist -> Modifique o nome Deles ou da Pasta deles (se não os arquivos
+serão apagados de verdade !
+
+______________________________________________---
+
+# OUTRA SOLUÇÃO (MELHOR) !!
+
+Na pasta que contém os videos que você quer assistir em sequencia, use o comando:
+
+ls > PlayList_Nova.m3u
+
+Este comando vai por o nome de todos os arquivos da pasta num arquivo de PlayList de musicas (mas que também funciona com players de video). 
+
+# USE O COMANDO:
+
+optirun -b primus totem PlayList_Nova.m3u

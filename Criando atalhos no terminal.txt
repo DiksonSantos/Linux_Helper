@@ -1,0 +1,39 @@
+Criando atalhos no terminal.txt
+
+
+
+alias upgrade='sudo apt upgrade'
+
+alias update='sudo apt update'
+
+
+
+
+FONTE:
+https://youtu.be/k8SycT32-yA?list=TLPQMjkwMTIwMjOJmlZbYUiW3w
+
+__________________________________
+
+
+# SUBSTITUIR O "CAT" (COMMAND)
+
+sudo apt install bat
+
+alias cat='batcat'
+
+FONTE:
+https://www.makeuseof.com/bat-an-alternative-to-cat-command/
+
+
+__________________________________
+
+EXA vs LS
+
+exa --tree
+
+exa --tree --level=2
+
+alias ls='exa'
+
+FONTE:
+https://opensource.com/article/21/3/replace-ls-exa

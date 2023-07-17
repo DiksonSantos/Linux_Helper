@@ -1,0 +1,1 @@
+Linux: Open a terminal window. Enter these commands: conda update conda 

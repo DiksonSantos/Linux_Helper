@@ -1,0 +1,5 @@
+vboxmanage modifyvm ORIGNAL_NAME --name NEW_NAME
+
+
+FONTE:
+https://superuser.com/questions/788420/how-to-rename-a-virtualbox-virtual-machine-vm

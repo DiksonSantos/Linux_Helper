@@ -1,0 +1,26 @@
+
+
+
+chown -R dikson:dikson PycharmProjects/
+
+
+chown -> Comando muda 'proprietario' e/ou 'Grupo' 
+
+-R -> Aplica as mudanças também ás sub pastas e sub arquivos contidos 
+
+dikson:dikson  -> Propeietário:Grupo
+
+
+
+A pasta 'PycharmProjects' passa a pertencer ao proprietario & grupo dikson
+
+
+
+
+
+
+
+
+FONTE:
+http://www.bosontreinamentos.com.br/linux/07-comandos-chgrp-e-chown-alterar-proprietario-e-grupo-dos-arquivos-no-linux/
+

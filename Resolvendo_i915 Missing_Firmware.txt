@@ -1,0 +1,5 @@
+Installing the firmware-linux package solves the problem because firmware-linux depends on firmware-linux-nonfree which depends on firmware-misc-nonfree.
+
+
+FONTE:
+https://unix.stackexchange.com/questions/556946/possible-missing-firmware-lib-firmware-i915-for-module-i915

@@ -1,0 +1,21 @@
+
+
+Ver temperatura do Processador no Terminal:
+
+INSTALAÇÃO:
+sudo apt install hddtemp lm-sensors
+
+
+COMANDO:
+sensors
+
+
+FONTE:
+https://phoenixnap.com/kb/linux-cpu-temp
+
+
+OUTROS COMANDOS E SOFTWARES (TEMP DOS DISCOS)
+
+sudo hddtemp /dev/sdb
+
+https://phoenixnap.com/kb/linux-cpu-temp

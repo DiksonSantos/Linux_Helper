@@ -1,0 +1,39 @@
+
+
+# COMANDO PARA INSTALAR:
+sudo apt-get install python-setuptools
+
+Installation pyinstaller: You can pip install the pyinstaller
+
+pip install pyinstaller
+
+
+
+
+
+# COMANDO PARA USAR
+pyinstaller --onefile -F --clean -w Programa_em_Python.py
+
+
+-> Um arquivo ".spec"  será gerado, Use o comando:
+
+pyinstaller Arquivo.spec
+
+
+-> Um arquivo dentro da pasta "dist" será o executavel agora
+-> Use ./Executavel 
+
+
+INFOs:
+https://www.youtube.com/watch?v=NLQ_xSAs2DY
+
+
+
+
+
+_____________________________________________
+if you do not have pip then you can install pip using
+
+sudo apt-get install python-pip
+
+_____________________________________________

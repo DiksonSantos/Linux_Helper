@@ -1,0 +1,25 @@
+COMO INSTALAR O APTITUDE
+
+sudo apt install aptitude
+
+
+
+O QUE É O APTTUDE:
+
+O controle de dependências dos pacotes é mais completo e sofisticado no aptitude do que o do apt-get.
+
+
+Tive um problema de dependencias (Faltantes) para instalar o WINE na maquina virtual Debian. e usando o comando:
+
+sudo aptitude install wine-stable
+
+
+Foi tudo instalado com todas as dependencias Já inscluidas e sugestões de soluçoes .
+
+SUGESTÕES DE USO ENTRE APT E APTITUDE :
+
+Procurar um pacote com ->  apt-cache search e 
+instalá-lo com -> aptitude install.
+
+
+02/03/21

@@ -1,0 +1,20 @@
+os comandos "optirun" e "primusrun" são específicos para placas de vídeo Nvidia com tecnologia de comutação de GPU, como o NVIDIA Optimus. Para placas de vídeo AMD Radeon, geralmente não é necessário usar esses comandos específicos.
+
+No entanto, existem algumas ferramentas e comandos relevantes para o uso de placas de vídeo AMD Radeon no Linux. Aqui estão alguns exemplos:
+
+"DRI_PRIME": O DRI_PRIME é uma variável de ambiente usada para selecionar qual placa de vídeo será utilizada ao executar um determinado programa. Você pode usar o DRI_PRIME para especificar qual GPU AMD Radeon deseja utilizar. Por exemplo, para executar um programa chamado "meu_programa" usando a placa de vídeo AMD Radeon, você pode usar o seguinte comando:
+shell
+Copy code
+DRI_PRIME=1 meu_programa
+O valor "1" após o DRI_PRIME representa a GPU AMD Radeon. Se você tiver mais de uma placa de vídeo AMD Radeon instalada, poderá usar valores diferentes para selecionar a GPU correta.
+
+"radeon-profile": O radeon-profile é uma ferramenta de monitoramento e controle para placas de vídeo AMD Radeon no Linux. Ela permite monitorar a temperatura, a velocidade do ventilador, a utilização da GPU e outras informações relacionadas à placa de vídeo Radeon. Você pode instalá-la usando o gerenciador de pacotes da sua distribuição Linux.
+
+"radeontop": O radeontop é uma ferramenta que exibe estatísticas em tempo real sobre o desempenho da placa de vídeo AMD Radeon. Ela mostra informações sobre a GPU, como a utilização, a frequência e a temperatura. É útil para monitorar o desempenho da placa de vídeo durante a execução de aplicativos ou jogos. Também pode ser instalado via gerenciador de pacotes da sua distribuição Linux.
+
+Esses são apenas alguns exemplos de ferramentas e comandos relevantes para o uso de placas de vídeo AMD Radeon no Linux. Lembre-se de consultar a documentação específica da sua distribuição Linux e da AMD para obter mais informações sobre as ferramentas e comandos disponíveis para o seu sistema.
+
+
+
+# Dell Vostro (Por Dentro)
+https://youtu.be/DWtF-U9lEuU

@@ -1,0 +1,88 @@
+
+
+# INSTALAÇÃO:
+sudo apt install  clamav
+
+ou
+
+sudo apt-get install clamav
+
+
+
+# APÓS INSTALAR:
+
+-> Resolvendo o problema " ...is locked by another process?"
+
+
+sudo systemctl stop clamav-freshclam.service
+
+# PRÉ-USO
+
+Atualização dos bancos de dados de vírus:
+
+sudo freshclam
+
+
+# COMO USAR:
+
+EX; Verifica todos os arquivos do diretorio Raiz;
+
+sudo clamscan -r /
+
+
+# Verificar um unico arquivo;
+
+clamscan /home/seu-usuario/documento.pdf
+
+
+# pós verificação -> exibir arquivos detectados/infectados;
+
+clamscan --verbose --infected
+
+sudo clamscan / --recursive | tee clamscan.log
+
+
+_____________________________________________________
+
+# LIDANDO COM O ERRO "LibClamAV Warning: cli_scanxz: decompress file size exceeds limits " :
+
+sudo clamscan --max-filesize=30M -r -l ClamScanLog -i /
+
+____________________________________________________
+# SALVAR LOG EM DIRETORIO ESPECIFICO
+
+sudo clamscan -r /folder/to/scan/ | grep FOUND >> /path/to/save/report/file.txt
+
+________________________________________
+
+FONTEs:
+https://askubuntu.com/questions/909273/clamav-error-var-log-clamav-freshclam-log-is-locked-by-another-process
+
+https://www.debian.org/doc/manuals/securing-debian-manual/ch08s08.pt-br.html
+
+__________________________________________
+
+
+	Se um arquivo infectado for encontrado, você poderá escolher uma ação a ser tomada, como excluir ou mover o arquivo. Siga as instruções apresentadas na tela para lidar com cada arquivo infectado.
+	
+	Essas são apenas algumas das operações básicas que você pode realizar com o ClamAV. O software possui várias opções e recursos avançados que você pode explorar em sua documentação oficial ou 
+
+Digitando no terminal  -> para visualizar o manual; 
+
+man clamscan   
+
+
+__________________________________________________________________________________________
+
+
+# REMOVER AMEAÇAS:
+
+How do I remove an infected file from Clamscan?
+If you would like clamscan to remove the infected file add to the command the --remove option, or you can use --move=/dir to quarantine them. You may also want clamscan to scan larger files. In this case, append the options --max-filesize=4000M and --max-scansize=4000M to the command.6 de mai. de 2023
+
+
+# COMANDO QUE USEI:
+
+sudo clamscan -r / --move=/home/dikson/quickcal/
+
+Deu Certo.

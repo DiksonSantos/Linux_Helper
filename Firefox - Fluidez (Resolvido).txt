@@ -1,0 +1,45 @@
+
+FIREFOX SOLVEs
+
+ Increase the session save interval of Firefox.
+
+Firefox saves session information every 15 seconds or so by default, which could make video stutter and sound skip while you are streaming videos from YouTube and other sites. To fix this, you should:
+
+    Type about:config in the address bar of Firefox and hit Enter.
+    Confirm that you will be careful.
+
+    Search for:
+ browser.sessionstore.interval
+
+# O VALOR ORIGINAL É: 15000
+    Double click on the pop-up result, and change its value to 60000 or 100000 instead.
+
+
+    Restart Firefox and play YouTube again.
+
+
+_________________________________________________
+LIMPE O CACH:
+Depois de muitos dias ligado e muitos vidfeos rodados, o Cache pode estar 'entupido':
+
+about:support
+
+E limpe o Cache de Inicialização.
+
+
+# MAIS SOBRE LIMPAR CACHE:
+https://support.mozilla.org/en-US/kb/how-clear-firefox-cache
+
+
+
+
+
+
+FONTE:
+https://www.winxdvd.com/streaming-video/fix-youtube-videos-choppy.htm
+
+
+
+
+TESTE A PERFORMANCE:
+https://www.youtube.com/watch?v=eu4TAgp1Ynw

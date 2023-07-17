@@ -1,0 +1,15 @@
+WINE 5 NO DEBIAN 10 & 9         [Instalei OK em 03/07/2020]
+https://computingforgeeks.com/how-to-install-wine-on-debian/
+
+
+
+INSTALAR O WINETRICKS:
+https://livrelinux.wordpress.com/2009/12/25/winetricks-e-playonlinux-vao-te-ajudar-a-instalar-muitos-programas/#:~:text=Para%20instalar%20o%20winetricks%20%C3%A9,e%20n%C3%A3o%20apenas%20como%20c%C3%B3digo.
+
+
+ARTIGO -> OS SEGREDOS DO WINETRICKS:
+http://unixuniverse.com.br/linux/winetricks
+
+
+VIDEO ENSINANDO A INSTALAR O PLYONLINUX:
+https://www.youtube.com/watch?v=9apSGNy7Ivs

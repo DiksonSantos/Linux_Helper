@@ -1,0 +1,33 @@
+
+PARA DESLIGAR UMA OU OUTRA PLACA DE VIDEO NA INICIALIZAÇÃO:
+
+- INSIRA NO GRUB -> /etc/default/grub
+
+ESTE COMANDO 'nomodeset i915.modeset=0 nouveau.modeset=0' 
+
+
+NA LINHA -> GRUB_CMDLINE_LINUX=""
+
+DESLIGAR SÓ A INTEL:
+nomodeset i915.modeset=0
+
+DESLIGAR SÓ A NVIDIA:
+nouveau.modeset=0
+
+
+Inserir entre as aspas na linha do arquivo.
+
+
+FINALIZAR:
+sudo update-grub
+
+FONTES:
+https://bbs.archlinux.org/viewtopic.php?id=207749
+
+https://unix.stackexchange.com/questions/110573/what-is-i915-modeset-1-for
+
+https://itsfoss.com/update-grub/
+
+https://askubuntu.com/questions/204210/how-to-permanently-set-i915-modeset-0-to-fix-black-screen-after-boot-on-device-w
+
+

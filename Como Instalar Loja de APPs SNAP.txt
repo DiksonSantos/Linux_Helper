@@ -1,0 +1,17 @@
+
+COMANDO:
+dikson@debian:~$ sudo snap install snap-store
+[sudo] senha para dikson: 
+
+RESULTADO ALL OK:
+snap-store 3.38.0-64-g23c4c77 from Canonical✓ installed
+
+
+
+
+É NECESSÁRIO JÁ TER INSTALADO O SNAPD -> sudo apt install snapd
+
+
+
+FONTE:
+https://www.addictivetips.com/ubuntu-linux-tips/install-the-official-snap-store-app-on-linux/

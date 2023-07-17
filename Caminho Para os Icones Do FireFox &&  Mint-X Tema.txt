@@ -1,0 +1,21 @@
+
+
+Quando voce instala o tema do Mint-X , ele vem com seus proprios icones do Firefox. Se quiser substituir, esta é 
+a pasta onde eles se encontram; 
+
+
+/usr/share/icons/Mint-X/apps/16
+
+
+Por garantia (Se não funcionar) Além da pasta 16 cole nas outras que contenham estes Icones que também sejam da Extensão .PNG também.
+
+
+Depois no Firefox digite ->  about:support  Na barra de URL e clique em "Restaurar Firefox" ,
+Uma janela irá se abrir. Clique em "Restaurar Firefox" nesta janela que ira se abrir. 
+O Firefox irá reiniciar. Você pode re-abrir as ultimas janelas que usou (se quiser).
+E pronto. Os icones novos agora estão em uso.
+
+
+BAIXAR DA INTERNET:
+
+http://packages.linuxmint.com/pool/main/m/mint-x-icons/

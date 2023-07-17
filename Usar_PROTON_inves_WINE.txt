@@ -1,0 +1,13 @@
+#[Desktop Entry]
+Name=Max_Payne_2
+Exec=env cd ~/.local/share/Steam/steamapps/common/Proton\ 3.7/; STEAM_COMPAT_DATA_PATH="$HOME/.local/share/Steam/steamapps/compatdata/$appid" optirun -b primus ./proton run /home/dikson/.wine/drive_c/Max_Payne_2/MaxPayne2.exe
+Type=Application
+StartupNotify=true
+Comment=Atalho_MP_2
+Icon=""
+StartupWMClass=MaxPayne2.exe
+Name[pt_BR]=Max_Payne_2
+
+
+
+# Eu usei a extensão .desktop no arquivo com o conteudo a cima.

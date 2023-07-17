@@ -1,0 +1,100 @@
+Preparando o sistema (e o usuário) para atualizar o Debian Stretch para Buster via terminal
+A seguir, você verá como atualizar um sistema Debian 9 Stretch para a versão 10 Buster via terminal. Prepare seu café, cancele os outros downloads e vamos a atualização.
+
+Antes de começar, lembre-se de remover os pacotes desnecessários e faça um backup de seus dados.
+
+Como atualizar o Debian 9 Stretch para a versão 10 Buster via terminal
+Para atualizar o Debian 9 Stretch para a versão 10 Buster via terminal, você deve fazer o seguinte:
+
+Passo 1. Abra um terminal como administrador ou pressione CTRL + ALT + F1 e faça login como root;
+Passo 2. Use os comandos abaixo para atualizar seu sistema atual;
+
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+
+Passo 3. Se quiser conferir como está o arquivo de configuração de programas do gerenciador de pacotes, use esse comando;
+
+cat /etc/apt/sources.list
+
+Passo 4. No Debian Buster, ele deve estar basicamente nesse formato;
+
+deb http://security.debian.org buster/updates main
+deb http://ftp.br.debian.org/debian/ buster main
+deb-src http://ftp.br.debian.org/debian/ buster main
+deb http://ftp.us.debian.org/debian buster main
+deb-src http://ftp.us.debian.org/debian/ buster main/code>
+
+
+Passo 5. Substitua a palavra Buster por bullseye , no arquivo /etc/apt/sources.list, usando esse comando;
+
+sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+
+# 21-11-21 :
+
+Descobri que É necessário comentar a linha "security" da 'sources.list' | OU Deixar 'Buster' mesmo.
+
+
+
+Passo 6. Novamente, se quiser conferir como está o arquivo de configuração de programas do gerenciador de pacotes, use esse comando;
+
+cat /etc/apt/sources.list
+
+
+Passo 7. Depois da mudança, ele ficará mais ou menos assim;
+
+deb http://security.debian.org buster/updates main
+deb http://ftp.br.debian.org/debian/ buster main
+deb-src http://ftp.br.debian.org/debian/ buster main
+deb http://ftp.us.debian.org/debian buster main
+deb-src http://ftp.us.debian.org/debian/ buster main/code>
+
+
+Passo 8. Use os comandos abaixo para atualizar as informações do gerenciador de pacotes e os pacotes básicos;
+
+apt-get update
+apt-get upgrade
+
+
+Passo 9. Finalmente, instale qualquer outra atualização disponível, com o comando abaixo. Essa etapa demora bastante e dependendo do que você tem instalado, será necessário responder a algumas perguntas durante o processo;
+
+apt-get dist-upgrade
+
+
+Passo 10. Quando finalizar a instalação, use o comando a seguir para reiniciar o sistema;
+
+sudo reboot
+
+-> Comente as Duas linhas "Security" (Que contém referencias á antiga Distro)
+-> Também comentei o "contrib non-free" na frente das Duas primeiras linhas do sources.list
+
+sudo apt update
+
+Passo 11. Quando o sistema iniciar novamente, use o comando a seguir para verificar as informações atuais do Debian;
+
+hostnamectl
+
+
+Passo 12. O resultado será algo parecido com as informações abaixo;
+
+Static hostname: debian
+         Icon name: computer
+           Chassis: c
+        Machine ID: 909d7eb4d6cd403bb9cf478d1a3fb18d
+           Boot ID: 17584ebea9d447cc9657fcbced3850d0
+    Virtualization: oracle
+  Operating System: Debian GNU/Linux 10 (Buster)
+            Kernel: Linux x.y.z-y-amd64 x86_64
+      Architecture: x86-64
+Pronto! Seu sistema está atualizado e pronto para ser usado.
+
+
+
+
+
+
+# CASO PRECISE DE UMA SOURCE.LIST ORIGINAL:
+
+
+
+https://wiki.debian.org/pt_BR/SourcesList

@@ -1,0 +1,27 @@
+
+
+
+sudo apt install default-jre
+
+sudo apt install default-jdk
+
+
+FONTE:
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-11
+
+
+
+JRE é necessária para rodar vários programas usados em Data Science como;
+
+Alguns dos aplicativos que podem ser executados no Linux com a JRE incluem: 
+
+- Apache Tomcat
+- Jetty
+- Apache ActiveMQ
+- Apache Cassandra
+- Apache Ant
+- Groovy
+- Hadoop
+- Kafka
+- Apache Spark
+

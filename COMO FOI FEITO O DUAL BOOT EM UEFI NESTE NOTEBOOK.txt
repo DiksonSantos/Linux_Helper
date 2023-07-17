@@ -1,0 +1,29 @@
+COMO FOI FEITO O DUAL BOOT EM UEFI NESTE NOTEBOOK:
+
+After going through it I found out that it was not so difficult after all. For other users of Acer Laptops I would like to simplify the entire procedure and put it in following simple steps:
+
+If you have a pre-installed Windows OS, which ever it might be like 7,8,8.1 or 10, you need to do is disable Secure Boot in your BIOS first. You can do it as follows:                                                                                                          
+Press F2 on your keyboard after pressing Power button.
+Go to “Security” option and “Set Supervisor Password”.
+ (Note: Write down the supervisor password as it will be necessary to be entered every-time you wish to enter into your BIOS settings by pressing F2)
+
+Now go to "Boot Option" that lies just beside "Security". There you will find "Secure Boot" option and it will be in "Enable" state. Press Enter and use arrow keys to choose "Disable" option and Press Enter. Press F10 to "Save & Exit". 
+We are done with secure boot part. Now, make a bootable USB stick for any of the Linux distors and install using the procedures that you will find on "Youtube" and many other channels & sites. I would personally recommend you to use Youtube.
+After the installation is done the computer will automatically boot into Windows OS and no option for Linux distribution that you currently installed will be shown. Don't you worry at all.
+All you need to do now is "Shutdown" your computer and Press F2 button just like before after pressing "Power Button". A black screen requesting to "Enter Password" will pop up instead of directly opening the BIOS settings. Enter the "Supervisor Password" in it (This is why I had asked you to note it down) and press Enter.
+Now go to "Boot" option and "Enable" Secure boot.
+Then go to "Security" and select “Select an UEFI file as trusted for executing: ” option. To select it you simply need to press Enter button. Now you will see a screen with an option like “HDDO”. Press enter then you will find <EFI> option. Press Enter and then you will see following options:                                                                                                <.>                                                                                                                                                                            <..>                                                                                                                                                          <Microsoft>                                                                                                                                                     <Boot>                                                                                                                                                            <Kali>    (This option pops up in my case, but in yours you may find the name of your version of Linux).
+Simply choose <Kali> option and press enter. Now you will enter into another page with an option as: “grubx64.efi”. Press Enter to select this option.
+ A new dialog box requesting to enter a valid name will appear. Simply write Kali or Linux or anything you like in it and press enter.
+By following this procedure we have successfully made an entry for Linux in boot menu.                                         The work’s not done yet. Now go to “Boot” option where you will probably find an Entry for Linux at the end of “Boot Priority Order” list. If you don’t find it then simply “save & exit” by pressing F10 and reboot to BIOS settings.
+We are now going to arrange the “Boot priority order”, so select the “Windows boot Loader” option and move it down to the bottom of the list. Then select Linux Loader option which might be like “Kali Linux …..” or something like that and move it to the top of the list. “Save & exit”.
+You might have found your Linux loader working but you will not find an entry for Windows in it. Don’t worry my friend. Now when you have booted into Linux, simply open the Terminal (it is a black colored icon on the list placed on left side of the screen. If you cannot find it simply use Youtube.)
+Now type “update-grub” in it and press enter (type the command without double quotes). The terminal will automatically add entry for Windows in Grub.
+Finally we are done. Shutdown your computer and press the power button you will have grub loader popping up on the screen with both Linux and Windows in it.
+
+
+
+
+
+
+https://community.acer.com/en/discussion/comment/495185#Comment_495185

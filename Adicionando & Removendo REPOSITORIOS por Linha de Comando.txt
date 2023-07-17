@@ -1,0 +1,8 @@
+Adiciona Repositorio:
+
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+
+
+Remove Repositorio:
+
+sudo add-apt-repository --remove ppa:nathan-renniewaldock/flux

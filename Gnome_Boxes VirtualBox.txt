@@ -1,0 +1,75 @@
+Para Instalar o virtualizador de SOs oficial da Gnome:
+
+sudo apt-get install gnome-boxes
+
+
+(Compatibilidade melhor com o Cinnamon).
+
+
+#Vou começar a testar agora em 24/10/21. O VirtualBox da muitos problemas, as máquinas virtuais nele #são descartaveis
+#duram poucos meses e sempre foi assim. 
+
+PROBLEMA A CIMA RESOLVIDO EM JUL 2022
+____________________________________________________________________________
+
+
+
+EVITANDO ERROS EM VIRTUALIZAÇÕES COM GNOME-BOXES
+
+-> CHECAR SE A BIOS ESTA CONFIGURADA PARA VIRTUAL-MACHINES:
+https://www.youtube.com/watch?v=QTTGA4u7azE
+
+
+____
+
+CRIAR O ARQUIVO 'NESTED' EM -> /etc/modprobe.d/nested.conf:
+
+Conteudo do arquivo:
+
+options kvm-intel nested=y
+
+https://www.vivaolinux.com.br/dica/Como-Habilitar-Virtualizacao-Aninhada-Nested-no-KVM
+
+
+____
+
+CRIAR O ARQUIVO KVM EM -> /etc/modprobe.d/
+
+Conteudo do arquivo:
+
+options kvm_intel nested=1
+
+https://docs.fedoraproject.org/en-US/quick-docs/using-nested-virtualization-in-kvm/
+
+
+
+__________________________________________________________________________
+
+
+GNOME-BOXES-ADDICTION -> Instale nas maquinas/SOs virtuais  :
+
+O primeiro software (vdagent) permite ter uma resolução que ocupe a tela todo (usando a maquina virtual)
+
+
+sudo apt install spice-vdagent && sudo apt install spice-webdavd
+
+
+
+Após a instalação reinicie a VMachine e mecha nos softwares de resolução de tela para ver a tela inteira ser preenchida (Melhor e muito menos trabalhoso do que a Virtual-Box). 
+
+
+
+
+FONTE:
+https://mike42.me/blog/2019-08-how-to-auto-scale-the-display-in-gnome-boxes
+
+_____________________________________________________________________________
+
+
+
+# PASTA QUE CONTEM AS MÁQUINAS VIRTUAIS:
+
+~/.local/share/gnome-boxes/images/
+
+-> Da pra criar um atalho com o mesmo nome, e colocar as MVs em qualquer outro lugar.
+

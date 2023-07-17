@@ -1,0 +1,30 @@
+
+
+dpkg --add-architecture i386
+
+
+apt install libegl1-mesa libgl1-mesa-dri libgl1-mesa-dri:i386 libgl1-mesa-glx libgl1-mesa-glx:i386 libglapi-mesa libglapi-mesa:i386 libgles2-mesa mesa-vulkan-drivers mesa-utils inxi
+
+
+
+
+https://linuxdicasesuporte.blogspot.com/2021/08/driver-mesa-3d-na-distribuicao-gnu.html
+
+
+
+___________________
+
+
+# CHECAR VERSÃO DO MESA DRIVER:
+
+sudo apt install inxi 
+
+inxi -G
+
+
+OU
+
+Use o HardInfo.
+
+
+https://diolinux.com.br/tutoriais/versao-dos-drivers-de-video-no-linux.html

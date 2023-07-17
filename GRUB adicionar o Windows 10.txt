@@ -1,0 +1,37 @@
+
+Configurei o GRUB para constar o Windows 10 como opção de inicialização:
+
+
+Windows 10 estando em UEFI e o Linux estando em Legacy .
+
+# E por que trazer\modificar para Legacy e Não UEFI ? Pois UEFI é idealizado pela Microsoft, sendo assim, sempre o Windows iria ser 'visto' primeiro pela BIOS , não dando chance á tela de seleção do GRUB.
+
+1-> Mudei na bios para UEFI para poder iniciar o Windows , Baixei o software EaseUS Partition Master (https://www.1337x.to/torrent/2214372/EASEUS-Partition-Master-12-0-Technican-Edition-Crack-SadeemPC/)
+
+2-> Instalei, e converti o SSD do Windows para Legacy . Ele pede para reiniciar o sistema (alias ele te obriga).
+
+3-> Mudei a BIOS de volta para Legacy, e la estava o velho e bom GRUB (sem o Windows na lista ainda).
+
+4-> No Linux entrei num gerenciador de disco (pode ser o  GPARTED mesmo) descobri o UUID da partição que contém o Windows .
+Ou use o comando ->  sudo fdisk -l
+Vai aparecer o “Nome” da unidade como -> Identificador do disco: numeração\nome_aqui
+
+5-> Editei o arquivo 'kate /etc/grub.d/40_custom'  (como podem ver usei o editor 'Kate' mesmo). Adicionei as Seguintes linhas no arquivo (que não tinha quase nada):
+
+menuentry "Windows 10" --class windows --class os {
+   insmod ntfs
+   search --no-floppy --set=root --fs-uuid 860E88D10E88BBA5
+   ntldr /bootmgr
+}
+
+# Sendo 860E88D10E88BBA5 o "Nome" da partição com o Windows 10
+
+6-> Salve o arquivo de texto . Abra o terminal como Root e use o seguinte comando :
+sudo update-grub
+para "deixar ciente" o Linux de que o arquivo\texto de configuração foi alterado.
+
+7-> Reinicie o computador e Vualla!!!  o Windows consta na lista de opções de inicialização.
+
+
+LINK COM TUTORIAL EM VIDEO (PARA CONVERTER PARA LEGACY):
+https://youtu.be/OP7NikNiCuk

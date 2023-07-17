@@ -1,0 +1,33 @@
+Solução para corrigir possivel problema de aparece "Não conectado" no painel do Cinnamo (mesmo que a maquina esteja conectando normlamente :
+
+
+sudo mv /etc/network/interfaces /etc/network/interfaces.old
+
+
+Reinicie o computador e Pronto.
+
+
+
+
+# CASO CONECTE MAS NÃO NAVEGUE:
+
+$ su
+
+$ nano /etc/network/interfaces
+
+Comente as linhas
+
+allow-hotplug xxxxxx
+iface xxxxxx inet dhcp
+
+systemctl restart network-manager
+
+sudo /etc/init.d/networking restart
+
+sudo /etc/init.d/networking start network else
+
+
+FONTE:
+https://linuxdicasesuporte.blogspot.com/2018/05/debian-buster-testing-wifi-conecta-mas.html?m=1
+
+

@@ -1,0 +1,4 @@
+Casso enfrente falha ao remover algum componente do Cinnamon, entre no Synaptic e procure por este arquivo, instale-o:
+
+
+"task-cinnamon-desktop"

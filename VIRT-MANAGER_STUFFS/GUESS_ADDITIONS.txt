@@ -1,0 +1,26 @@
+
+INSTALE DENTRO DO SISTEMA OPERACIONAL / VIRTUAL:
+
+
+
+https://www.spice-space.org/download.html#guest
+
+https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe
+
+
+
+Com isso é possivel Redimensionar a tela do sitema hóspede  (spice-vdagent). Arrastar e soltar arquivos no SO hospede (spice-webdavd). 
+
+
+
+
+
+
+# CASO ESTEJA NO LINUX:
+
+sudo apt install spice-vdagent && sudo apt install spice-webdavd
+
+
+# BAIXAR PARA WINDOWS:
+
+https://www.spice-space.org/download/windows/spice-webdavd/

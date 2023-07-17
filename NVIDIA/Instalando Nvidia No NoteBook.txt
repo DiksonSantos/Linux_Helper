@@ -1,0 +1,144 @@
+NVIDIA NO DEBIAN 11
+
+sudo apt update && sudo apt upgrade -y
+
+SU -> SENHA ROOT
+
+sudo nano /etc/apt/sources.list
+
+ADICIONE CONTRIB NON FREE NA SOUCE.LIST:
+
+deb http://deb.debian.org/debian/ bullseye main contrib non-free
+
+sudo apt update
+
+sudo apt install linux-headers-amd64
+
+sudo apt install nvidia-detect
+
+nvidia-detect
+
+DE ACORDO COM DRIVE MOSTRADO, INSTALE-O,
+EX , neste NoteBook apareceu :
+
+It is recommended to install the
+    nvidia-driver
+
+
+
+ENTÃO:
+sudo apt install nvidia-driver linux-image-amd64
+
+Type “Y,” then press the “ENTER KEY” to proceed with the installation.
+
+AO TERMINAR:
+sudo reboot now
+
+CONFIRME A INSTALAÇÃO DO DRIVER:
+
+nvidia-smi
+
+
+____________________________________________________________________________________
+
+
+APÓS A ETAPA A CIMA INSTALE O BUMBLE BEE:
+
+
+apt-get install bumblebee-nvidia primus 
+
+CREIO QUE ESTE ->(primus-libs:i386 ) CAIU EM DESUSO (no DEB_11)
+
+
+#OS COMPONENTES A BAIXO SERVEM PARA RODAR OS JOGUINHOS ANTIGOS DE 32bits NO DEBIAN DE 64bits:
+#..USEI BACKPORTS (OPCIONAL).
+
+sudo apt-get -t bullseye-backports install primus-libs:i386 libprimus-vk1:i386 nvidia-primus-vk-wrapper:i386 nvidia-driver-libs-i386
+
+https://wiki.debian.org/Bumblebee
+
+https://linuxdicasesuporte.blogspot.com/2017/05/instalacao-de-driver-para-placa-de.html
+
+&&
+
+sudo gpasswd -a dikson bumblebee
+[sudo] senha para dikson: 
+RESULTADO:
+Adicionando usuário dikson ao grupo bumblebee
+_____
+
+PARA ABRIR O "nvidia-settings" :
+optirun -b none nvidia-settings -c :8
+_______________________________________________________________________________________
+
+10-12-21 -> INSTALEI OS 'CUDA' com :
+
+sudo apt install nvidia-cuda-toolkit
+
+OU
+
+sudo apt install -y nvidia-cuda-toolkit nvidia-opencl-common
+
+
+
+
+_________________________________________________________________________________________
+
+DESATIVAR O NOVEAU:
+
+https://qastack.com.br/ubuntu/841876/how-to-disable-nouveau-kernel-driver
+
+
+
+_________________________________________________________________________________________
+
+
+SE O DRIVER FOR ANTIGO, MAIS INFORMAÇÕES NESTE LINK:
+https://www.linuxcapable.com/how-to-install-or-upgrade-nvidia-drivers-on-debian-11-bullseye/
+____________________________________________________________________________
+
+
+PARA DESINSTALAR TUDO CASO DÊ PROBLEMA (DÊ BOOT COMO AVANÇADO\RECUPERAÇÃO\PROMPT) QUANDO LIGAR O NOTE 
+APARECE AS OPÇÕES... -> O COMPUTADOR VAI LIGAR COM UNIX APENAS, ENTÃO DIGITE NA LINHA DE COMANDO OS COMANDOS DO LINK
+A BAIXO:
+
+sudo apt-get remove --purge '^nvidia-.*'
+
+https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely
+
+___________________
+
+CASO PRECISE APAGAR A CHAVE GPG:
+Apague o arquivo em;
+
+/usr/share/keyrings/nvidia-drivers.gpg
+
+/etc/apt/sources.list.d/nvidia-drivers.list
+
+FONTE:
+https://www.linuxcapable.com/install-510-nvidia-drivers-on-debian-11-bullseye/
+
+___________________________________________________________________________________
+
+REINICIA O DRIVER NVIDIA & NVIDIA-SETTINGS:
+
+-> isso Costuma zerar o "Used Dedicated Memory"  no Nvidia-Settings.
+
+systemctl enable bumblebeed.service
+
+OU
+
+sudo systemctl disable nvidia-persistenced
+
+(Pedira a senha de Root várias vezes)
+____________________________________________________________________________________
+DEBIAN 10:
+Graças ao bom Deus algumas marmotas/Programadores (abençoados sejam) criaram um script Totalmente altomatizado
+que fez a total instalação e configuração do Sistema Debian (tambem funciona com alguns outros Distros). Não 
+precisei fazer nada além de copiar o arquivo e colar no Terminal.
+Link para baixar o Arquvo Mágico (a la Windows):
+
+https://drive.google.com/file/d/1hRtkg4sB3Cj3_R4hPPGAuhwvPZXTqWwW/view?usp=sharing
+
+
+

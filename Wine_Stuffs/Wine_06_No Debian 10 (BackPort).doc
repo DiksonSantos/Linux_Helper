@@ -1,0 +1,80 @@
+
+30-03-2021
+
+
+Step 1: Enable 32 bit architecture
+If you’re running a 64-bit system, enable support for 32-bit applications.
+
+sudo dpkg --add-architecture i386
+
+
+
+
+Step 2: Add WineHQ repository
+We will pull the latest Wine packages from WineHQ repository that is added manually.
+
+First, import GPG key:
+
+sudo apt update
+sudo apt -y install gnupg2 software-properties-common
+wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+
+
+
+You should receive “OK” in the output.
+
+Add the Wine repository by running the following command:
+
+sudo apt-add-repository https://dl.winehq.org/wine-builds/debian/
+
+
+The command will add a line to /etc/apt/sources.list file.
+
+
+
+Step 3: Install Wine 6 on Debian 10
+After configuration of the APT repository, the final step is the actual installation of Wine 6 on Debian 10/9.
+
+Add Wine OBS repository:
+
+-> EU COPIEI E COLEI TUDO DE UMA VEZ AS LINHAS DE BAIXO:
+
+wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_10/Release.key | sudo apt-key add -    
+echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | sudo tee /etc/apt/sources.list.d/wine-obs.list
+
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+
+
+CONFIRA:
+$ wine --version 
+ wine-6.0
+ 
+ 
+ 
+ 
+ FONTE:
+ 
+ https://computingforgeeks.com/how-to-install-wine-on-debian/
+ 
+ 
+
+ 
+ _____
+ 
+ 
+ Como instalar Qualquer software com Backports:
+ apt-get -t buster-backports install nome_do_pacote
+ 
+ # NO DEBIAN_11
+ sudo apt-get -t bullseye-backports install NOME_DO_PACOTE
+ 
+ FONTE:
+ https://diolinux.com.br/tutoriais/como-ativar-o-repositorio-backports-no-debian-jessie.html
+
+ 
+ 
+ 
+ # BACKPORT NO DEBIAN 11:
+ 
+ https://backports.debian.org/Instructions/

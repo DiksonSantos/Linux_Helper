@@ -1,0 +1,13 @@
+
+
+Fazer o gestor de arquivos NEMO mostrar as miniaturas dos videos nas pastas:
+
+
+
+
+
+
+
+sudo apt install ffmpegthumbnailer
+
+sudo apt install ffmpegthumbs
