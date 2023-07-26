@@ -1,0 +1,14 @@
+
+
+# DESCOBRIR QUAL A FREQUENCIA DAS MEMORIAS RAM:
+
+sudo lshw -C memory
+
+
+# DESCOBRIR SE É SINCRONA OU ASSINCRONA:
+
+sudo lshw -short -C memory
+
+
+# FONTE:
+https://askubuntu.com/questions/391173/how-to-find-the-frequency-and-type-of-my-current-ram

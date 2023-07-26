@@ -4,8 +4,18 @@ No entanto, existem algumas ferramentas e comandos relevantes para o uso de plac
 
 "DRI_PRIME": O DRI_PRIME é uma variável de ambiente usada para selecionar qual placa de vídeo será utilizada ao executar um determinado programa. Você pode usar o DRI_PRIME para especificar qual GPU AMD Radeon deseja utilizar. Por exemplo, para executar um programa chamado "meu_programa" usando a placa de vídeo AMD Radeon, você pode usar o seguinte comando:
 shell
-Copy code
+
+
+# HERE !
+
+# Driver Opensource:
 DRI_PRIME=1 meu_programa
+
+
+# Driver Proprietario / Opensource:
+A forma como o comando é utilizado é a mesma, independentemente de estar usando o driver de código aberto (AMDGPU) ou o driver proprietário (AMDGPU-PRO).
+
+
 O valor "1" após o DRI_PRIME representa a GPU AMD Radeon. Se você tiver mais de uma placa de vídeo AMD Radeon instalada, poderá usar valores diferentes para selecionar a GPU correta.
 
 "radeon-profile": O radeon-profile é uma ferramenta de monitoramento e controle para placas de vídeo AMD Radeon no Linux. Ela permite monitorar a temperatura, a velocidade do ventilador, a utilização da GPU e outras informações relacionadas à placa de vídeo Radeon. Você pode instalá-la usando o gerenciador de pacotes da sua distribuição Linux.
@@ -18,3 +28,19 @@ Esses são apenas alguns exemplos de ferramentas e comandos relevantes para o us
 
 # Dell Vostro (Por Dentro)
 https://youtu.be/DWtF-U9lEuU
+
+
+
+
+# COMO INSTALAR OS DRIVERS RADEON NO DEBIAN:
+
+# Verificar se a placa é Hibrida ou Não:
+sudo apt install lshw
+
+sudo lshw -c video
+
+lsmod | grep amd
+
+# PASSO A PASSO EM VIDEO:
+https://youtu.be/gOwMe_UYMdM
+

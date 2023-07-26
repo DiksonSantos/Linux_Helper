@@ -67,3 +67,39 @@ https://www.linuxquestions.org/questions/linux-hardware-18/br-connection-profile
 
 RESOLVEU (07-06-23)
 https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-pulseaudio-ubuntu-2204/
+
+
+________________________________________________
+
+# COMANDOS LIGA 7 DESLIGA BLUETOOTH:
+
+sudo hciconfig hci0 down
+sudo hciconfig hci0 up
+
+
+service bluetooth restart
+service dbus restart
+
+__________________________________
+# VEJA STATUS DO BLUETOOTH:
+
+# ABRIR TERMINAL DO BLUETOOTH:
+bluetoothctl
+
+#COMANDO Para ver o Status:
+show
+
+Se o Bluetooth estiver ativado, você verá:
+Powered: yes
+
+
+# PARA SAIR:
+quit
+
+____________________________________________________
+
+
+# CONFIGURANDO MANUALMENTE:
+
+https://forums.linuxmint.com/viewtopic.php?t=361308
+

@@ -1,0 +1,39 @@
+
+
+Xiaomi Pocophone F1 Dual Sim 64 Gb Graphite Black 6 Gb Ram
+
+https://produto.mercadolivre.com.br/MLB-3754080452-xiaomi-pocophone-f1-dual-sim-64-gb-graphite-black-6-gb-ram-_JM#polycard_client=bookmarks
+
+
+
+# CHECAR COMPATIBILIDADE DE APARELHOS:
+
+https://devices.ubuntu-touch.io/device/sargo
+
+
+
+# S/O COMPATIVEL COM ESTE APARELHO / PROCESSADOR (845):
+
+https://images.mobian.org/sdm845/
+
+
+# INSTRUÇÕES DE INSTALAÇÃO:
+
+https://wiki.mobian-project.org/doku.php?id=install-android
+
+
+# MAIS INSTRUÇÕES:
+
+https://salsa.debian.org/Mobian-team/mobian-recipes
+
+
+
+# O QUE EU ENTENDI SOBRE A INSTALAÇÃO:
+
+-> ENCONTRE O PROCEDIMENTO PARA ATIVAR O BOOTLOADER DO APARELHO (ALGUM VIDEO NO YT DEVE MOSTRAR ISSO)
+
+-> FORMATE O DISCO INSNTERNO DO CELULAR EM EXT4
+
+-> USE O COMANDO 'DD' PARA INSERIR A ROM COM EXTENSÃO '.ISO' BAIXADO DO SITE (MOBIAN).
+
+-> REINICIE O APARELHO E VEJA SE FUNCIONA.

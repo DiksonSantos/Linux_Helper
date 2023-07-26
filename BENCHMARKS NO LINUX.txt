@@ -1,0 +1,27 @@
+
+COMO FAZER BENCHMARKS (VIDEO)
+
+
+Download:
+https://www.phoronix-test-suite.com/?k=downloads
+
+sudo dpkg -i phoronix...deb
+
+sudo apt -f install
+
+# Listar os tipos de teste (que podem ser instalados) para serem rodados:
+phoronix-test-suite list-tests
+
+# INSTALANDO UM DELES:
+phoronix-test-suite install unigine-heaven
+
+# RODANDO UM DELES:
+phoronix-test-suite run unigine-heaven
+
+# TESTAR UM DOS JOGOS DA sua BIBLIOTECA DA STEAM:
+
+phoronix-test-suite run metroll-redux
+
+
+FONTE:
+https://linuxconfig.org/benchmark-your-graphics-card-on-linux

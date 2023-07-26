@@ -28,7 +28,7 @@ _________________________________________________
 Crie um arquivo em -> /etc/modprobe.d/iwlwifi.conf 
 
 IDEIA;
-options iwlwifi <any of the above option, can be both with space separated, but I suggest trying one by one starting from the top>
+options iwlwifi <any of the Down option, can be both with space separated, but I suggest trying one by one starting from the top>
 
 EX:
 options iwlwifi bt_coex_active=0 11n_disable=1
@@ -41,6 +41,20 @@ Thank you,
 Using only the 1st option (bt_coex_active=0) solved the problem.
 
 https://forum.manjaro.org/t/using-logitech-m650-bluetooth-mouse-breaks-wifi-connectivity/130997
+
+
+
+# OUTRO PROCEDIMENTO FEITO (em 20-07-23):
+
+/etc/modprobe.d/btconfig.conf:
+
+blacklist acer_wmi
+(Also, I thought it better to add btcoex_enable=1 and bt_ant_diversity=1 to ath9k in that same file: options ath9k btcoex_enable=1 bt_ant_diversity=1.)⁽¹⁾
+
+Then I ran update-initramfs -c -k all, I rebooted the system, and voi-là, the adapter is up and working.
+
+FONTE:
+https://askubuntu.com/questions/791785/qualcomm-atheros-bluetooth-4-0-not-working-on-ubuntu-16-04
 
 _____________________________________________
 

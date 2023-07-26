@@ -1,0 +1,8 @@
+
+COMO INSTALAR SQL NO UBUNTU LINUX:
+
+
+# SQL Server 2022
+
+
+https://freegistutorial.com/how-to-install-sql-server-2022-on-ubuntu-22-10/

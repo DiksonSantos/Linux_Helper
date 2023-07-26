@@ -31,3 +31,7 @@ FONTE:
 https://linuxdicasesuporte.blogspot.com/2018/05/debian-buster-testing-wifi-conecta-mas.html?m=1
 
 
+
+# MOSTRAR VELOCIDADE CARACTERISICAS DA REDE:
+
+sudo iwconfig

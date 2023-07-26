@@ -25,3 +25,30 @@ https://linuxhint.com/change-display-manager-debian-linux/
 # DESCOBRIR QUAL GESTOR DE LOGIN ESTA EM USO:
 
 cat /etc/X11/default-display-manager
+
+
+
+# LIGHTDM -> GESTOR DE LOGIN PADRÃO DO CINNAMON:
+
+MEMORIZAR USUÁRIO:
+sudo pluma /etc/lightdm/lightdm.conf
+
+Go down the file until you get to:
+
+# greeter-hide-users=false
+Un-comment it, make sure the value is false.
+
+FONTE:
+https://askubuntu.com/questions/59199/can-i-set-a-default-user-in-lightdm
+
+TEMAS LIGHTDM:
+https://www.gnome-look.org/p/1405412
+
+# MUDAR BACKGROUND:
+sudo pluma /usr/share/lightdm/lightdm-gtk-greeter.conf.d/01_debian.conf
+
+
+# OUTRAS FONTES:
+https://devicetests.com/change-lightdm-theme#:~:text=also%20called%20Greeters.-,To%20change%20the%20LightDM%20theme%20or%20greeter%20on%20your%20Linux,greeter%2C%20and%20then%20restart%20LightDM.
+
+
