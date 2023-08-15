@@ -9,7 +9,8 @@ OR alternatively as a single line
 sudo swapoff -a; sudo swapon -a
 
 
-
+# STATUS DA SWAP:
+sudo swapon --show
 
 
 https://askubuntu.com/questions/1357/how-to-empty-swap-if-there-is-free-ram

@@ -1,0 +1,21 @@
+
+UNCHARTED: LEGACY OF THIEVES
+
+
+Video Tutorial/demonstração:
+
+https://youtu.be/yuXiZwxhQ_M
+
+
+
+
+STEAM LAUNCH OPTIONS:
+
+PROTON_HIDE_NVIDIA_GPU=0 WINEDLLOVERRIDES="amd_ags_x64.dll=b" PROTON_ENABLE_NVAPI=1 DXVK_AYSNC=1 %command%
+
+
+
+Softwares / Dependencias:
+
+GE_Proton7-38:
+https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton7-38

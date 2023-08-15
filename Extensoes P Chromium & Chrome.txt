@@ -1,0 +1,5 @@
+https://chrome.google.com/webstore/category/extensions
+
+
+EXTENSOES INSTALADAS:
+chrome://extensions/

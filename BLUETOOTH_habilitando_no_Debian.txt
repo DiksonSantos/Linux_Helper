@@ -71,7 +71,7 @@ https://ubuntuhandbook.org/index.php/2022/04/pipewire-replace-pulseaudio-ubuntu-
 
 ________________________________________________
 
-# COMANDOS LIGA 7 DESLIGA BLUETOOTH:
+# COMANDOS LIGA e DESLIGA BLUETOOTH:
 
 sudo hciconfig hci0 down
 sudo hciconfig hci0 up

@@ -22,11 +22,13 @@ sudo apt-get install protonvpn-cli
 Use as informações de Login do ProtonMail:
 
 dikson_santos@protonmail.com
+sigma360
 Alph@346348
 
 
 # LOGAR  (Terminal):
 protonvpn-cli login dikson_santos@protonmail.com
+sigma360
 Alph@346348
 
 # Escolha um local (Servidor no exterior):

@@ -1,6 +1,6 @@
 http://wps-community.org/downloads
 
-SITE COM O PACOTE DE TRADU��O:
+SITE COM O PACOTE DE TRADUCAO:
 http://www.osistematico.com.br/2018/09/novo-wps-office-linux-traducao-pt-br.html
 
 
@@ -9,3 +9,21 @@ http://www.osistematico.com.br/2018/09/novo-wps-office-linux-traducao-pt-br.html
 
 
 https://www.youtube.com/watch?v=1b_ZUNs2vIg&feature=youtu.be
+
+
+
+# MUDAR MOEDA P ESTILO REAL:
+
+No SpreedSheet (Excel do Wps).
+Em uma das celulas que vc deseja colocar o formato moeda.
+Clique com o botão direito do mouse
+Formatar células…
+Na Aba Número, em categoria escolha “Personalizado”
+Em Tipo coloque algo assim:
+
+[$R$-416] #.##0,00;[RED]-[$R$-416] #.##0,00
+
+se não quiser o espaço entre o sifrão e o número é só tirar. Se não quiser que o negativo fique vermelho é só tirar o [Red]
+
+FONTE:
+https://plus.diolinux.com.br/t/formato-moeda-em-real-no-wps-office/919/2

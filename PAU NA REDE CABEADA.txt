@@ -128,6 +128,7 @@ ________________________________________________________________________________
 
 # COMANDO PARA REESTABELECR AS CONEXÕES DE REDE:
 
+(Tem que estar com o RJ-45 Desconectado).
 
 sudo dhclient
 

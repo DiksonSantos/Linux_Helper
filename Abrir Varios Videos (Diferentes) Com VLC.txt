@@ -1,3 +1,14 @@
 https://youtu.be/W4ko0vxU0wg?t=362
 
 Ferramentas/Preferencias/ -> Desmarque -> "Instancia Unica...
+
+
+Troquei os icones do VLC:
+
+Dentro da pasta
+/usr/share/icons/hicolor
+
+Existem outras pastas com os icones padrão do VLC, -> Substitua todos.
+
+Fonte 
+https://askubuntu.com/questions/94791/how-do-i-change-the-vlc-icon-on-the-launcher

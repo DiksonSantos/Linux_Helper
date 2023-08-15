@@ -1,9 +1,12 @@
 ﻿INSTALAR NO LINUX:
 
-$ sudo apt-get install unrar
-Ou
-$ sudo apt install unrar
 
+
+sudo apt install unrar
+
+&&
+
+sudo apt-get install rar
 
 
 
@@ -18,18 +21,18 @@ $unrar e nome_Do_Arquivo.rar
 
 LISTAR CONTEUDO DE UM ARQUIVO .RAR:
 
-$unrar l tecmint.rar
+unrar l tecmint.rar
 
 
 
 PARA CRIAR UM AQRUIVO .RAR
 
-$rar a NovoArquivo.rar Arquivo_Ou_Pasta_A_SerCompactado
+rar a NovoArquivo.rar Arquivo_Ou_Pasta_A_SerCompactado
 
 
 ADICIONAR ARQUIVOS A UM .RAR EXISTENTE:
 
-$rar u Existente.rar Adicionar_Isto.sql
+rar u Existente.rar Adicionar_Isto.sql
 
 
 

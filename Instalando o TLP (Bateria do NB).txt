@@ -1,4 +1,6 @@
 Melhora a vida da bateria do NoteBook
+O TLP -> otimizar a vida útil da bateria, reduzindo o consumo de energia e melhorando o desempenho térmico.
+O TLP-RDW -> é um complemento opcional para o TLP. Ele fornece recursos adicionais de gerenciamento de energia para dispositivos de rádio, como Wi-Fi e Bluetooth.
 
 sudo apt install tlp tlp-rdw
 
@@ -36,17 +38,25 @@ _______________________________________________
 
 sudo apt install lshw
 
+# Não faz nada:
 sudo lshw -c power
+
+Salva TODAS as informações do Hardware num aruqivo bem detalhado:
+sudo lshw -html > info.html
+
 
 
 ______________________________________________
 
 # OUTROS PACOTES PARA ADM DE BATERIA:
 
+"powerdevil" -> Configurações avançadas.
+
 "acpi" and "powerdevil"
 
-sudo apt install  ...
+sudo apt install acpi
 
 acpi -i
 acpi -b
+acpi status
 

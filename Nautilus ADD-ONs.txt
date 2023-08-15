@@ -63,3 +63,26 @@ Isso instala a opção de Clicar com o Botão Direito e Abir qualquer pasta como
 
 FOONTE:
 https://qastack.com.br/ubuntu/156998/how-do-i-start-nautilus-as-root
+
+
+_______________________________________________________________________________________________________________
+
+
+# TEMA DARK
+
+sudo pluma ~/.profile
+
+# Adicione a Linha:
+export GTK_THEME=ark-arker
+# OU
+export GTK_THEME=Yaru-bark-dark
+
+source ~/.profile
+
+sudo apt update
+
+
+OU
+
+# No Terminal digite:
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
