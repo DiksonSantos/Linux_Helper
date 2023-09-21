@@ -1,6 +1,6 @@
 Para instalar o soundconverter:
 
-$ sudo apt-get install soundconverter
+sudo apt-get install soundconverter
 
 
 FONTE:

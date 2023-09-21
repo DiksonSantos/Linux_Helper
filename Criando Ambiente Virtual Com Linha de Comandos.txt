@@ -53,7 +53,7 @@ rmvirtualenv NomeDoAmbiente
 
 Vai aparecer ->  Removing NomeDoAmbiente...
 
-
+Voce pode criar um ambiente virtual na mesma pasta do projeto, colocando Poto final após o comando mkvirtualenv...etc...
 
 ________________________________________________________________
 

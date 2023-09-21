@@ -117,9 +117,10 @@ Last run command:
 
 
 # REINICIAR REDE:
-sudo service network-manager restart 
+sudo service network-manager restart
 
 systemctl restart NetworkManager
+sudo -i systemctl restart NetworkManager
 
 # FONTE:
 https://askubuntu.com/questions/904545/networkmanager-doesnt-show-ethernet-connection

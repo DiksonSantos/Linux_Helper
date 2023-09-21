@@ -21,7 +21,28 @@ sudo apt install exiftool
 exiftool signal-2023-01-16-050857.gif 
 
 
+PARA ALTERAR:
+O comando para alterar os metadados de um arquivo .mp4 usando o exiftool:
+
+exiftool -overwrite_original -Title="Novo Título" arquivo.mp4`
+
+
 
 
 FONTE
 https://unix.stackexchange.com/questions/243509/how-to-print-metadata-of-a-file-with-the-help-of-command-line
+
+
+___________________________________________________________
+
+# EDITAR METADADOS DE UM ARQUIVO .MP3:
+
+sudo apt install id3v2
+
+EX_1:
+id3v2 -T "número da faixa" -a "artista" -A "álbum" -t "título" -y "ano" -g "gênero" nome_do_arquivo.mp3
+
+EX_2:
+id3v2 -T "0" -a "Pollo" -A "_" -t "Vagalumes" -y "2014" -g "2010s" Pollo_Vagalumes.mp3
+
+

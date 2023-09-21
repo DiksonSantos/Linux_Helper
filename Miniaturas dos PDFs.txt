@@ -1,0 +1,12 @@
+
+
+sudo apt install tumbler -y
+
+sudo apt install tumbler-plugins-extra -y
+
+
+wget -c http://ftp.de.debian.org/debian/pool/main/p/poppler/libpoppler-glib8_22.12.0-2+b1_amd64.deb
+
+
+apt install ffmpegthumbnailer
+apt install ffmpegthumbs

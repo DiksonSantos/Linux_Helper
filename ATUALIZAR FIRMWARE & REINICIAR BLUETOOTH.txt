@@ -1,0 +1,54 @@
+13-09-2023
+ERRO/BUG:
+Bluetooth: hci0: Opcode 0x c1a failed: -110
+
+
+
+TENTATIVA / SOLUÇÃO:
+sudo apt update && sudo apt install firmware-linux -t bookworm-backports 
+
+
+
+
+PACOTES INSTALADOS:
+
+The following additional packages will be installed:
+  amd64-microcode firmware-amd-graphics firmware-linux-nonfree
+Os NOVOS pacotes a seguir serão instalados:
+  amd64-microcode firmware-amd-graphics firmware-linux firmware-linux-nonfree
+
+
+____
+
+
+Recarregar o Módulo Bluetooth:
+Após a instalação do novo firmware, é uma boa prática recarregar o módulo Bluetooth para aplicar as alterações. Você pode fazer isso com o seguinte comando:
+
+sudo modprobe -r btusb
+sudo modprobe btusb
+
+Isso remove e, em seguida, recarrega o módulo btusb, que é responsável pelo suporte Bluetooth USB.
+
+
+Verificar a Atualização:
+Você pode verificar se a atualização foi bem-sucedida consultando a versão do firmware Bluetooth. Use o seguinte comando:
+
+dmesg | grep Bluetooth
+
+
+________________________________________________________________
+
+A diferença entre os comandos;
+Para desligar o bluetooth no Linux:
+
+systemctl stop bluetooth.service 
+sudo hciconfig hci0 down
+sudo modprobe -r btusb
+
+
+O comando "systemctl stop bluetooth.service" interrompe o serviço do Bluetooth,
+"sudo hciconfig hci0 down" desativa a interface Bluetooth 
+"sudo modprobe -r btusb" remove o módulo btusb
+"sudo rfkill block bluetooth" desliga completamente o Bluetooth no Linux.
+
+
