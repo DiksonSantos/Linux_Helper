@@ -12,6 +12,11 @@ https://support.hpe.com/hpesc/public/docDisplay?docId=c02946277&docLocale=en_US
 VDI to .QCOW2 :
 qemu-img convert -f vdi Zorin_OS_16.vdi -O qcow2 Zorin_OS_16.qcow2
 
+
+QCOW2 Para .VDI:
+qemu-img convert -f qcow2 -O vdi Debian12.qcow2 Debian_EX.vdi
+
+
 OUTRAS FORMAS DE CONVERSÃO:
 
 

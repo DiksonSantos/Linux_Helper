@@ -1,0 +1,34 @@
+Para coletar todas as dependências de um ambiente em um arquivo .txt usando o comando pip freeze, você pode fazer o seguinte:
+
+No ambiente de origem:
+
+Use o comando pip freeze para listar todas as dependências e seus respectivos números de versão em um arquivo .txt. Você pode redirecionar a saída para um arquivo da seguinte maneira:
+
+bash
+Copy code
+pip freeze > requirements.txt
+Isso criará um arquivo chamado requirements.txt que conterá todas as dependências do ambiente atual com suas versões.
+
+Transfira o arquivo requirements.txt para o novo ambiente:
+
+Você pode copiar o arquivo requirements.txt para o novo ambiente, seja manualmente ou usando alguma forma de transferência de arquivos (por exemplo, SCP, FTP, etc.).
+
+No novo ambiente:
+
+Acesse o novo ambiente e instale as dependências listadas no arquivo requirements.txt usando o comando pip:
+
+bash
+Copy code
+pip install -r requirements.txt
+Isso instalará todas as dependências listadas no arquivo requirements.txt no novo ambiente, com as versões especificadas.
+
+Lembre-se de que este procedimento assume que o novo ambiente possui um ambiente Python compatível com as dependências listadas no arquivo requirements.txt. Certifique-se de que o novo ambiente seja compatível com as versões das dependências listadas e que o Python esteja configurado corretamente no novo ambiente.
+
+
+# PARA INSTALAR FORA DE UMAMBIENTE VIRTUAL (NUMA VM):
+
+remova o arquivo /usr/lib/python3.x/EXTERNALLY-MANAGED:
+
+sudo rm /usr/lib/python3.x/EXTERNALLY-MANAGED,
+
+

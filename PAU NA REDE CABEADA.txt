@@ -115,12 +115,16 @@ managed=true
 wifi.scan-rand-mac-address=no
 Last run command:
 
+________________________________________________________________________________________
 
 # REINICIAR REDE:
 sudo service network-manager restart
 
 systemctl restart NetworkManager
+
 sudo -i systemctl restart NetworkManager
+
+sudo /etc/init.d/networking restart
 
 # FONTE:
 https://askubuntu.com/questions/904545/networkmanager-doesnt-show-ethernet-connection

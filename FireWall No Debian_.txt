@@ -41,6 +41,10 @@ sudo ufw default allow outgoing
 
 Configura o firewall UFW para permitir todas as conexões de saída por padrão. Ou seja, se ele já não foi configurado, serão criadas regras no firewall para permitir todas as conexões de saída.
 
+# Permitir Trafego Necessário:
+sudo ufw allow http
+sudo ufw allow https
+
 
 __________________________________
 

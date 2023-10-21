@@ -8,3 +8,8 @@ https://linuxconfig.org/how-to-resize-a-qcow2-disk-image-on-linux
 
 
 https://maunium.net/blog/resizing-qcow2-images/
+
+
+# CRIAR UM DISCO LIMPO:
+
+qemu-img create -f qcow2 nome_do_disco.qcow2 11G

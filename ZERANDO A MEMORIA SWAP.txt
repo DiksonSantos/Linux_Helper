@@ -12,5 +12,12 @@ sudo swapoff -a; sudo swapon -a
 # STATUS DA SWAP:
 sudo swapon --show
 
+OU
+sudo swapon -s
+
+
+# LIMPAR A SWAP (Só depois de Desativa-la 'swapoff'):
+sudo wipefs -a /dev/nvme0n1p4
+
 
 https://askubuntu.com/questions/1357/how-to-empty-swap-if-there-is-free-ram

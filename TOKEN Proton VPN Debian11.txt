@@ -37,8 +37,19 @@ protonvpn-cli c
 # SEGUNDA SENHA:
 0nofXZfnXkpJbnM3JLfmJq0mdJmL4X20
 
-
 https://protonvpn.com/support/official-linux-vpn-debian/
+
+
+# REINICIAR O PROTON VPN Gui == Interface Gŕafica:
+sudo systemctl restart protonvpn-cli
+sudo systemctl restart protonvpn-gui
+
+sudo systemctl restart protonvpn-cli.service
+sudo systemctl restart protonvpn-gui.service
+
+sudo systemctl restart protonvpn
+
+sudo pkill -f protonvpn
 
 
 # FONTE:
@@ -46,7 +57,15 @@ https://youtu.be/5nL12XYvGuA
 
 # CONFERIR IP
 https://meuip.com.br/tools-geo.php
-
+https://ip.me/
+https://www.dnsleaktest.com/
+https://www.ip2location.com/demo/186.200.160.106
+https://www.whatismyip.com/
+https://www.iplocation.net/
 
 # TOKEN / LOGIN
 https://account.protonvpn.com/account
+
+
+
+
